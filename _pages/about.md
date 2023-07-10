@@ -1,7 +1,7 @@
 ---
 layout: about
 permalink: /
-title: <strong>Alfredo</strong> De la Fuente
+title: <strong>Brigitte</strong> Castañeda
 order: 1
 description: Passionate learner, eclectic idealist <br/> <blockquote2 class="warning" id="mymotto" title="Motto"><h5> 'Nothing is built on stone, all is built on sand; but we must build as if the sand were stone.' <br/> – Jorge Luis Borges</h5></blockquote2> 
 
