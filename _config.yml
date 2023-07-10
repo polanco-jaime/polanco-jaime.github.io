@@ -1,13 +1,13 @@
 # -----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
-title: Alfredo - De la Fuente
+title: Brigitte Castañeda
 email: alfredo.delafuente.b@gmail.com
 description: > # this means to ignore newlines until "url:"
   Personal website.
 footer_text: > #
 
-url: #"http://Alfo5123.github.io"
+url: #"https://brigitte-castaneda.github.io/"
 baseurl: #/al-folio # the subpath of your site, e.g. /blog/
 last_updated: # leave blank if you don't want to display last updated
 
