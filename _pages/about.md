@@ -1,9 +1,9 @@
 ---
 layout: about
 permalink: /
-title: <strong>Brigitte</strong> Castañeda
+title: <strong>Brigitte</strong> Castañeda Rodríguez
 order: 1
-description: Passionate learner, eclectic idealist <br/> <blockquote2 class="warning" id="mymotto" title="Motto"><h5> 'Nothing is built on stone, all is built on sand; but we must build as if the sand were stone.' <br/> – Jorge Luis Borges</h5></blockquote2> 
+description: Ph.D. candidate in economics <br/> #<blockquote2 class="warning" id="mymotto" title="Motto"><h5> 'Nothing is built on stone, all is built on sand; but we must build as if the sand were stone.' <br/> – Jorge Luis Borges</h5></blockquote2> 
 
 profile:
   align: right
@@ -13,11 +13,11 @@ news: true
 social: true
 ---
 
-I received my MSc (with Distinction) in *Statistical Learning Theory* from [Skoltech](https://www.skoltech.ru/en/education/msc-programs/ds/slt/) and [Higher School of Economics](https://www.hse.ru/en/ma/sltheory/), supervised by [Maxim Panov](https://scholar.google.ru/citations?user=BqDhGJQAAAAJ&hl=en&oi=ao). I worked on unsupervised graph embedding as member of the [Structural Learning Group](http://strlearn.ru/).
-{: .text-justify}
+I am a Ph.D. candidate in Economics at the Universidad de los Andes (Bogota, Colombia). My advisor is [Hernando Zuleta](https://scholar.google.com/citations?user=CgFQtFIAAAAJ&hl=en). Currently, I'm in a summer internship on an inclusive-just transition at [Environmental Defense Fund] (https://www.edf.org/), under the direction of [Luis Fernandez-Intriago] (https://www.luisfernandezintriago.com/home).  {: .text-justify}
 
-My research interests currently lie within Representation Learning, Statistical learning theory, Generative Models and Reinforcement Learning. My updated CV is available [here](https://drive.google.com/file/d/1IHbSs6S5tZ2wG65jmnWlmUF-aCnXPC2V/view?usp=sharing).
-{: .text-justify}
+My primary research fields are Macroeconomics and Environmental economics. My research focuses on the evaluation of the impact of carbon taxes on economic growth and employment. The first paper of my thesis explores the effect of the carbon tax on economic growth and jobs, with an emphasis on the role of the energy mix. The second chapter of my thesis endeavors to answer how polluted is the labor market in developing countries and how effectively are workers making the transition to greener jobs? These questions are looked into using both empirical analysis and a theoretical model. My research aims to formulate policy recommendations to mitigate the adverse effects of the energy transition and climate change.{: .text-justify}
 
-This website constitutes a personal experimental mechanism to hierarchically organize my thoughts, thus forcing myself to remain in a creative state of mind by improving my writing skills and developing a constant learning habit. 
-{: .text-justify}
+Previously, she worked as a consultant for the World Bank and as a researcher for the Center for Sustainable Finance at the University of the Andes. She holds an M.S. in Economics and an M.S. in Oil and Gas Engineering from Udmurt State University, Russia. Additionally, she has a B.S. in Petroleum Engineering from Universidad de America, Colombia. {: .text-justify}
+
+**I will be on the Job Market in 2024/2025.**
+
