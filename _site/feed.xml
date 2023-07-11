@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-10T23:36:03-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Brigitte Castañeda</title><subtitle>Personal website.
+</subtitle><entry><title type="html">Population growth</title><link href="http://localhost:4000/articles/2023/population/" rel="alternate" type="text/html" title="Population growth" /><published>2023-06-23T11:12:00-04:00</published><updated>2023-06-23T11:12:00-04:00</updated><id>http://localhost:4000/articles/2023/population</id><content type="html" xml:base="http://localhost:4000/articles/2023/population/">&lt;p&gt;Recently I  came across the following quantitative question:&lt;/p&gt;
+
+&lt;blockquote class=&quot;text-justify&quot;&gt;
+  &lt;p&gt;A mythical city contains \(100,000\) monogamously married couples but no children. Each family wishes to “continue the male line”, but they do not wish to overpopulate. So, each family has one baby per annum until the arrival of the first boy. For example, if (at some future date) a family has five children, then it must be either that they are all girls, and another child is planned, or that there are four girls and one boy, and no more children are planned. Assume that the children are equally likely to be born male or female. 
+Let \(p(t)\) be the percentage of &lt;strong&gt;children&lt;/strong&gt; that are male at the end of year \(t\).  How is this percentage expected to evolve through time?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;At this point, the ambitious reader should not avoid spoilers and take a few minutes to try to solve it without using a piece of paper for calculations (ideally). If you do any mathematics whatsoever, you probably are missing the point.&lt;/p&gt;
+
+&lt;p&gt;A few additional assumptions, if unclear:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Consider that no person in the city dies.&lt;/li&gt;
+  &lt;li&gt;The kids will not become parents themselves during the time horizon of the analysis.&lt;/li&gt;
+  &lt;li&gt;The marriages remain fixed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;naive-intuition&quot;&gt;Naive Intuition&lt;/h2&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;When we consider a short time horizon, we can easily imagine large families that have many daughters and a single son, thus there must be more girls than boys. Additionally, at a longer time horizon, most families would be expected to have a boy and stopped having more kids. We could conclude then that the percentage of male children is small at the beginning and slowly increase over time, never exceeding \(50\%\).&lt;/p&gt;
+
+&lt;h2 id=&quot;simulation&quot;&gt;Simulation&lt;/h2&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt; 
+
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Repeat experiment multiple times
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tries&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;_&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tries&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;seed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;available_couples&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100000&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Couples who did not have a boy yet
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;male_cumulative&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Cumulative male children per year
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;female_cumulative&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# Cumulative female children per year
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;ratio&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;years&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+  
+  &lt;span class=&quot;c1&quot;&gt;# Run growth simulation for a fixed time horizon
+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;total_years&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt; 
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;total_years&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;years&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;available_couples&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;male_children&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;female_children&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;male_children&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;binomial&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;available_couples&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;female_children&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;available_couples&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;male_children&lt;/span&gt; 
+      &lt;span class=&quot;n&quot;&gt;available_couples&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;male_children&lt;/span&gt;
+
+    &lt;span class=&quot;n&quot;&gt;male_cumulative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;male_children&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;male_cumulative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;female_cumulative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;female_children&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;female_cumulative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;ratio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;male_cumulative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;male_cumulative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;female_cumulative&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]))&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;years&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ratio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alpha&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;g&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xticks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;years&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;years&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Male Children Ratio&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Expected Ratio over Time&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;center&gt;
+&lt;div class=&quot;img_row&quot; style=&quot;height: 500px;width: 900px&quot;&gt;
+    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/population_growth_simulation.png&quot; alt=&quot;&quot; title=&quot;Population growth&quot; /&gt;
+&lt;/div&gt;
+&lt;/center&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;So, what exactly went wrong?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;em&gt;The number of large families is surprisingly small!&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;analysis&quot;&gt;Analysis&lt;/h2&gt;
+&lt;p class=&quot;text-justify&quot;&gt;The key word in the problem statement is &lt;strong&gt;expected&lt;/strong&gt;. No real calculation is needed to see that at each time step an equal number of female and male babies are expected be born. Therefore, the proportion of male and female children is expected to remain at \(50\%\).&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Any doubts?&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Mathematical arguments must ultimately convince the reader. Let us consider the number of female children within each family as an independent random variable \(f_i\), where \(1 \leq i \leq 10^5\). By the problem statement, \(f_i\) follows a geometric distribution with success probabiliy \(p=0.5\). Thus, the probabiliy of having \(k\) girls before a boy is given by \(P(f_i = k) = (1-p)^k p\). The mean of this distribution is given by \(\frac{1-p}{p}\), which in our case is \(1\). In other words, in average each family will have one boy and one girl.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Finally, by linearity of expectation, we can observe that for the whole population the expected ratio of male to female children remains at \(50\%\).&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;It is very easy to have the wrong intuition about simple statistical concepts, even for a person with good working knowledge of statistics. Consider the case where one needs to examine evidence and make decisions for a complex model of reality, how likely are we to have an appropiate intution? It is really key to study simplified cases to build up our intuitive reasoning. Even small tweaks into seemingly simple models can create insanely complex behaviors (e.g. &lt;a href=&quot;https://en.wikipedia.org/wiki/Rule_30&quot;&gt;Rule 30&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;One thing to notice is that most people tend fo focus on extreme behvior of each family, rather than the general trend of the population growth. Moreover, regardless the intention of each family to have boys (specified by the stopping rule), this only affects the size of one family, not the male ratio within the population.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Geometric_distribution&quot;&gt;Geometric Distribution Wikipedia article&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://50percentofcapacity.blogspot.com/2012/02/laymen-cannot-decide-for-themselves.html?m=1&amp;amp;fbclid=IwAR3kQgtccRxR5ux_5IaZdNH0Kry6q_Xs5oWShClrU8mx_uUDaIlHdkLvMV0&quot;&gt;Blog post: “Laypeople Cannot Decide for Themselves”&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;acknowledgment&quot;&gt;Acknowledgment&lt;/h2&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Thanks to Brigitte Castañeda, Anji Yi, John Pang, and Aleksandra Galitsyna for the constructive feedback and hightling a few clarifications on the problem statement.&lt;/p&gt;</content><author><name></name></author><category term="idea" /><category term="programming" /><category term="math" /><summary type="html">Recently I came across the following quantitative question:</summary></entry><entry><title type="html">Pancake</title><link href="http://localhost:4000/articles/2023/pancake/" rel="alternate" type="text/html" title="Pancake" /><published>2023-05-01T11:12:00-04:00</published><updated>2023-05-01T11:12:00-04:00</updated><id>http://localhost:4000/articles/2023/pancake</id><content type="html" xml:base="http://localhost:4000/articles/2023/pancake/">&lt;p&gt;[TODO]&lt;/p&gt;</content><author><name></name></author><category term="idea" /><category term="programming" /><summary type="html">[TODO]</summary></entry><entry><title type="html">Bingo</title><link href="http://localhost:4000/articles/2023/bingo/" rel="alternate" type="text/html" title="Bingo" /><published>2023-03-01T10:12:00-05:00</published><updated>2023-03-01T10:12:00-05:00</updated><id>http://localhost:4000/articles/2023/bingo</id><content type="html" xml:base="http://localhost:4000/articles/2023/bingo/">&lt;p class=&quot;text-justify&quot;&gt;Contrary to most of the nonsense conversations I have on a daily basis, this one presented a reasonable opportunity to delve into. Nostalgia took me back to 2008-2010 (I know what you are thinking!), during my last years of high school. We had the tradition of playing BINGO during the school anniversary festivities. Vividly recall the day when I thought I had won a smaller prize with the “O” pattern: only to realize I had one mistake, unfortunately.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;div class=&quot;img_row&quot; style=&quot;height: 368px;width: 350px&quot;&gt;
+    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/bingo.webp&quot; alt=&quot;&quot; title=&quot;Bingo Board&quot; /&gt;
+&lt;/div&gt;
+&lt;/center&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Despite I never won myself the maximum prize (around $2000), attributed to the first player completing the whole board, I witness the excitement of lucky people walking among a big crowd towards the presenter to verify their victory. Among those memories, the following questions appeared in my mind: How difficult was &lt;em&gt;actually&lt;/em&gt; to win, afterall? Is it a worthy investment? Is it &lt;em&gt;actually&lt;/em&gt; easier to win forming the “N” pattern? Ergo, this post.&lt;/p&gt;
+
+&lt;h2 id=&quot;game-description&quot;&gt;Game Description&lt;/h2&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/Bingo_(American_version)&quot;&gt;U.S. 75-ball bingo game&lt;/a&gt; consists of disposable paper cardboards which contain a unique combination of 25 numbers on squares arranged in five vertical columns (corresponding to each of the BINGO letters) and five side to side rows. Each space is covered except the center one, which is free space. The range of printed numbers that can appear on any order on the card is restricted by column. In particular, the column ‘B’ only contains numbers between 1 and 15 inclusive, the column ‘I’ only contains numbers between 16 and 30 inclusive, and so on.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Each of the 75 possible numbers is randomly drawn by a presenter of the game, while each player marks the announced number down on their BINGO card, until a winner is revealed within the audience. The most common winning scenario is a full cover pattern. That is, when each of the 24 numbers is marked on a cardboard, its owner can claim BINGO. This is usually assigned to the highest prize of the event. Other winning scenarios consist of forming particular patterns of marked cells in the board. For example, forming a letter ‘O’ with a fraction of the marked cells. That would require all the numbers in the columns ‘B’ and ‘O’, as well as the first and last elements of each column, to be marked as the picture below shows.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;div class=&quot;img_row&quot; style=&quot;height: 450px;width: 350px&quot;&gt;
+    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/bingoO.png&quot; alt=&quot;&quot; title=&quot;Bingo Board - O pattern Win&quot; /&gt;
+&lt;/div&gt;
+&lt;/center&gt;
+
+&lt;h2 id=&quot;analysis&quot;&gt;Analysis&lt;/h2&gt;
+
+&lt;p&gt;Let us define the following variables&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;\(X\), number of draws so far&lt;/li&gt;
+  &lt;li&gt;\(\mathcal{F}\), random event of winning with full cover pattern.&lt;/li&gt;
+  &lt;li&gt;\(\mathcal{B}\), random event of winning with “B” pattern.&lt;/li&gt;
+  &lt;li&gt;\(\mathcal{O}\), random event of winning with “O” pattern.&lt;/li&gt;
+  &lt;li&gt;\(\mathcal{N}\), random event of winning with “N” pattern.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;full-cover-probability&quot;&gt;Full Cover Probability&lt;/h3&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;The cumulative probability of winning with a full cover board in less or equal than \(D\) draws is,&lt;/p&gt;
+
+\[\mathbb{P}_F ( X \leq D ) = \frac{\binom{51}{D-24}}{\binom{75}{D}}\]
+
+&lt;p class=&quot;text-justify&quot;&gt;The distribution has support only for values \(D\geq 24\). Thus,&lt;/p&gt;
+
+\[\mathbb{P}_F[ X = D ] = \mathbb{P}_F[ X \leq D ] - \mathbb{P}_F[X \leq D-1]\]
+
+\[\mathbb{P}_F[ X = D ] = \frac{24\binom{51}{D-25}}{ (D-24)\binom{75}{D-1}}\]
+
+&lt;h3 id=&quot;pattern-probability&quot;&gt;Pattern Probability&lt;/h3&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;The cumulative probability of winning with a particular pattern \(P\) in less or equal than \(D\) draws is given by&lt;/p&gt;
+
+\[\mathbb{P}_P ( X \leq D ) = \sum_{i=P_{size}}^{24} \frac{\binom{24}{i}\binom{51}{D-i}}{\binom{75}{D}} \times \text{Probability of Forming Pattern P with i marked numbers}\]
+
+&lt;p class=&quot;text-justify&quot;&gt;In particular, we have for patterns \(\mathcal{N}, \mathcal{O}\) and \(\mathcal{B}\) the following expressions,&lt;/p&gt;
+
+\[\mathbb{P}_B ( X \leq D ) = \sum_{i=12}^{24} \frac{\binom{24}{i}\binom{51}{D-i}}{\binom{75}{D}} \times \frac{\binom{12}{12}\binom{12}{i-12}}{\binom{24}{i}} = \sum_{i=18}^{24} \frac{ \binom{12}{i-12}\binom{51}{D-i}}{\binom{75}{D}}\]
+
+\[\mathbb{P}_O ( X \leq D ) = \sum_{i=16}^{24} \frac{\binom{24}{i}\binom{51}{D-i}}{\binom{75}{D}} \times \frac{\binom{16}{16}\binom{8}{i-16}}{\binom{24}{i}} = \sum_{i=16}^{24} \frac{ \binom{8}{i-16}\binom{51}{D-i}}{\binom{75}{D}}\]
+
+\[\mathbb{P}_B ( X \leq D ) = \sum_{i=18}^{24} \frac{\binom{24}{i}\binom{51}{D-i}}{\binom{75}{D}} \times \frac{\binom{18}{18}\binom{6}{i-18}}{\binom{24}{i}} = \sum_{i=18}^{24} \frac{ \binom{6}{i-18}\binom{51}{D-i}}{\binom{75}{D}}\]
+
+&lt;h3 id=&quot;probability-distributions&quot;&gt;Probability Distributions&lt;/h3&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;We can visually inspect how the cumulative distribution probabilities for the different winning cases look like. We can notice that only after \(60\) draws the chances stop being negligible. This explains why the game lasts that long without winner, even for simpler patterns.&lt;/p&gt;
+
+&lt;div class=&quot;img_row&quot; style=&quot;height: 290px;width: 820px&quot;&gt;
+    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/cumulative_dist.png&quot; alt=&quot;&quot; title=&quot;Cumulative Distribution&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;&lt;em&gt;One interesting observation is how close the probability curves are from each other, defying our initial intuition&lt;/em&gt;. We expected that winning by full cover represented a much slimmer chance than by an \(\mathcal{O}\) pattern, for instance. Yet, we observe that at \(70\) draws one has around \(0.15\) probability of winning by full cover vs. a \(0.3\) probability of winning by \(\mathcal{O}\) pattern, if playing in isolation.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;However, in the most realistic BINGO setting we have a huge crowd (\(N\sim 1000\)) so we care about the probability of at least one person winning given \(X\) draws so far. Thus, we proceed to obtain the cumulative probability distributions of at least one person winning for each pattern.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;If the probability of an event happening is \(p\), then the probability that it will happen at least once in \(N\) times is \(1 - (1-p)^N\). Using this formula, we obtained the following results,&lt;/p&gt;
+
+&lt;div class=&quot;img_row&quot; style=&quot;height: 290px;width: 820px&quot;&gt;
+    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/cumulative_dist_1000.png&quot; alt=&quot;&quot; title=&quot;Cumulative Distribution - 1000 players&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;&lt;em&gt;The updated results match our intuition: where each cumulative probability curve is drastically spread after \(\sim 40\) draws.&lt;/em&gt; From these distributions we can calculate the expected value of draws required to win for each case.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Pattern&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Expected Draws To Win - 1 player&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Expected Draws To Win - 1k players&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;Full Cover&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;72.96&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;58.79&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;B&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;72.00&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;53.16&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;O&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;71.52&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;50.56&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;N&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;70.15&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;43.56&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Finally, this analysis leads to another open question for the curious reader: &lt;strong&gt;what would be the ‘optimal’ way of assigning the prizes’ values given our probabilistic findings?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;I am confident that my high school BINGO’s organizers did not think this thoroughly nor did the math. Since  \(\mathcal{N}, \mathcal{O}\) and even \(\mathcal{B}\) were given kitchen appliances or TVs as prizes, while the full cover win was rewarded with the highest prize of 2000 dollars, for a 3 dollar BINGO board.&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Blog post on Bingo Calculations - &lt;a href=&quot;https://randombooks.org/case-study-bingo.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Blog post on Computation of Bingo Probabilities Numerically - &lt;a href=&quot;http://www.durangobill.com/BingoHowTo.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;acknowlegdments&quot;&gt;Acknowlegdments&lt;/h3&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Thanks to Maximilian Montserrat for engaging conversations and running the &lt;a href=&quot;https://drive.google.com/file/d/1lVfQ0PwOTuTlsb2_zh-NztbyeSy_u_zg/view?usp=sharing&quot;&gt;numerical calculations code&lt;/a&gt; to verify results.&lt;/p&gt;</content><author><name></name></author><category term="idea" /><category term="math" /><summary type="html">Contrary to most of the nonsense conversations I have on a daily basis, this one presented a reasonable opportunity to delve into. Nostalgia took me back to 2008-2010 (I know what you are thinking!), during my last years of high school. We had the tradition of playing BINGO during the school anniversary festivities. Vividly recall the day when I thought I had won a smaller prize with the “O” pattern: only to realize I had one mistake, unfortunately.</summary></entry><entry><title type="html">Watercolors</title><link href="http://localhost:4000/articles/2023/watercolors/" rel="alternate" type="text/html" title="Watercolors" /><published>2023-02-16T10:12:00-05:00</published><updated>2023-02-16T10:12:00-05:00</updated><id>http://localhost:4000/articles/2023/watercolors</id><content type="html" xml:base="http://localhost:4000/articles/2023/watercolors/">&lt;p class=&quot;text-justify&quot;&gt;I am not sure whether it was the multiple IG accounts I followed on the topic, or a few paintings that moved me just by using a few translucent strokes, yet I was cautivated by this art form for a while. Deciding to do something more than faulty geometric shapes, I started taking online lessons early this year. Here are some of the results. This could easily be an attempt to monitor my progress over time and hopefully motivated others to try it out.&lt;/p&gt;
+
+&lt;div class=&quot;img_row&quot;&gt;
+    &lt;img class=&quot;col one&quot; src=&quot;/assets/img/watercolor1.jpeg&quot; /&gt;
+    &lt;img class=&quot;col one&quot; src=&quot;/assets/img/watercolor2.jpeg&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;col three caption&quot;&gt;
+    A long way to go
+&lt;/div&gt;
+
+&lt;p&gt;Thanks to Anna Obratzsova for my first watercolor palette set as present :)&lt;/p&gt;</content><author><name></name></author><category term="idea" /><category term="painting" /><summary type="html">I am not sure whether it was the multiple IG accounts I followed on the topic, or a few paintings that moved me just by using a few translucent strokes, yet I was cautivated by this art form for a while. Deciding to do something more than faulty geometric shapes, I started taking online lessons early this year. Here are some of the results. This could easily be an attempt to monitor my progress over time and hopefully motivated others to try it out.</summary></entry><entry><title type="html">Turnstyle</title><link href="http://localhost:4000/articles/2023/turnstyle/" rel="alternate" type="text/html" title="Turnstyle" /><published>2023-02-15T10:12:00-05:00</published><updated>2023-02-15T10:12:00-05:00</updated><id>http://localhost:4000/articles/2023/turnstyle</id><content type="html" xml:base="http://localhost:4000/articles/2023/turnstyle/">&lt;p&gt;Naturally, a casual walk on a stimulating work environment can trigger the most prominent forms of &lt;a href=&quot;https://xkcd.com/356/&quot;&gt;nerd snipping&lt;/a&gt;. Another addictive puzzle from the ninth floor dazzled me. Hopefully, I can share some of my curiosity with you.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;div class=&quot;img_row&quot; style=&quot;height: 450px;width: 450px&quot;&gt;
+    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/turnstyle.png&quot; alt=&quot;&quot; title=&quot;Turnstyle&quot; /&gt;
+&lt;/div&gt;
+&lt;/center&gt;
+
+&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://gamewright.com/product/turnstyle&quot;&gt;Turnstyle&lt;/a&gt;&lt;/strong&gt; brain teaser consists of two discs connected by a gear on the back. Allowing two types of valid moves:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Shift&lt;/em&gt;  all the numbers one position right (clockwise) or left (counter-clockwise).&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Flip&lt;/em&gt; the connected gears to change the order of the numbers from ABCD to BADC.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;After interacting with the puzzle for a few seconds, I knew my best hope was to write a program to find an optimal solution for me.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Let’s solve it!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Being particularly bad at games, I couldn’t help but think whether I should invest a few hours into it. Naturally, one thought crossed my mind: the imminent fear of a jigsaw puzzle missing a piece. What if someone designed a devilish unsolvable game? Let’s better take one step back, and first prove the solvability of the game.&lt;/p&gt;
+
+&lt;h2 id=&quot;digging-into-math&quot;&gt;Digging into math&lt;/h2&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;We build up our intution by introducing a set of definitions. Let us consider \(\mathcal{A} = \{1,...,n\}\). We define a &lt;em&gt;permutation&lt;/em&gt; \(\sigma\) as a function from \(\mathcal{A}\) to itself, which is onto and one-to-one. In other words, a reording of the elements of \(\mathcal{A}\). Any permutation \(\sigma\) can be represented by a set of disjoint cycles, with the interpretation that any consecutive pair \(i,j\) indicates that \(i\) is mapped to \(j\), and any \(i\) at the end of a parenthesized cycle maps to \(j\) at the start of the same cycle.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;For example, the permutation \(\sigma : \{1,2,3,4\} \rightarrow \{2,1,4,3\}\) can be denoted as \(\sigma = (12)(34)\). In addition, a cycle consisting of only two elements is called a &lt;em&gt;transposition&lt;/em&gt; and a cycle of one element (which can be avoided in the cycle notation) is called &lt;em&gt;fixed point&lt;/em&gt;. In our case, our permutation is expressed as the product of two transpositions.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;We define the order of the permutation is the defined the smallest positive integer \(m\) such that \(\sigma^m = id\). That is, how many times we should apply the permutation mapping until we obtain the identity map. For example, for the above permutation \(\sigma\) the order is \(2\).&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Regarding the parity of a permutation, using the cycle notation, the permutation is odd if and only if this factorization contains an odd number of even-length cycles. Thus, our permutation \(\sigma = (12)(34)\) is even. It is easy to proof that the composition of two even permutation is another even permutation. This will be a useful property for proving the solvability.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;The set of all permutations of \(\mathcal{A}\) is the &lt;em&gt;symmetric group&lt;/em&gt; of \(n\) symbols, denoted by \(\mathcal{S}_n\). As detailed in &lt;a href=&quot;https://kconrad.math.uconn.edu/blurbs/grouptheory/genset.pdf&quot;&gt;this&lt;/a&gt; paper, for a group \(\mathcal{G}\) a subset \(\mathcal{X} \subset \mathcal{G}\) is a generating set for \(\mathcal{G}\) if every \(g \in \mathcal{G}\) can be written as a product of powers of elements taken from \(\mathcal{X}\):&lt;/p&gt;
+
+&lt;center&gt;
+$$ g = x_1^{a_1} x_2^{a_2} \cdots x_r^{a_r} $$,
+&lt;/center&gt;
+&lt;p class=&quot;text-justify&quot;&gt;where \(x_i \in \mathcal{X}\) and \(a_i \in \Z\). Thus, \(\mathcal{X}\) generates \(\mathcal{G}\) and is denoted by \(\mathcal{G} = \langle \mathcal{X} \rangle\).&lt;/p&gt;
+
+&lt;h3 id=&quot;lemma&quot;&gt;Lemma&lt;/h3&gt;
+&lt;p&gt;For any odd integer \(n&amp;gt;4\), the permutations \(\sigma_1 = (1,2,3,\cdots, n)\) and \(\sigma_2 = (1,2)(3,4)\) do not generate \(\mathcal{S}_n\). This solves the open question stated &lt;a href=&quot;https://www.cs.brandeis.edu/~storer/JimPuzzles/ZPAGES/zzzTurnstyle.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;proof&quot;&gt;Proof&lt;/h3&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Let us consider odd values of \(n&amp;gt;4\). We can easily verify that for odd \(n&amp;gt;8\), the permutations \(\sigma_1 = (1,2,3,\cdots, n)\) and \(\sigma_2 = (1,2)(3,4)\) are both even. Therefore, every composition of these two permutations would result in an even permutation, by the property described above. Thus, it is not possible to generate odd permutations, and ultimately \(\mathcal{S}_n\). ∎&lt;/p&gt;
+
+&lt;h3 id=&quot;lemma-1&quot;&gt;Lemma&lt;/h3&gt;
+&lt;center&gt;
+$$\mathcal{S}_{12} = \langle \sigma_1, \sigma_2 \rangle = \langle (1,2,3,\cdots, 12), (1,2) (3,4) \rangle$$
+&lt;/center&gt;
+
+&lt;h3 id=&quot;proof-1&quot;&gt;Proof&lt;/h3&gt;
+&lt;p&gt;Let us define the following permutations using the generators \(\sigma_1\) and \(\sigma_2\),&lt;/p&gt;
+
+\[L = \sigma_1 = (1,2,3,4,5,6,7,8,9,10,11, 12)\]
+
+\[R = \sigma_1^{-1} = (12, 11,10, 9, 8, 7, 6, 5, 4, 3, 2, 1)\]
+
+\[T = \sigma_2 = (1,2) (3,4)\]
+
+&lt;p&gt;We use the auxiliary composition of permutations,&lt;/p&gt;
+
+\[P = TLLLTR\]
+
+\[Q = RRTLL\]
+
+&lt;p&gt;Thus, we can verify&lt;/p&gt;
+
+\[L T L P Q P^3 T L = (1,2)\]
+
+&lt;p class=&quot;text-justify&quot;&gt;To conclude, we can generate \(\mathcal{S}_{12}\) using the transposition \((1,2)\) and the 12-cycle permutation.∎&lt;/p&gt;
+
+&lt;!---
+For this case, we can trivially verify $$\sigma_1$$ and $$\sigma_2$$ have opposite parity, as a necessity for generating $$S_n$$. Let us define $$\sigma_3 = \sigma_1^4$$. We have that $$\sigma_3^3 = \sigma_2^2 = id$$. By using the [theorem proven by Miller](https://www.ams.org/journals/bull/1901-07-10/S0002-9904-1901-00826-9/S0002-9904-1901-00826-9.pdf), which shows that for $$n&gt;8$$, the symmetric group $$S_n$$ can be generated by a permutation of order $$2$$ and a permutation of order $$3$$, we can guarantee the existence of two permutations of order $$2$$ and $$3$$, which generate $$S_{12}$$.
+{: .text-justify}
+
+Let $$G$$ be a group generated by the set $$S = \{ (1,2,3,\cdots, 12), (1,2) (3,4) \}$$. We choose an element $$x \in \mathcal{X}$$ that is not fixed by $$G$$. Since it suffices to choose a nontrivial generator $$s$$ and consider $$x$$ not fixed by $$s$$, we pick $$x=1$$. Then, the order of $$G$$ is given by, 
+
+$$ \vert G \vert = \vert Y \vert \cdot \vert H \vert$$,
+
+where $$H$$ is the stabilitzer of $$x$$ and $$Y$$ is the $$G$$-orbit of $$x$$.
+
+
+
+The orbit of 𝑥
+ is &quot;everything that can be reached from 𝑥
+ by an action of something in 𝐺
+.&quot;
+
+The stabilizer of 𝑥
+ is &quot;the set of all elements of 𝐺
+ which don&apos;t move 𝑥
+ when they act on 𝑥
+&quot;.
+--&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;In plain words, by using the two valid game moves (flip and shift), we can reach any possible configuration, for the case of \(n=12\). Therefore, we can now &lt;em&gt;safely&lt;/em&gt; verify the solutions using computer search.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Furthermore, we could use a library for symbolic mathematics such as &lt;a href=&quot;https://www.sympy.org/en/index.html&quot;&gt;SymPy&lt;/a&gt; to quickly verify our result. The library uses the &lt;a href=&quot;https://en.wikipedia.org/wiki/Schreier%E2%80%93Sims_algorithm&quot;&gt;Schreier–Sims algorithm&lt;/a&gt; to compute the order of the generated group.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sympy.combinatorics&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Permutation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PermutationGroup&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Permutation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Permutation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;G&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PermutationGroup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Group Order:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;G&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 12!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;&lt;em&gt;I wanted to take this opportunity to relate &lt;a href=&quot;https://www.youtube.com/watch?v=px_4TxC2mXU&quot;&gt;Feynman’s famous quote&lt;/a&gt; on knowing the name of something. Despite I am nowhere near being a formerly trained mathematician, sometimes one can benefit by knowing the name of some obscure group theory concept in order to tackle a problem and appropriately explore previous research efforts on the field.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;time-to-code&quot;&gt;Time to code&lt;/h2&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;From an algorithmic point, the problem consists of a graph traversal task. Each node represents each of the cyclic permutation formed by the 12 pieces. In order to restrict our representation of cyclic permutations, we fix the position of “\(1\)” at the beginning of the tuple, for each node.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Due to the high number of possible nodes (11! states = ~39M) in the connected graph, a naive implementation of DFS would reach maximum recursion limits. Thus, I opted for using BFS, since that would also help answering shortest path queries between any initial state to the solved state.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;The only piece missing is the transition function to traverse each node. Since we want to keep the element \(1\) as fixed point in the tuple representation, we apply the transformations of the shape \([i\%n, (i+1)\%n, (i+2)\%n, (i+3)\%n ]\) for a valid \(i\) (\(0\leq i &amp;lt; n\)), and the necessary rotations to keep the element \(1\) at the beginnning. Throughout this post, we denote this sequence of transformations as &lt;strong&gt;move(\(i\))&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;math&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;copy&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deepcopy&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;collections&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deque&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;move&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;# Copy mutable state variable 
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;# Swap the elements (ix%n, (ix+1)%n) and (ix+2)%n, (ix+3)%n)
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; 
+        &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;# Corner cases for resetting 1 at the beginning of the new state
+&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;We can now run our naive BFS implementation.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# Create a set for visited states 
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;visited&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Keep track of parent states during traversal for path reconstruction
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;dict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;parent_idx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;dict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Intialization of solution state
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solution_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;initial_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;tuple&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solution_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;visited&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;initial_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deque&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;initial_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;initial_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initial_state&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;parent_idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;initial_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Explore immediate neighbors not visited
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;current_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;popleft&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;current_state_tuple&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;tuple&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;next_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;tuple&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;move&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;next_state&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;visited&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;visited&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current_state_tuple&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;parent_idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;As far as I remember, the initial game configuration that I encountered was the following,&lt;/p&gt;
+
+&lt;center&gt;
+$$(1, 3, 5, 7, 2, 4, 6, 8, 9, 10, 11, 12)$$.
+&lt;/center&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Using our BFS traversal, the sequence of &lt;strong&gt;move&lt;/strong&gt; operations with indices \(i=[1, 5, 2, 3, 5]\)  solves the puzzle from the initial state.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;In addition, we can observe the log-scaled histogram of paths lengths (from 0 to 15).&lt;/p&gt;
+&lt;center&gt;
+&lt;div class=&quot;img_row&quot; style=&quot;height: 450px;width: 450px&quot;&gt;
+    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/path_lengh_distribution.png&quot; alt=&quot;&quot; title=&quot;Turnstyle&quot; /&gt;
+&lt;/div&gt;
+&lt;/center&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Out of curiosity, I wanted to finish this post by pointing one possible initial configuration that requires the biggest amounts of move operations is \((1, 12, 11, 10, 9, 8, 6, 7, 4, 5, 2, 3)\).&lt;/p&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Turnstyle solution approach via computer search of SWAP - &lt;a href=&quot;https://www.cs.brandeis.edu/~storer/JimPuzzles/ZPAGES/zzzTurnstyle.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Tom’s Turnstile description and puzzle solution by J. A. Storer - &lt;a href=&quot;https://www.cs.brandeis.edu/~storer/JimPuzzles/SLIDE/TomsTurnstile/TomsTurnstile.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Miller, G.A., ‘On the groups generated by 2 operators’, 1901. - &lt;a href=&quot;https://www.ams.org/journals/bull/1901-07-10/S0002-9904-1901-00826-9/S0002-9904-1901-00826-9.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;MathOverflow discussion over genenator of Symmetric group. - &lt;a href=&quot;https://mathoverflow.net/questions/405256/what-is-the-standard-2-generating-set-of-the-symmetric-group-good-for#comment1038737_405273&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Keith Conrad, ‘Generating Sets’ - &lt;a href=&quot;https://kconrad.math.uconn.edu/blurbs/grouptheory/genset.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Bases for permutation groups, Tim Burness, University of Bristol - &lt;a href=&quot;https://seis.bristol.ac.uk/~tb13602/docs/padova_lecture_1.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Group Theory, J.S. Milne - &lt;a href=&quot;https://www.jmilne.org/math/CourseNotes/GT.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Jeffrey S. Leon, ‘On an Algorithm for Finding a Base and a Strong Generating Set for a Group Given by Generating Permutations’ - &lt;a href=&quot;https://www.ams.org/journals/mcom/1980-35-151/S0025-5718-1980-0572868-5/S0025-5718-1980-0572868-5.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Alexander Hulpke, ‘Notes on Computational Group Theory’ - &lt;a href=&quot;https://www.math.colostate.edu/~hulpke/lectures/m676cgt/notes.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Ken Brown, ‘Computation in permutation groups’ - &lt;a href=&quot;http://pi.math.cornell.edu/~kbrown/6310/computation.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;acknowledgment&quot;&gt;Acknowledgment&lt;/h2&gt;
+&lt;p&gt;Thanks to Niek Lamoree and Samuel Vidal for the group theory ideas and proofreading this post.&lt;/p&gt;</content><author><name></name></author><category term="idea" /><category term="math" /><category term="programming" /><summary type="html">Naturally, a casual walk on a stimulating work environment can trigger the most prominent forms of nerd snipping. Another addictive puzzle from the ninth floor dazzled me. Hopefully, I can share some of my curiosity with you.</summary></entry><entry><title type="html">Rice</title><link href="http://localhost:4000/articles/2022/rice/" rel="alternate" type="text/html" title="Rice" /><published>2022-11-30T10:12:00-05:00</published><updated>2022-11-30T10:12:00-05:00</updated><id>http://localhost:4000/articles/2022/rice</id><content type="html" xml:base="http://localhost:4000/articles/2022/rice/">&lt;p&gt;Have you ever struggled with cooking rice perfectly?&lt;/p&gt;
+
+&lt;p&gt;Are you tired of reading overly precise recipes like this?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;For cooking 1 to 2 cups of dry rice, a 2-quart saucepan is just the right size. Too big and the rice may not steam right. 
+Too small and it will boil over and make a sticky mess. You will add 1 3/4 cups water.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Or vague general proportions?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;Add 2 parts water and 1 part rice to a large pot. For slightly firmer rice, use 1 part liquid to 2/3 parts rice.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Let us evoke the Asian wisdom, which goes beyond standard pan sizes or fancy volume unit measures.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;To cook proper rice, one should add enough water to the pan so that it hits the first index finger knuckle, while the finger tip vertically touches the surface of the rice.&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Let’s build up our intution and start with a set of assumptions.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# Average measurement (inches)
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;diameter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;6.&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;height_index_knuckle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.8&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Conversation Rates
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inch_to_cm_ratio&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.54&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;cup_water_to_cm3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;236.588&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Random Packing Density
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random_packing_density&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.56&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Number of cups of rice to cook
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rice_volume&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Main assumptions:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Random Packing Density of the grains of rice approximate one of loosely random packed spheres and it’s constant over different medium (air/water).&lt;/li&gt;
+  &lt;li&gt;The rice quality (shape) is disregarded in the analysis.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Thus, we can define our main function for the finger heuristic.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate_water&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pan_diameter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                     &lt;span class=&quot;n&quot;&gt;rice_volume&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+                     &lt;span class=&quot;n&quot;&gt;height_index_knuckle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;&apos;&apos;&apos;
+  Input:
+    pan_diameter : float 
+      Volume in inches for the pan diameter
+    rice_volume : float
+      Volume in cups for the rice
+    height_index_knuckle : float
+      Length of first index knuckle in inches
+
+  Returns 
+    Ideal water volume to add in cups
+  &apos;&apos;&apos;&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;pan_area&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pi&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pan_diameter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inch_to_cm_ratio&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;4.0&lt;/span&gt; 
+  &lt;span class=&quot;n&quot;&gt;volume_water_added&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;height_index_knuckle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inch_to_cm_ratio&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pan_area&lt;/span&gt; 
+  &lt;span class=&quot;n&quot;&gt;volume_water_added&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rice_volume&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cup_water_to_cm3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random_packing_density&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;volume_water_added&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cup_water_to_cm3&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;We plot the results of applying our function to common sauce pan sizes and rice quantities.&lt;/p&gt;
+
+&lt;div class=&quot;img_row&quot; style=&quot;height: 650px;width: 650px&quot;&gt;
+    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/asian_rice_rule.png&quot; alt=&quot;&quot; title=&quot;Word Distribution&quot; /&gt;
+&lt;/div&gt;
+
+&lt;h3 id=&quot;a-very-natural-observation-of-the-skeptic-reader-is-what-if-my-finger-is-way-smaller-or-bigger&quot;&gt;&lt;em&gt;A very natural observation of the skeptic reader is: what if my finger is way smaller or bigger?&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Let us consider the results from the following &lt;a href=&quot;https://scielo.conicyt.cl/pdf/ijmorphol/v28n3/art15.pdf&quot;&gt;scientific study&lt;/a&gt;. Since we only care about the size of the index first knuckle, we have&lt;/p&gt;
+
+\[TotalSize =  Tip size + First Phalanx = (3.84±0.59) + (15.82±2.26) \ (mm)\]
+
+&lt;p&gt;Assuming independence of the variables for simplicty,&lt;/p&gt;
+
+\[TotalSize =  (3.84+15.82) ± \sqrt{0.59^2 + 2.26^2} = 19.66 ± 2.33 \ (mm)\]
+
+&lt;p&gt;In this way, we can model the first index knuckle size distributions for simplicity as a Gaussian distribution.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;mean_knuckle_size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;19.66&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inch_to_cm_ratio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+&lt;span class=&quot;n&quot;&gt;std_knuckle_size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.33&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inch_to_cm_ratio&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scipy.stats&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;norm&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;x_axis&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linspace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean_knuckle_size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std_knuckle_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+                     &lt;span class=&quot;n&quot;&gt;mean_knuckle_size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std_knuckle_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;First Index Knuckle Distribution&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_axis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;norm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_axis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mean_knuckle_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std_knuckle_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;inches&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;img_row&quot; style=&quot;height: 450px;width: 585px&quot;&gt;
+    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/finger_size_distribution.png&quot; alt=&quot;&quot; title=&quot;Word Distribution&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We run a MonteCarlo simulation for different size of pans, finger sizes and rice cups.&lt;/p&gt;
+
+&lt;div class=&quot;img_row&quot; style=&quot;height: 600px;width: 600px&quot;&gt;
+    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/asian_rice_rule_2.png&quot; alt=&quot;&quot; title=&quot;Word Distribution&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;We can clearly observe that the different finger size effect is negligible in practice.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;“Wisdom comes from experience. Experience is often a result of lack of wisdom.” - Terry Pratchett&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Common Sauce Pan Sizes - &lt;a href=&quot;https://prudentreviews.com/saucepan-sizes/&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Conversion Units - &lt;a href=&quot;https://www.traditionaloven.com/conversions_of_measures/rice_amounts_converter.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Random Close Pack - &lt;a href=&quot;https://en.wikipedia.org/wiki/Random_close_pack&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Scientific Study on Finger Sizes - &lt;a href=&quot;https://scielo.conicyt.cl/pdf/ijmorphol/v28n3/art15.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;acknowledgment&quot;&gt;Acknowledgment&lt;/h2&gt;
+&lt;p&gt;Thanks to Raine Yeh and Pedro Bello-Maldonado for the inspiring conversation.&lt;/p&gt;</content><author><name></name></author><category term="idea" /><category term="programming" /><summary type="html">Have you ever struggled with cooking rice perfectly?</summary></entry><entry><title type="html">Best Game</title><link href="http://localhost:4000/articles/2022/bestgame/" rel="alternate" type="text/html" title="Best Game" /><published>2022-06-22T11:12:00-04:00</published><updated>2022-06-22T11:12:00-04:00</updated><id>http://localhost:4000/articles/2022/bestgame</id><content type="html" xml:base="http://localhost:4000/articles/2022/bestgame/">&lt;p class=&quot;text-justify&quot;&gt;An ongoing effort to improve my bullet chess skills lead me to play one of the best games in my life (reported accuracy of \(93.3\%\), estimated performance of 2000 ELO). It worths noting that part of the credit goes to my opponent who made a blunder on move 6. After it, the game takes a straighforward approach to exchange as many pieces as possible until move 28, when a possibility of a perpetual check appeared for my opponent. It was then when I had to think for a while and come up with some escape route for the king. Kg1 was the key of success. Sometimes exposing the king and moving it towards the center of the board,  altough counterintuitive, might lead to a winning position where the opponent runs out of checks.  The big lesson here was to force as many exchanges as possible whenever a material advantage is consolidated early in the game. But yes, ultimately, I got lucky :D&lt;/p&gt;
+&lt;iframe id=&quot;10728951&quot; allowtransparency=&quot;true&quot; frameborder=&quot;0&quot; style=&quot;width:100%;border:none;&quot; src=&quot;//www.chess.com/emboard?id=10728951&quot;&gt;&lt;/iframe&gt;
+&lt;script&gt;window.addEventListener(&quot;message&quot;,e=&gt;{e[&apos;data&apos;]&amp;&amp;&quot;10728951&quot;===e[&apos;data&apos;][&apos;id&apos;]&amp;&amp;document.getElementById(`${e[&apos;data&apos;][&apos;id&apos;]}`)&amp;&amp;(document.getElementById(`${e[&apos;data&apos;][&apos;id&apos;]}`).style.height=`${e[&apos;data&apos;][&apos;frameHeight&apos;]+30}px`)});&lt;/script&gt;</content><author><name></name></author><category term="idea" /><category term="chess" /><summary type="html">An ongoing effort to improve my bullet chess skills lead me to play one of the best games in my life (reported accuracy of \(93.3\%\), estimated performance of 2000 ELO). It worths noting that part of the credit goes to my opponent who made a blunder on move 6. After it, the game takes a straighforward approach to exchange as many pieces as possible until move 28, when a possibility of a perpetual check appeared for my opponent. It was then when I had to think for a while and come up with some escape route for the king. Kg1 was the key of success. Sometimes exposing the king and moving it towards the center of the board, altough counterintuitive, might lead to a winning position where the opponent runs out of checks. The big lesson here was to force as many exchanges as possible whenever a material advantage is consolidated early in the game. But yes, ultimately, I got lucky :D</summary></entry><entry><title type="html">Power of trie-ing</title><link href="http://localhost:4000/articles/2022/poweroftrieing/" rel="alternate" type="text/html" title="Power of trie-ing" /><published>2022-02-19T10:12:00-05:00</published><updated>2022-02-19T10:12:00-05:00</updated><id>http://localhost:4000/articles/2022/poweroftrieing</id><content type="html" xml:base="http://localhost:4000/articles/2022/poweroftrieing/">&lt;p class=&quot;text-justify&quot;&gt;In a bittersweet talk with a friend, immediately after failing a tech job interview, one &lt;del&gt;unreasonable&lt;/del&gt; doubt came to my mind: how much memory compression can a trie actually offer? Naturally, since it was the data structure that defined my rejection, I opted to dedicate this post to it.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;A &lt;a href=&quot;https://en.wikipedia.org/wiki/Trie&quot;&gt;trie&lt;/a&gt;, also known as prefix tree, is a tree data structure whose nodes store the characters present in a set of words given some alphabet (i.e., dictionary). These words can be easily re&lt;em&gt;trie&lt;/em&gt;ved by traversing down the branches of the tree.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;For our analysis, we assume our alphabet size \(A\) to be \(26\), matching the English alphabet. In a simple and unoptimized manner, we could code our data structure in a few lines using Python.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Trie&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;children&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;26&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
+
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nodes&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;children&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Trie&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+                &lt;span class=&quot;n&quot;&gt;nodes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;children&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Since most operations on the data structure depend on the number of nodes and not on the dictionary size (key idea), I wanted to evaluate how much less characters do we need to represent a dictionary if we use a trie.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;We proceed by obtaining a dictionary of english valid words and plotting their distribution by length.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matplotlib&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inline&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;english_words&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;english_words_lower_alpha_set&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Set of words in english dictionary, lower case and no punctuation
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;S&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;english_words_lower_alpha_set&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Filter dataset
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_word_length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;S&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;.&apos;&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;&amp;amp;&apos;&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; 
+                &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_word_length&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;S&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+
+&lt;span class=&quot;c1&quot;&gt;# Plot distribution of valid words with different number of letters
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lenghts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_word_length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;num_words&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;S&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
+              &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word_size&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lenghts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;fig&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_axes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Distribution of words by length&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_xlabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Length of words&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_ylabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Frequency&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lenghts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;num_words&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;img_row&quot; style=&quot;height: 600px;width: 820px&quot;&gt;
+    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/word_distribution.png&quot; alt=&quot;&quot; title=&quot;Word Distribution&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;After adding each of the words of our dictionary in random order to our trie, I was truly surprised by the following results:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Total number of chars in dictionary:  183728&lt;/li&gt;
+  &lt;li&gt;Total number of nodes of Trie to store dictionary:  77421&lt;/li&gt;
+  &lt;li&gt;General compression for storing all words in dictionary: &lt;strong&gt;42.14 %&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;My intuition was wrong. Perhaps I was assuming that most of words in the dictionary show a more uniform distribution, causing the trie to efficiently compress short words but obtaining no memory gains on longer words. Moreover, my friend pointed out one aspect I totally overlooked: the English language has some inherent prefix structure. Most common words share a similar etimology. This observation drove my stubbornes into another experiment: random words.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;We compare the memory compression rates achieved by using a trie to store the dictionary. For that purpose, we generate a multiple dictionary of random gibberish words of different lengths using the English alphabet. We compare the number of characters in total versus the number of nodes created while adding each word to the trie.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;max_word_length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;num_chars&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;num_nodes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Create random dataset of different sizes
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linspace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1e6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;D&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;total_chars&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;choices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alphabet_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                        &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_word_length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; 
+        &lt;span class=&quot;n&quot;&gt;sz&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;randint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_word_length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;total_chars&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sz&lt;/span&gt;
+
+    &lt;span class=&quot;c1&quot;&gt;# Calculate global statistics after adding dictionary in trie
+&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;nodes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Trie&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;total_nodes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nodes&lt;/span&gt;
+    
+    &lt;span class=&quot;n&quot;&gt;num_chars&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;total_chars&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;num_nodes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;total_nodes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# Plot trends
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linspace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1e6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_chars&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;# chars&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_nodes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;# nodes&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Memory Compression using Trie in Random Dictionary&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
+           &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Memory&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Number of words&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;legend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;div class=&quot;img_row&quot; style=&quot;height: 700px&quot;&gt;
+    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/trends_trie.png&quot; alt=&quot;&quot; title=&quot;Guitar&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Again, my intuition was wrong :) Whenever you need to store retrieve a set of words, just use trie.&lt;/p&gt;</content><author><name></name></author><category term="idea" /><category term="programming" /><summary type="html">In a bittersweet talk with a friend, immediately after failing a tech job interview, one unreasonable doubt came to my mind: how much memory compression can a trie actually offer? Naturally, since it was the data structure that defined my rejection, I opted to dedicate this post to it.</summary></entry><entry><title type="html">Removing rust</title><link href="http://localhost:4000/articles/2021/removinrgust/" rel="alternate" type="text/html" title="Removing rust" /><published>2021-11-27T10:12:00-05:00</published><updated>2021-11-27T10:12:00-05:00</updated><id>http://localhost:4000/articles/2021/removinrgust</id><content type="html" xml:base="http://localhost:4000/articles/2021/removinrgust/">&lt;p class=&quot;text-justify&quot;&gt;Unlike many of the unsuccessful internet searches, two months ago I came across the &lt;a href=&quot;https://www.mat.uniroma2.it/~tauraso/&quot;&gt;professional website&lt;/a&gt; of Professor Roberto Tauraso from the Mathematics Department of the Università di Roma. He dedicated one &lt;a href=&quot;https://www.mat.uniroma2.it/~tauraso/AMM/amm.html&quot;&gt;section of his website&lt;/a&gt; to solve and share the American Monthly Mathematical Problems, which are part of &lt;a href=&quot;https://www.maa.org/press/periodicals/american-mathematical-monthly&quot;&gt;The American Mathematical Monthly&lt;/a&gt;. To be honest, I was not familiar with this journal, however I decided to give it a try and attempt a few problems.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;I have always been a fan of such math problems that push you to find interesting approaches and learn new obscure theorems in order to derive a solution. The problems I found were precisely like that. I must admit some of them took me several days and a few cups of coffee, yet I take pride to say I was not totally lost, after all. These are the problems I have solved so far (will add more as time goes on). I would invite the readers to take them as sporadic challenges.&lt;/p&gt;
+
+&lt;h3 id=&quot;problem-12260&quot;&gt;Problem 12260&lt;/h3&gt;
+&lt;p&gt;Prove&lt;/p&gt;
+
+\[\int_{0}^\infty \frac{\sin^2(x) - x \sin(x)}{x^3} dx = \frac12 - \log2\]
+
+&lt;p class=&quot;text-justify&quot;&gt;&lt;em&gt;Proposed by S. M. Stewart (Australia), American Mathematical Monthly, Vol.128, 2021&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://drive.google.com/file/d/1b7NhVFVbdj0yK0ONUsFoxXpXdJ8G93rZ/view?usp=sharing&quot;&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;problem-12265&quot;&gt;Problem 12265&lt;/h3&gt;
+&lt;p&gt;For a fixed positive integer \(k\), let \(a_0 = a_1 = 1\) and \(a_n = a_{n-1} + (k-n)^2 a_{n-2}\) for \(n \geq 2\). Show that \(a_k = (k-1)!\). 
+&lt;em&gt;Proposed by R. Dempsey (USA), American Mathematical Monthly, Vol.128, 2021&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://drive.google.com/file/d/10Wl1jdBTs7c7hAZ4e9qfWXGbrJjYHS3S/view?usp=sharing&quot;&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;problem-12276&quot;&gt;Problem 12276&lt;/h3&gt;
+&lt;p&gt;Prove&lt;/p&gt;
+
+\[I = \sum_{n=2}^\infty \frac{1}{n+1} \sum_{i=1}^{\lfloor \frac{n}{2} \rfloor} \frac{1}{2^{i-1}(i-1)!(n-2i)!} = 1\]
+
+&lt;p&gt;&lt;em&gt;Proposed by Joe Santmyer, Las Cruces, NM., Vol 128, Issue 8, American Mathematical Monthly, 2021.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://drive.google.com/file/d/1Q-Yydcuivq3Z6a18pD9RpcdQ_oHC08cR/view?usp=sharing&quot;&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;problem-12279&quot;&gt;Problem 12279&lt;/h3&gt;
+&lt;p&gt;Let \(j\) and \(n\) be positive integers of opposite parity with \(j&amp;lt;n\). Prove&lt;/p&gt;
+
+\[\sum_{k=j}^n \frac{(-1)^k (k-1)!}{2^k} \binom{k}{j} {n \brace k} = 0\]
+
+&lt;p&gt;where \({n \brace k}\) are the Stirling numbers of second kind. &lt;em&gt;Proposed by  B. Isaacson (USA), American Mathematical Monthly, 2021.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://drive.google.com/file/d/14Hy1BQECb5hz5Zq8dnRwX-4qPJ_74iSA/view?usp=sharing&quot;&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;problem-12287&quot;&gt;Problem 12287&lt;/h3&gt;
+&lt;p&gt;Prove&lt;/p&gt;
+
+\[\sum_{n=1}^\infty \left( n \left( \sum_{k=n}^\infty \frac{1}{k^2} \right)^2  - \frac{1}{n} \right) = \frac12\left( 3 - \zeta(2) + 3\zeta(3) \right)\]
+
+&lt;p&gt;&lt;em&gt;Proposed by - O. Furdui and A. Sintamarian (Romania), Vol 128, American Mathematical Monthly 2021&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://drive.google.com/file/d/1BKifaMXGGZkPF105gCxIgoxnWi1duL1e/view?usp=sharing&quot;&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;problem-12300&quot;&gt;Problem 12300&lt;/h3&gt;
+&lt;p&gt;Let \(n\) be an integer such that \(n \geq 3\). Prove that there is no permutation \(\pi\) of \(\{ 1, 2, \cdots, n \}\) such that \(\pi(1), 2\pi(2), \cdots, n\pi(n)\) are distinct modulo \(n\). &lt;em&gt;Proposed by H. A. ShahAli, Tehran, Iran. American Mathematical Monthly, 2022.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://drive.google.com/file/d/1emEC0DJYUp-IKNVsAZc7UI3yLYSYeXIy/view?usp=sharing&quot;&gt;&lt;strong&gt;Solution&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;problem-12316&quot;&gt;Problem 12316&lt;/h3&gt;
+&lt;p&gt;For each \(i\) in \(\{1, 2, \cdots C\}\) , we have \(2i\) coins with color $i$. Place these \(C(C+1)\) coins in a line. A move consists of the transposition of two adjacent coins. Let \(m\) be the minimum number of moves required to reach a configuration where all coins of the same color are together in a run of consecutive coins. Show that the maximum value of $m$ over all initial configurations is \((C-1)C(C+1)(3C+2)/12\). &lt;em&gt;Proposed by H. A. ShahAli, Tehran, Iran, and Manija Shahali, Bakersfield, CA. American Mathematical Monthly, Vol 129 No 4, 2022.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;problem-12349&quot;&gt;Problem 12349&lt;/h3&gt;
+
+&lt;p&gt;Let \(A_n\) be the set of permutations of \(\{ 1, \cdots, n \}\) that have at least one fixed point. For \(\pi \in A_n\), we write \(\text{Fix}(\pi)\) for \(\{ j : \pi(j) = j\}\). Evaluate
+\(S = \sum_{\pi \in A_n} \left( \frac{\text{sign}(\pi)}{| \text{Fix}(\pi) |} \sum_{j \in \text{Fix}(\pi) } j \right)\). &lt;em&gt;Proposed by Roberto Tauraso, Tor Vergata University of Rome, Italy. American Mathematical Monthly, Vol 129 No 8, 2022.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;problem-12377&quot;&gt;Problem 12377&lt;/h3&gt;
+&lt;p&gt;An integer is a &lt;em&gt;one-drop&lt;/em&gt; number if its decimal digits \(d_1, \cdots, d_n\) satisfy 
+\(1 \leq d_1 \leq \cdots \leq d_i &amp;gt; d_{i+1} \leq \cdots \leq d_n\)
+for some \(i\). For \(n\geq 2\), how many \(n\)-digit one drop numbers are there? &lt;em&gt;Proposed by Li Zhou, USA. American Mathematical Monthly, 2023.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;problem-12385&quot;&gt;Problem 12385&lt;/h3&gt;
+
+&lt;p&gt;Let $n$ be a positive integer. Prove&lt;/p&gt;
+
+\[\sum_{1\leq i \leq k \leq n } \frac{(-2)^k}{k+1} \binom{n}{k} \binom{k}{i}^{-1} = \frac{(-1)^n - 1}{2n}\]
+
+&lt;p&gt;&lt;em&gt;Proposed by H. Ohtsuka, Japan. American Mathematical Monthly, 2023.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;More solutions will be available after the deadline.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;One of the main intentions of this post is to thank Professor Tauraso for sharing knowledge, motivating with his work, and freely exchanging ideas with students across the internet. If someday I visit Rome again, I will definitely pass by your office to meet you. Until then, &lt;em&gt;Grazie mille!&lt;/em&gt;  :)&lt;/p&gt;</content><author><name></name></author><category term="idea" /><category term="math" /><summary type="html">Unlike many of the unsuccessful internet searches, two months ago I came across the professional website of Professor Roberto Tauraso from the Mathematics Department of the Università di Roma. He dedicated one section of his website to solve and share the American Monthly Mathematical Problems, which are part of The American Mathematical Monthly. To be honest, I was not familiar with this journal, however I decided to give it a try and attempt a few problems.</summary></entry><entry><title type="html">A combinatoric approach</title><link href="http://localhost:4000/articles/2021/combinatoricsproblems/" rel="alternate" type="text/html" title="A combinatoric approach" /><published>2021-09-22T11:12:00-04:00</published><updated>2021-09-22T11:12:00-04:00</updated><id>http://localhost:4000/articles/2021/combinatoricsproblems</id><content type="html" xml:base="http://localhost:4000/articles/2021/combinatoricsproblems/">&lt;p class=&quot;text-justify&quot;&gt;In an unxpected turn of events, returning from a trip to Yellowstone, I found in my phone the book &lt;a href=&quot;https://www.isinj.com/mt-usamo/Principles%20and%20Techniques%20in%20Combinatorics%20-%20Chen%20Chuan-Chong,%20Koh%20Khee-Meng%20(WS,%201992).pdf&quot;&gt;“Principles and Techniques in Combinatorics”&lt;/a&gt;. Being a passionate about combinatorics I decided to give it a try. Only a few pages later, I was totally engaged with the material. I do plan to continue reading the following chapters in the upcoming months. However, at least for now, let me share some of the problems from the book that grabbed my attention and present as well the solutions I came up with.&lt;/p&gt;
+
+&lt;h4 id=&quot;problem-1&quot;&gt;Problem 1&lt;/h4&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Prove that it is impossible for seven distinct straight lines to be situated in the Euclidean plane so as to have at least six points where exactly three of these lines intersect and at least four points where exactly two of these lines intersect. (&lt;em&gt;Putnam, 1973&lt;/em&gt;).&lt;/p&gt;
+
+&lt;h4 id=&quot;problem-2&quot;&gt;Problem 2&lt;/h4&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Let \(S=\{1, 2, \cdots, 1990\}\). A 31-element subset \(A\) of \(S\) is said to be &lt;em&gt;good&lt;/em&gt; if the sum \(\sum_{a\in A} a\) is divisible by 5. Find the number of 31-element subsets of \(S\) which are good. (&lt;em&gt;Proposed by the Indian team at the 31st IMO&lt;/em&gt;).&lt;/p&gt;
+
+&lt;h4 id=&quot;problem-3&quot;&gt;Problem 3&lt;/h4&gt;
+&lt;p class=&quot;text-justify&quot;&gt;For \(\{1, 2, \cdots, n\}\) and each of its nonempty subsets, a unique &lt;em&gt;alternating sum&lt;/em&gt; is defined as follows: Arrange the numbers in the subset in decreasing order and then, beginning with the largest, alternatively add and substract successive numbers. (For example, the alternating sum for \(\{1, 2, 4, 6, 9\}\) is \(9-6+4-2+1=6\) and for \(\{5\}\) is simply 5.) Find the sum of all such alternating sums for \(n=7\). (&lt;em&gt;AIME, 1983/13&lt;/em&gt;)&lt;/p&gt;
+
+&lt;h4 id=&quot;problem-4&quot;&gt;Problem 4&lt;/h4&gt;
+&lt;p class=&quot;text-justify&quot;&gt;For what \(n \in \mathbb{N}\) does there exist a permutation \((x_1, x_2, \cdots, x_n)\) of \((1, 2, \cdots, n)\) such that the differences \(|x_k-k|\), \(1\leq k \leq n\), are all distinct? (&lt;em&gt;Proposed by M.J Pelling, 1989&lt;/em&gt;)&lt;/p&gt;
+
+&lt;p&gt;At this point, the curious reader can stop reading, and struggle with these problems. :)&lt;/p&gt;
+
+&lt;h3 id=&quot;solutions&quot;&gt;Solutions&lt;/h3&gt;
+
+&lt;p&gt;Here I present the casual solutions I came up with to solve the above tasks.&lt;/p&gt;
+
+&lt;h4 id=&quot;problem-1-1&quot;&gt;Problem 1&lt;/h4&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Let us consider the set of line pairs \(L = \{ (l_i, l_j) , \text{s.t. } 1 \leq i &amp;lt; j \leq 7 \}\), where \(l_i\) represents the line \(i\). The cardinality of this set is given by \(|L| = \binom{7}{2} = 21\). We can construct the set \(L\) based on the points of intersection for the given lines. Each point where exactly two lines intersect, adds one element to the set. Also, each point where exactly three lines intersect, adds \(\binom{3}{2} = 3\) elements to the set. Thus, the cardinality of the formed set is at least \(6 \times 3 + 4 \times 1 =  22\), which contradicts with the actual cardinality of the set and proves the claim.&lt;/p&gt;
+
+&lt;h4 id=&quot;problem-2-1&quot;&gt;Problem 2&lt;/h4&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Let us consider the circular arrangement of numbers of the set \(S\) in clock-wise increasing order. We notice that a 31-element subset \(A\) can be represented by a set of marked numbers in this circular arrangement. We define the bijection \(f\) as moving each marked number to its immediate right position in the circle. We notice that given a 31-element subset \(A\), if  \(\sum_{a\in A} a \text{ mod } 5 = k\), then \(f(A) = \sum_{a\in A} (a+1) \text{ mod } 5 = (k + 1) \text{ mod } 5\). By denoting \(N_k\) the number of 31-element subsets with sum modulo 5 equal \(k\), we observe that by applying the bijection \(f\), we obtain \(N_0 = N_1 = N_2 = N_3 = N_4\). Finally, since \(\sum_{k=0}^4 N_k = \binom{1990}{31}\), the answer is given by \(N_0 = \frac15 \binom{1990}{31}\).&lt;/p&gt;
+
+&lt;h4 id=&quot;problem-3-1&quot;&gt;Problem 3&lt;/h4&gt;
+&lt;p class=&quot;text-justify&quot;&gt;We define \(S_n\) to be the sum of alternating sums for all non-emtpy subsets of \(\{1, 2, \cdots, n\}\). We observe that we have two types of subsets. The ones where \(n\) is the maximum element and the ones where its not. There are \(2^{n-1}\) and \(2^{n-1} - 1\) such subsets for each case, respectively. The key insight is that for each subset of the second type, we can add the element \(n\) and obtain a unique subset of the first type. However, given the definition of alternating sums, when summing up both subsets from each type, all the terms will cancel except the \(n\). Thus, \(S_n = n 2^{n-1}\). The answer is given by \(7\times 2^6 = 448\).&lt;/p&gt;
+
+&lt;h4 id=&quot;problem-4-1&quot;&gt;Problem 4&lt;/h4&gt;
+&lt;p class=&quot;text-justify&quot;&gt;From the problem statement it is evident that the expression \(|x_k-k|\) will take different values between \(0\) and \(n-1\). Moreover, given that \(\sum_{k=1}^n (x_k-k) = 0\), we can conclude that \(\sum_{k=1}^n |x_k-k| = \sum_{i=0}^{n-1} i = \frac{n(n-1)}{2}\) must an even number. We consider all possible values \(n\) of the form \(4p\), \(4p+1\), \(4p+2\) and \(4p+3\), for \(p \geq 0\). We can easily verify that for \(n=0,1 \ (\text{mod } 4)\) the previous expression is even. However for \(n=2,3\ (\text{mod } 4)\) we obtain odd numbers. Therefore, we can only obtain such permutations for \(n=0,1 \ (\text{mod } 4)\). To conclude the proof, we need to show how to construct such permutations for each case.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;When \(n=4p\) we can define our permutation by alternating numbers on opposite sides of the list \(\{1, 2, \cdots, n\}\) skipping the number \(3p\) (which maps to itself). For example, for \(p=1\), we have the following permutation \(1\rightarrow 4\), \(4\rightarrow 2\), \(2\rightarrow 4\) and \(3\rightarrow 3\).&lt;/li&gt;
+  &lt;li&gt;When \(n=4p+1\), we can define our permutation by alternating numbers on opposite sides of the list \(\{1, 2, \cdots, n\}\) skipping the number \(p+1\). For example, for \(p=1\) we have the following permutation \(1\rightarrow 5\), \(5\rightarrow 3\), \(3\rightarrow 4\), \(4\rightarrow 1\), and \(2\rightarrow 2\).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+    Every mathematical proof can be elegantly written within three lines. 
+    The difficult part is to find those lines. 
+
+    —Vladimir Spokoiny.
+&lt;/blockquote&gt;</content><author><name></name></author><category term="idea" /><category term="math" /><summary type="html">In an unxpected turn of events, returning from a trip to Yellowstone, I found in my phone the book “Principles and Techniques in Combinatorics”. Being a passionate about combinatorics I decided to give it a try. Only a few pages later, I was totally engaged with the material. I do plan to continue reading the following chapters in the upcoming months. However, at least for now, let me share some of the problems from the book that grabbed my attention and present as well the solutions I came up with.</summary></entry></feed>
