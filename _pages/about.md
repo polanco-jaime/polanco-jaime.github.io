@@ -13,7 +13,7 @@ news: true
 social: true
 ---
 
-I am a Ph.D. candidate in Economics at the Universidad de los Andes (Bogota, Colombia). My advisor is [Hernando Zuleta](https://scholar.google.com/citations?user=CgFQtFIAAAAJ&hl=en). Currently, I'm in a summer internship on an inclusive-just transition at [Environmental Defense Fund](https://www.edf.org/), under the direction of [Luis Fernandez-Intriago](https://www.luisfernandezintriago.com/home).
+I am a Ph.D. candidate in Economics at the Universidad de los Andes (Bogota, Colombia). My advisor is [Hernando Zuleta](https://scholar.google.com/citations?user=CgFQtFIAAAAJ&hl=en). Currently, I'm in a summer internship on an inclusive - just transition at [Environmental Defense Fund](https://www.edf.org/).
 {: .text-justify}
 
 My primary research fields are Macroeconomics and Environmental economics. My research focuses on the evaluation of the impact of carbon taxes on economic growth and employment. The first paper of my thesis explores the effect of the carbon tax on economic growth and jobs, with an emphasis on the role of the energy mix. The second chapter of my thesis endeavors to answer how polluted is the labor market in developing countries and how effectively are workers making the transition to greener jobs? My research aims to formulate policy recommendations to mitigate the adverse effects of the energy transition and climate change.
