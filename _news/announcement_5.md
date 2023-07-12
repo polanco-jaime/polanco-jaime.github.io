@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2019-05-06 07:59:00-0400
+date: 2019-11-21 07:59:00-0400
 inline: true
 ---
 
-Presented [our work on node embeddings](https://rlgm.github.io/papers/72.pdf) at the [ICLR 2019 Representation Learning on Graphs and Manifolds Workshop](https://rlgm.github.io/) 
+First place in Paper Contest and second in the Poster Session at [Oil and Gas Horizons Congress XI](https://www.rogtecmagazine.com/results-of-the-11th-international-youth-scientific-practical-congress-oil-and-gas-horizons/).\textbf{11 2019}

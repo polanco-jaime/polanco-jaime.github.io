@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2018-12-08 07:59:00-0400
+date: 2019-10-01 07:59:00-0400
 inline: true
 ---
 
-Poster presentation at [NeurIPS 2018 LXAI Research Workshop](http://www.latinxinai.org/nips-2018)
+Regional finalist in the [SPE Student Paper Contest 2019](https://www.spe.org/en/students/contest/winners/), Russian and Caspian region.
