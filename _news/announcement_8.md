@@ -1,7 +1,6 @@
 ---
 layout: post
-date: 2022-05-22 07:59:00-0400
+date: 2021-09-03 07:59:00-0400
 inline: true
 ---
-
-Joined Google as a Software Engineer. Moved to NY.
+Approved the doctoral first-year exams and I am now a PhD candidate in economics.
