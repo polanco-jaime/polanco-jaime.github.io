@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2019-11-21 07:59:00-0400
+date: 2020-08-10 07:59:00-0400
 inline: true
 ---
 
-First place in Paper Contest and second in the Poster Session at [Oil and Gas Horizons Congress XI](https://www.rogtecmagazine.com/results-of-the-11th-international-youth-scientific-practical-congress-oil-and-gas-horizons/).
+Degree with honors in the [“Data Science for All” course](https://www.correlation-one.com/es-co/data-science-for-all-colombia), by the Colombian Ministry of Technology.  
