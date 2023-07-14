@@ -1,6 +1,7 @@
 ---
 layout: post
-date: 2021-09-03 07:59:00-0400
+date: 2023-01-10 07:59:00-0400
 inline: true
 ---
-Approved the doctoral first-year exams and I am now a PhD candidate in economics.
+
+Worked for the World Bank as Short Term Consultant in Data Scientist.

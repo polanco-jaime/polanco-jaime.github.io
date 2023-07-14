@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2019-10-01 07:59:00-0400
+date: 2019-11-21 07:59:00-0400
 inline: true
 ---
 
-Regional finalist in the [SPE Student Paper Contest 2019](https://www.spe.org/en/students/contest/winners/), Russian and Caspian region.
+First place in Paper Contest and second in the Poster Session at [Oil and Gas Horizons Congress XI](https://www.rogtecmagazine.com/results-of-the-11th-international-youth-scientific-practical-congress-oil-and-gas-horizons/).
