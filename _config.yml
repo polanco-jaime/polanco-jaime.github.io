@@ -14,12 +14,12 @@ last_updated: # leave blank if you don't want to display last updated
 # -----------------------------------------------------------------------------
 # Social integration
 # -----------------------------------------------------------------------------
-github_username: Alfo5123
-twitter_username: alfo_512
-linkedin_username: alfredodelafuenteb
-scholar_authorid: LfyprxoAAAAJ # put your google scholar author id
+github_username: brigitte-castaneda
+twitter_username: BrigitteCasRo
+linkedin_username: brigittecasro
+scholar_authorid: yq_2itUAAAAJ # put your google scholar author id
 contact_note: >
-  Feel free to drop me a line at alfredo.delafuente.b {at} gmail. com
+  Feel free to drop me a line at k.castaneda {at} uniandes.edu.co
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 
@@ -51,8 +51,8 @@ text:
 disqus_shortname: # put your disqus shortname
 
 # Optional features
-show_social_icons:  false
-enable_anchorjs:    false
+show_social_icons:  true
+enable_anchorjs:    true
 enable_katex:       true
 
 # -----------------------------------------------------------------------------
