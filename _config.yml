@@ -31,10 +31,10 @@ sass:
     sass_dir: _sass
 
 # -----------------------------------------------------------------------------
-# Articles
+# Working papers
 # -----------------------------------------------------------------------------
-blog_name: Plato's Cave
-blog_description: Random thoughts
+blog_name: Articles and Working papers
+blog_description: Summary of academic projects
 
 # Pagination
 paginate: 5
