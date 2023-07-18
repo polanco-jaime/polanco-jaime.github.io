@@ -33,8 +33,8 @@ sass:
 # -----------------------------------------------------------------------------
 # Working papers
 # -----------------------------------------------------------------------------
-blog_name: Articles and Working papers
-blog_description: Summary of academic projects
+blog_name: Working papers
+blog_description: Summary of academic articles
 
 # Pagination
 paginate: 5
