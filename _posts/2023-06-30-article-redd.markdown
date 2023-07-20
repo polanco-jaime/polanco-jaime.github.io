@@ -8,7 +8,7 @@ categories: article
 comments: true
 ---
 
-<p style="font-family: cursive;">Coautoría con: Carolina Castro, Santiago Herrera, María Alejandra Vélez.</p>
+<p class="cursive-text">Coautoria con: Carolina Castro, Santiago Herrera, María Alejandra Vélez.</p>
 
 <div class="img_row center">
     <img src="{{ site.baseurl }}/assets/img/redd.jpg">
