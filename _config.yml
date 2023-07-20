@@ -19,7 +19,7 @@ twitter_username: BrigitteCasRo
 linkedin_username: brigittecasro
 scholar_authorid: yq_2itUAAAAJ # put your google scholar author id
 contact_note: >
-  Feel free to drop me a line at k.castaneda {at} uniandes.edu.co
+  Feel free to drop me a line at k.castaneda{at}uniandes.edu.co
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 
@@ -37,7 +37,7 @@ blog_name: Working papers
 blog_description: Summary of academic articles
 
 # Pagination
-paginate: 5
+paginate: 6
 permalink: /articles/:year/:title/
 paginate_path: /articles/page:num/
 
