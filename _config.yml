@@ -34,7 +34,7 @@ sass:
 # Research
 # -----------------------------------------------------------------------------
 blog_name: Research
-blog_description: Articles
+blog_description: Working papers
 
 # Pagination
 paginate: 8

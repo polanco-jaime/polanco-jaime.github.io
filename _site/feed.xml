@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-21T22:38:18-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Brigitte Castañeda</title><subtitle>Personal website.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-24T17:09:10-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Brigitte Castañeda</title><subtitle>Personal website.
 </subtitle><entry><title type="html">Can growth take place while reducing emissions?</title><link href="http://localhost:4000/articles/2023/article-1/" rel="alternate" type="text/html" title="Can growth take place while reducing emissions?" /><published>2023-05-15T16:11:00-04:00</published><updated>2023-05-15T16:11:00-04:00</updated><id>http://localhost:4000/articles/2023/article-1</id><content type="html" xml:base="http://localhost:4000/articles/2023/article-1/">&lt;div class=&quot;img_row center&quot;&gt;
     &lt;img src=&quot;/assets/img/7g7P.gif&quot; /&gt;
 &lt;/div&gt;
@@ -6,7 +6,7 @@
     Stephen showing off. 
 &lt;/div&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;This study aims to determine &lt;i&gt;whether the economic effect of introducing a carbon tax differs between countries, according to the energy mix&lt;i&gt; of clean and polluting inputs. Following a model of directed technical change and environmental, I empirically analyze the implementation of a carbon tax in countries with different carbon-intensity energy sources and the allocation of revenues. I find four main results: (i) In the absence of subsidies, carbon taxes have a negative effect on economic growth, (ii) this negative effect is a decreasing function of the proportion of clean energy sources in the energy mix increases. (iii) subsidies for clean inputs have a positive effect on economic growth, and (iv) the magnitude of this effect grows with the proportion of clean energy sources. These results are consistent with the predictions of the theoretical model and suggest that policymakers could consider this relationship between the energy mix and the economic effect of a carbon tax when creating environmental regulations. &lt;a href=&quot;https://github.com/brigitte-castaneda/Carbon-Tax/blob/main/Can_growth_take_place_while_reducing_emissions%20(21).pdf&quot;&gt;See Paper&lt;/a&gt;&lt;/i&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;This study aims to determine &lt;i&gt;whether the economic effect of introducing a carbon tax differs between countries, according to the energy mix&lt;i&gt; of clean and polluting inputs. Following a model of directed technical change and environmental, I empirically analyze the implementation of a carbon tax in countries with different carbon-intensity energy sources and the allocation of revenues. I find four main results: (i) In the absence of subsidies, carbon taxes have a negative effect on economic growth, (ii) this negative effect is a decreasing function of the proportion of clean energy sources in the energy mix increases. (iii) subsidies for clean inputs have a positive effect on economic growth, and (iv) the magnitude of this effect grows with the proportion of clean energy sources. These results are consistent with the predictions of the theoretical model and suggest that policymakers could consider this relationship between the energy mix and the economic effect of a carbon tax when creating environmental regulations. &lt;a href=&quot;https://drive.google.com/file/d/1bNTOP0Q08lJpOr-MEamFc9shRYE6NCLn/view?usp=sharing&quot;&gt;See Paper&lt;/a&gt;&lt;/i&gt;&lt;/i&gt;&lt;/p&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;The main findings provide empirical evidence on the relationship between carbon tax implementation and economic growth, highlighting the importance of considering the composition of energy sources in the analysis.&lt;/p&gt;
 
@@ -25,7 +25,7 @@
     &lt;li&gt;The effect of the carbon tax on employment rate is not statistically significant in the first three years after the policy.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr /&gt;</content><author><name></name></author><category term="article" /><summary type="html">Stephen showing off.</summary></entry><entry><title type="html">REDD+ como herramienta para evitar la deforestación y la expansión de cultivos ilícitos en el pacífico Colombiano</title><link href="http://localhost:4000/articles/2023/article-redd/" rel="alternate" type="text/html" title="REDD+ como herramienta para evitar la deforestación y la expansión de cultivos ilícitos en el pacífico Colombiano" /><published>2023-05-15T16:11:00-04:00</published><updated>2023-05-15T16:11:00-04:00</updated><id>http://localhost:4000/articles/2023/article-redd</id><content type="html" xml:base="http://localhost:4000/articles/2023/article-redd/">&lt;p class=&quot;cursive-text&quot;&gt;Coautoria con: Carolina Castro, Santiago Herrera, María Alejandra Vélez.&lt;/p&gt;
+&lt;hr /&gt;</content><author><name></name></author><category term="article" /><summary type="html">Stephen showing off.</summary></entry><entry><title type="html">REDD+, deforestación y cultivos ilícitos.</title><link href="http://localhost:4000/articles/2023/article-redd/" rel="alternate" type="text/html" title="REDD+, deforestación y cultivos ilícitos." /><published>2023-05-15T16:11:00-04:00</published><updated>2023-05-15T16:11:00-04:00</updated><id>http://localhost:4000/articles/2023/article-redd</id><content type="html" xml:base="http://localhost:4000/articles/2023/article-redd/">&lt;p class=&quot;cursive-text&quot;&gt;Con: Carolina Castro, Santiago Herrera, María Alejandra Vélez.&lt;/p&gt;
 
 &lt;div class=&quot;img_row center&quot;&gt;
     &lt;img src=&quot;/assets/img/redd.jpg&quot; /&gt;
@@ -40,7 +40,7 @@
 
 &lt;h4 id=&quot;proyecto-en-desarrollo-será-presentado-en-17th-biennial-conference-of-the-international-society-for-ecological-economics&quot;&gt;Proyecto en desarrollo, será presentado en &lt;a href=&quot;https://theisee.wildapricot.org/event-5112431&quot;&gt;17th Biennial Conference of the International Society for Ecological Economics&lt;/a&gt;&lt;/h4&gt;
 
-&lt;hr /&gt;</content><author><name></name></author><category term="article" /><summary type="html">Coautoria con: Carolina Castro, Santiago Herrera, María Alejandra Vélez.</summary></entry><entry><title type="html">Pancake</title><link href="http://localhost:4000/articles/2023/pancake/" rel="alternate" type="text/html" title="Pancake" /><published>2023-05-01T11:12:00-04:00</published><updated>2023-05-01T11:12:00-04:00</updated><id>http://localhost:4000/articles/2023/pancake</id><content type="html" xml:base="http://localhost:4000/articles/2023/pancake/">&lt;p&gt;[TODO]&lt;/p&gt;</content><author><name></name></author><category term="idea" /><category term="programming" /><summary type="html">[TODO]</summary></entry><entry><title type="html">Impacto de las regalías en el comportamiento fiscal de los municipios de Colombia.</title><link href="http://localhost:4000/articles/2023/article-regalias/" rel="alternate" type="text/html" title="Impacto de las regalías en el comportamiento fiscal de los municipios de Colombia." /><published>2023-04-15T16:11:00-04:00</published><updated>2023-04-15T16:11:00-04:00</updated><id>http://localhost:4000/articles/2023/article-regalias</id><content type="html" xml:base="http://localhost:4000/articles/2023/article-regalias/">&lt;p class=&quot;cursive-text&quot;&gt;Coautoria con: Andrés Álvarez y Marc Hofstetter.&lt;/p&gt;
+&lt;hr /&gt;</content><author><name></name></author><category term="article" /><summary type="html">Con: Carolina Castro, Santiago Herrera, María Alejandra Vélez.</summary></entry><entry><title type="html">Pancake</title><link href="http://localhost:4000/articles/2023/pancake/" rel="alternate" type="text/html" title="Pancake" /><published>2023-05-01T11:12:00-04:00</published><updated>2023-05-01T11:12:00-04:00</updated><id>http://localhost:4000/articles/2023/pancake</id><content type="html" xml:base="http://localhost:4000/articles/2023/pancake/">&lt;p&gt;[TODO]&lt;/p&gt;</content><author><name></name></author><category term="idea" /><category term="programming" /><summary type="html">[TODO]</summary></entry><entry><title type="html">Impacto fiscal de las regalías en los municipios de Colombia.</title><link href="http://localhost:4000/articles/2023/article-regalias/" rel="alternate" type="text/html" title="Impacto fiscal de las regalías en los municipios de Colombia." /><published>2023-04-15T16:11:00-04:00</published><updated>2023-04-15T16:11:00-04:00</updated><id>http://localhost:4000/articles/2023/article-regalias</id><content type="html" xml:base="http://localhost:4000/articles/2023/article-regalias/">&lt;p class=&quot;cursive-text&quot;&gt;Coautoria con: Andrés Álvarez y Marc Hofstetter.&lt;/p&gt;
 
 &lt;div class=&quot;img_row center&quot;&gt;
     &lt;img src=&quot;/assets/img/regalias_1.png&quot; /&gt;
@@ -49,7 +49,7 @@
     Distribución de regalías antes y después de la reforma de 2012.
 &lt;/div&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;En el presente estudio se evalúa &lt;i&gt;el efecto de la reforma al Sistema General de Regalías en 2012, sobre los ingresos tributarios municipales en Colombia&lt;i&gt;. Para estudiar los efectos en las finanzas regionales de una posible reducción de los ingresos de regalías, nos preguntamos qué tanta dependencia fiscal ha provocado estos ingresos de actividades extractivas en las regiones. La literatura se ha enfocado principalmente en estudiar la alta dependencia de las regiones productoras, que eran las que históricamente han recibido mayores ingresos de esta naturaleza, y cuyas economías son más dependientes del sector minero. Sin embargo, Colombia realizado desde 2012, una serie de reformas de distribución de las regalías, buscando que estos ingresos le lleguen a los municipios no productores, dirigiendo mayores recursos aquellos municipios con mayores necesidades básicas insatisfechas.&lt;/i&gt;&lt;/i&gt;&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;En el presente estudio se evalúa &lt;i&gt;el efecto de la reforma al Sistema General de Regalías en 2012, sobre los ingresos tributarios municipales en Colombia&lt;i&gt;. Para estudiar los efectos en las finanzas regionales de una posible reducción de los ingresos de regalías, nos preguntamos qué tanta dependencia fiscal ha provocado estos ingresos de actividades extractivas en las regiones. La literatura se ha enfocado principalmente en estudiar la alta dependencia de las regiones productoras, que eran las que históricamente han recibido mayores ingresos de esta naturaleza, y cuyas economías son más dependientes del sector minero. Sin embargo, Colombia realizado desde 2012, una serie de reformas de distribución de las regalías, buscando que estos ingresos le lleguen a los municipios no productores, dirigiendo mayores recursos aquellos municipios con mayores necesidades básicas insatisfechas.&lt;a href=&quot;https://drive.google.com/file/d/1bNTOP0Q08lJpOr-MEamFc9shRYE6NCLn/view?usp=sharing&quot;&gt;See WP&lt;/a&gt;&lt;/i&gt;&lt;/i&gt;&lt;/p&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;En la Ilustración 2 se puede ver el detalle de la forma en que se distribuyen los municipios que se clasificaron como ganadores, perdedores y neutros ante el cambio en la distribución de las regalías de 2012. Se puede ver cómo las regalías ganan en importancia dentro de los ingresos de los municipios ganadores y cómo caen considerablemente para los municipios perdedores.&lt;/p&gt;
 
@@ -67,573 +67,180 @@
     &lt;li&gt;La transición energética requerirá entonces un esfuerzo mayor para diversificar los ingresos municipales, no solo en los municipios históricamente productores sino tambien en los municipios con necesidades basicas insatisfechas (más vulnerables).&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr /&gt;</content><author><name></name></author><category term="article" /><summary type="html">Coautoria con: Andrés Álvarez y Marc Hofstetter.</summary></entry><entry><title type="html">Bingo</title><link href="http://localhost:4000/articles/2023/bingo/" rel="alternate" type="text/html" title="Bingo" /><published>2023-03-01T10:12:00-05:00</published><updated>2023-03-01T10:12:00-05:00</updated><id>http://localhost:4000/articles/2023/bingo</id><content type="html" xml:base="http://localhost:4000/articles/2023/bingo/">&lt;p class=&quot;text-justify&quot;&gt;Contrary to most of the nonsense conversations I have on a daily basis, this one presented a reasonable opportunity to delve into. Nostalgia took me back to 2008-2010 (I know what you are thinking!), during my last years of high school. We had the tradition of playing BINGO during the school anniversary festivities. Vividly recall the day when I thought I had won a smaller prize with the “O” pattern: only to realize I had one mistake, unfortunately.&lt;/p&gt;
+&lt;hr /&gt;</content><author><name></name></author><category term="article" /><summary type="html">Coautoria con: Andrés Álvarez y Marc Hofstetter.</summary></entry><entry><title type="html">Equity index for educational scores standardization</title><link href="http://localhost:4000/articles/2020/data-ds4a/" rel="alternate" type="text/html" title="Equity index for educational scores standardization" /><published>2020-08-21T11:12:00-04:00</published><updated>2020-08-21T11:12:00-04:00</updated><id>http://localhost:4000/articles/2020/data-ds4a</id><content type="html" xml:base="http://localhost:4000/articles/2020/data-ds4a/">&lt;p&gt;Below I summarize the final project of the Data Science for All &lt;a href=&quot;https://www.correlation-one.com/es-co/data-science-for-all-colombia&quot;&gt;DS4A&lt;/a&gt; Course, 2020. Carried out by team 41, with Alejandra Martínez, Gabriel Cárdenas, Sebastián Betancourt. Under guidance of TAs: Daniel Gil , Chris Earle. &lt;a href=&quot;https://drive.google.com/file/d/1X2q5-K7NWpWDCZYJm2HKSxyt0Nn6PKGz/view?usp=sharing&quot;&gt;See Report&lt;/a&gt;&lt;/p&gt;
 
-&lt;center&gt;
-&lt;div class=&quot;img_row&quot; style=&quot;height: 368px;width: 350px&quot;&gt;
-    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/bingo.webp&quot; alt=&quot;&quot; title=&quot;Bingo Board&quot; /&gt;
+&lt;h4 id=&quot;background&quot;&gt;Background&lt;/h4&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Education enables upward socioeconomic mobility and is a key to escaping poverty. Over the past decade, major progress was made towards increasing access to education and school enrollment rates. Nevertheless the Saber 11 exam scores have a strong dependency on the socioeconomic background of the students, so comparing them using the same scale will put certain students at an advantage that other students don’t have access to.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Our proposal is to create a scaled index based on socioeconomic variables, which will offset the score of those students with a higher than expected score and deduct those with a lower than expected score.&lt;/p&gt;
+&lt;div class=&quot;img_row center&quot;&gt;
+    &lt;img src=&quot;/assets/img/equatyindex.png&quot; /&gt;
 &lt;/div&gt;
-&lt;/center&gt;
-
-&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;Despite I never won myself the maximum prize (around $2000), attributed to the first player completing the whole board, I witness the excitement of lucky people walking among a big crowd towards the presenter to verify their victory. Among those memories, the following questions appeared in my mind: How difficult was &lt;em&gt;actually&lt;/em&gt; to win, afterall? Is it a worthy investment? Is it &lt;em&gt;actually&lt;/em&gt; easier to win forming the “N” pattern? Ergo, this post.&lt;/p&gt;
-
-&lt;h2 id=&quot;game-description&quot;&gt;Game Description&lt;/h2&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/Bingo_(American_version)&quot;&gt;U.S. 75-ball bingo game&lt;/a&gt; consists of disposable paper cardboards which contain a unique combination of 25 numbers on squares arranged in five vertical columns (corresponding to each of the BINGO letters) and five side to side rows. Each space is covered except the center one, which is free space. The range of printed numbers that can appear on any order on the card is restricted by column. In particular, the column ‘B’ only contains numbers between 1 and 15 inclusive, the column ‘I’ only contains numbers between 16 and 30 inclusive, and so on.&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;Each of the 75 possible numbers is randomly drawn by a presenter of the game, while each player marks the announced number down on their BINGO card, until a winner is revealed within the audience. The most common winning scenario is a full cover pattern. That is, when each of the 24 numbers is marked on a cardboard, its owner can claim BINGO. This is usually assigned to the highest prize of the event. Other winning scenarios consist of forming particular patterns of marked cells in the board. For example, forming a letter ‘O’ with a fraction of the marked cells. That would require all the numbers in the columns ‘B’ and ‘O’, as well as the first and last elements of each column, to be marked as the picture below shows.&lt;/p&gt;
-
-&lt;center&gt;
-&lt;div class=&quot;img_row&quot; style=&quot;height: 450px;width: 350px&quot;&gt;
-    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/bingoO.png&quot; alt=&quot;&quot; title=&quot;Bingo Board - O pattern Win&quot; /&gt;
-&lt;/div&gt;
-&lt;/center&gt;
-
-&lt;h2 id=&quot;analysis&quot;&gt;Analysis&lt;/h2&gt;
-
-&lt;p&gt;Let us define the following variables&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;\(X\), number of draws so far&lt;/li&gt;
-  &lt;li&gt;\(\mathcal{F}\), random event of winning with full cover pattern.&lt;/li&gt;
-  &lt;li&gt;\(\mathcal{B}\), random event of winning with “B” pattern.&lt;/li&gt;
-  &lt;li&gt;\(\mathcal{O}\), random event of winning with “O” pattern.&lt;/li&gt;
-  &lt;li&gt;\(\mathcal{N}\), random event of winning with “N” pattern.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;full-cover-probability&quot;&gt;Full Cover Probability&lt;/h3&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;The cumulative probability of winning with a full cover board in less or equal than \(D\) draws is,&lt;/p&gt;
-
-\[\mathbb{P}_F ( X \leq D ) = \frac{\binom{51}{D-24}}{\binom{75}{D}}\]
-
-&lt;p class=&quot;text-justify&quot;&gt;The distribution has support only for values \(D\geq 24\). Thus,&lt;/p&gt;
-
-\[\mathbb{P}_F[ X = D ] = \mathbb{P}_F[ X \leq D ] - \mathbb{P}_F[X \leq D-1]\]
-
-\[\mathbb{P}_F[ X = D ] = \frac{24\binom{51}{D-25}}{ (D-24)\binom{75}{D-1}}\]
-
-&lt;h3 id=&quot;pattern-probability&quot;&gt;Pattern Probability&lt;/h3&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;The cumulative probability of winning with a particular pattern \(P\) in less or equal than \(D\) draws is given by&lt;/p&gt;
-
-\[\mathbb{P}_P ( X \leq D ) = \sum_{i=P_{size}}^{24} \frac{\binom{24}{i}\binom{51}{D-i}}{\binom{75}{D}} \times \text{Probability of Forming Pattern P with i marked numbers}\]
-
-&lt;p class=&quot;text-justify&quot;&gt;In particular, we have for patterns \(\mathcal{N}, \mathcal{O}\) and \(\mathcal{B}\) the following expressions,&lt;/p&gt;
-
-\[\mathbb{P}_B ( X \leq D ) = \sum_{i=12}^{24} \frac{\binom{24}{i}\binom{51}{D-i}}{\binom{75}{D}} \times \frac{\binom{12}{12}\binom{12}{i-12}}{\binom{24}{i}} = \sum_{i=18}^{24} \frac{ \binom{12}{i-12}\binom{51}{D-i}}{\binom{75}{D}}\]
-
-\[\mathbb{P}_O ( X \leq D ) = \sum_{i=16}^{24} \frac{\binom{24}{i}\binom{51}{D-i}}{\binom{75}{D}} \times \frac{\binom{16}{16}\binom{8}{i-16}}{\binom{24}{i}} = \sum_{i=16}^{24} \frac{ \binom{8}{i-16}\binom{51}{D-i}}{\binom{75}{D}}\]
-
-\[\mathbb{P}_B ( X \leq D ) = \sum_{i=18}^{24} \frac{\binom{24}{i}\binom{51}{D-i}}{\binom{75}{D}} \times \frac{\binom{18}{18}\binom{6}{i-18}}{\binom{24}{i}} = \sum_{i=18}^{24} \frac{ \binom{6}{i-18}\binom{51}{D-i}}{\binom{75}{D}}\]
-
-&lt;h3 id=&quot;probability-distributions&quot;&gt;Probability Distributions&lt;/h3&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;We can visually inspect how the cumulative distribution probabilities for the different winning cases look like. We can notice that only after \(60\) draws the chances stop being negligible. This explains why the game lasts that long without winner, even for simpler patterns.&lt;/p&gt;
-
-&lt;div class=&quot;img_row&quot; style=&quot;height: 290px;width: 820px&quot;&gt;
-    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/cumulative_dist.png&quot; alt=&quot;&quot; title=&quot;Cumulative Distribution&quot; /&gt;
+&lt;div class=&quot;col three caption&quot;&gt;
+    Percentage of student participation in the Saber 11 exam and the best scores, in 2019 according to their socioeconomic strata. 
 &lt;/div&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;&lt;em&gt;One interesting observation is how close the probability curves are from each other, defying our initial intuition&lt;/em&gt;. We expected that winning by full cover represented a much slimmer chance than by an \(\mathcal{O}\) pattern, for instance. Yet, we observe that at \(70\) draws one has around \(0.15\) probability of winning by full cover vs. a \(0.3\) probability of winning by \(\mathcal{O}\) pattern, if playing in isolation.&lt;/p&gt;
+&lt;h4 id=&quot;model&quot;&gt;Model&lt;/h4&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;However, in the most realistic BINGO setting we have a huge crowd (\(N\sim 1000\)) so we care about the probability of at least one person winning given \(X\) draws so far. Thus, we proceed to obtain the cumulative probability distributions of at least one person winning for each pattern.&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;If the probability of an event happening is \(p\), then the probability that it will happen at least once in \(N\) times is \(1 - (1-p)^N\). Using this formula, we obtained the following results,&lt;/p&gt;
-
-&lt;div class=&quot;img_row&quot; style=&quot;height: 290px;width: 820px&quot;&gt;
-    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/cumulative_dist_1000.png&quot; alt=&quot;&quot; title=&quot;Cumulative Distribution - 1000 players&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;&lt;em&gt;The updated results match our intuition: where each cumulative probability curve is drastically spread after \(\sim 40\) draws.&lt;/em&gt; From these distributions we can calculate the expected value of draws required to win for each case.&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Pattern&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Expected Draws To Win - 1 player&lt;/th&gt;
-      &lt;th style=&quot;text-align: center&quot;&gt;Expected Draws To Win - 1k players&lt;/th&gt;
-    &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;Full Cover&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;72.96&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;58.79&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;B&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;72.00&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;53.16&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;O&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;71.52&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;50.56&lt;/td&gt;
-    &lt;/tr&gt;
-    &lt;tr&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;N&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;70.15&lt;/td&gt;
-      &lt;td style=&quot;text-align: center&quot;&gt;43.56&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Finally, this analysis leads to another open question for the curious reader: &lt;strong&gt;what would be the ‘optimal’ way of assigning the prizes’ values given our probabilistic findings?&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;I am confident that my high school BINGO’s organizers did not think this thoroughly nor did the math. Since  \(\mathcal{N}, \mathcal{O}\) and even \(\mathcal{B}\) were given kitchen appliances or TVs as prizes, while the full cover win was rewarded with the highest prize of 2000 dollars, for a 3 dollar BINGO board.&lt;/p&gt;
-
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Blog post on Bingo Calculations - &lt;a href=&quot;https://randombooks.org/case-study-bingo.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Blog post on Computation of Bingo Probabilities Numerically - &lt;a href=&quot;http://www.durangobill.com/BingoHowTo.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;acknowlegdments&quot;&gt;Acknowlegdments&lt;/h3&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;Thanks to Maximilian Montserrat for engaging conversations and running the &lt;a href=&quot;https://drive.google.com/file/d/1lVfQ0PwOTuTlsb2_zh-NztbyeSy_u_zg/view?usp=sharing&quot;&gt;numerical calculations code&lt;/a&gt; to verify results.&lt;/p&gt;</content><author><name></name></author><category term="idea" /><category term="math" /><summary type="html">Contrary to most of the nonsense conversations I have on a daily basis, this one presented a reasonable opportunity to delve into. Nostalgia took me back to 2008-2010 (I know what you are thinking!), during my last years of high school. We had the tradition of playing BINGO during the school anniversary festivities. Vividly recall the day when I thought I had won a smaller prize with the “O” pattern: only to realize I had one mistake, unfortunately.</summary></entry><entry><title type="html">Watercolors</title><link href="http://localhost:4000/articles/2023/watercolors/" rel="alternate" type="text/html" title="Watercolors" /><published>2023-02-16T10:12:00-05:00</published><updated>2023-02-16T10:12:00-05:00</updated><id>http://localhost:4000/articles/2023/watercolors</id><content type="html" xml:base="http://localhost:4000/articles/2023/watercolors/">&lt;p class=&quot;text-justify&quot;&gt;I am not sure whether it was the multiple IG accounts I followed on the topic, or a few paintings that moved me just by using a few translucent strokes, yet I was cautivated by this art form for a while. Deciding to do something more than faulty geometric shapes, I started taking online lessons early this year. Here are some of the results. This could easily be an attempt to monitor my progress over time and hopefully motivated others to try it out.&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;To test our hypothesis, we used Clustering techniques to generate 3 groups using only the socioeconomic variables, and then, we check how the Scores changed along each of the groups.This three clusters are a good representation of low, medium and high socioeconomic background.&lt;/p&gt;
 
 &lt;div class=&quot;img_row&quot;&gt;
-    &lt;img class=&quot;col one&quot; src=&quot;/assets/img/watercolor1.jpeg&quot; /&gt;
-    &lt;img class=&quot;col one&quot; src=&quot;/assets/img/watercolor2.jpeg&quot; /&gt;
+    &lt;img class=&quot;col one&quot; src=&quot;/assets/img/equatyindex_1.png&quot; alt=&quot;&quot; title=&quot;Clusters&quot; /&gt;
+    &lt;img class=&quot;col one&quot; src=&quot;/assets/img/equatyindex_2.png&quot; alt=&quot;&quot; title=&quot;Expected results&quot; /&gt;
 &lt;/div&gt;
+&lt;div class=&quot;col two caption&quot;&gt;
+    Song&apos;s journey
+&lt;/div&gt;
+
+&lt;h4 id=&quot;proposed-equity-index&quot;&gt;Proposed equity index&lt;/h4&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;Expected Scores were calculated for each individual, comparing several regression techniques and selecting the one that performs better in the data. The selected algorithm was a Linear Regression with ElasticNet Regularization, and the expected scores were used to calculate the index for each student, used to scale its original score as follows.&lt;/p&gt;
+
+&lt;p&gt;\(Index = \frac{Actual Score}{Expected Score}\)
+\(Adjusted Score = Actual Score * Index\)&lt;/p&gt;
+
+&lt;h4 id=&quot;results&quot;&gt;Results&lt;/h4&gt;
+&lt;p class=&quot;text-justify&quot;&gt;As a solution to the existing gap in access to higher education, this equity indicator was created to compensate those students who excelled with scores higher than the expected score according to our model results.&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;When selecting the best students using this index, it is observed that the best students of each cluster (socioeconomic group) would have the privilege of accessing more benefits, such as scholarships to access university.&lt;/p&gt;
+
+&lt;div class=&quot;img_row center&quot;&gt;
+    &lt;img src=&quot;/assets/img/equatyindex_3.png&quot; /&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;img_row center&quot;&gt;
+    &lt;img src=&quot;/assets/img/equatyindex_4.png&quot; /&gt;
+&lt;/div&gt;</content><author><name></name></author><category term="idea" /><category term="programming" /><summary type="html">Below I summarize the final project of the Data Science for All DS4A Course, 2020. Carried out by team 41, with Alejandra Martínez, Gabriel Cárdenas, Sebastián Betancourt. Under guidance of TAs: Daniel Gil , Chris Earle. See Report</summary></entry><entry><title type="html">Hello World (Again)</title><link href="http://localhost:4000/articles/2020/code/" rel="alternate" type="text/html" title="Hello World (Again)" /><published>2020-08-09T00:00:00-04:00</published><updated>2020-08-09T00:00:00-04:00</updated><id>http://localhost:4000/articles/2020/code</id><content type="html" xml:base="http://localhost:4000/articles/2020/code/">&lt;p class=&quot;text-justify&quot;&gt;Competitive Programming has always been one of my passions, although not a reciprocating one. It was around 2010 when I first heard about it at my university. What started as an authentic journey towards constant Rejected or TLE, turned into a remarkable opportunity to make great friendships and improve my problem-solving skills, which in retrospect shaped most of my later choices in life.&lt;/p&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;One of my New Year’s resolutions, perhaps influenced by extended conversations with an outstanding programmer and food addict, was to improve my competitive programming skills by investing a considerable amount of time studying algorithms from a theoretical and practical point of view.  Consequently, as a metric of improvement, I considered no other than the renowned Russian competitive programming platform &lt;a href=&quot;https://codeforces.com/&quot;&gt;Codeforces&lt;/a&gt;.  My ambitious hope: to become purple ranked (&amp;gt;1900 ELO). Only time will tell, yet I will use this &lt;a href=&quot;https://github.com/Alfo5123/CodeTrain&quot;&gt;repository&lt;/a&gt; to track my progress.&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-c--&quot; data-lang=&quot;c++&quot;&gt;&lt;span class=&quot;cp&quot;&gt;#include&amp;lt;bits/stdc++.h&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content><author><name></name></author><category term="idea" /><category term="programming" /><summary type="html">Competitive Programming has always been one of my passions, although not a reciprocating one. It was around 2010 when I first heard about it at my university. What started as an authentic journey towards constant Rejected or TLE, turned into a remarkable opportunity to make great friendships and improve my problem-solving skills, which in retrospect shaped most of my later choices in life.</summary></entry><entry><title type="html">Cuerda</title><link href="http://localhost:4000/articles/2020/cuerda/" rel="alternate" type="text/html" title="Cuerda" /><published>2020-05-14T11:12:00-04:00</published><updated>2020-05-14T11:12:00-04:00</updated><id>http://localhost:4000/articles/2020/cuerda</id><content type="html" xml:base="http://localhost:4000/articles/2020/cuerda/">&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;La quebradiza cuerda,   &lt;br /&gt;
+a la que nos sujetamos como a la vida, &lt;br /&gt;
+sostiene con firmeza un elefante herido&lt;br /&gt;
+que no sabe, ni sabrá, como llegó ahí;&lt;br /&gt;
+y con las manos desgarradas soportamos&lt;br /&gt;
+aquel despreciable e incesante llanto&lt;br /&gt;
+que el dolor sabe producir en la criatura.&lt;/p&gt;
+&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;Ya es muy tarde, no hay vuelta atrás, &lt;br /&gt;
+¿no será el regalo de algún dios envidioso?&lt;br /&gt;
+¿por qué no sólo taparse los oídos y caminar?&lt;br /&gt;
+La resistencia a la que nos acostumbramos, &lt;br /&gt;
+abraza nuestra tristeza y nos ciega lentamente&lt;br /&gt;
+Sólo espero algún día llegar a creer&lt;br /&gt;
+que si seguimos aquí, es por culpa de la cuerda.&lt;/p&gt;</content><author><name></name></author><category term="idea" /><category term="poetry" /><summary type="html">La quebradiza cuerda, a la que nos sujetamos como a la vida, sostiene con firmeza un elefante herido que no sabe, ni sabrá, como llegó ahí; y con las manos desgarradas soportamos aquel despreciable e incesante llanto que el dolor sabe producir en la criatura. Ya es muy tarde, no hay vuelta atrás, ¿no será el regalo de algún dios envidioso? ¿por qué no sólo taparse los oídos y caminar? La resistencia a la que nos acostumbramos, abraza nuestra tristeza y nos ciega lentamente Sólo espero algún día llegar a creer que si seguimos aquí, es por culpa de la cuerda.</summary></entry><entry><title type="html">Bienvenido</title><link href="http://localhost:4000/articles/2020/bievenido/" rel="alternate" type="text/html" title="Bienvenido" /><published>2020-05-14T11:12:00-04:00</published><updated>2020-05-14T11:12:00-04:00</updated><id>http://localhost:4000/articles/2020/bievenido</id><content type="html" xml:base="http://localhost:4000/articles/2020/bievenido/">&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;Quiero aprender a creer&lt;br /&gt;
+que el tiempo no ha errado,&lt;br /&gt;
+que cada estrella conmigo&lt;br /&gt;
+de ti el sol no ha alejado.&lt;/p&gt;
+
+&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;Debo enseñarme a fingir,  &lt;br /&gt;
+que la distancia no se mide,&lt;br /&gt;
+que la confianza no limita&lt;br /&gt;
+y que el corazón no decide.&lt;/p&gt;
+
+&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;Ayer las palabras fueron &lt;br /&gt;
+alas de un afán prematuro, &lt;br /&gt;
+deseando dejar el suelo&lt;br /&gt;
+cuando caminar era seguro.&lt;/p&gt;
+
+&lt;p style=&quot;color:black; font-size: 100%; text-align: center;&quot;&gt;Hoy los sentidos nos quitan&lt;br /&gt;
+lo que la intuición nos dejó,&lt;br /&gt;
+como el ocaso de esa risa&lt;br /&gt;
+cuando la razón se alejó.&lt;/p&gt;</content><author><name></name></author><category term="idea" /><category term="poetry" /><summary type="html">Quiero aprender a creer que el tiempo no ha errado, que cada estrella conmigo de ti el sol no ha alejado.</summary></entry><entry><title type="html">New beginning</title><link href="http://localhost:4000/articles/2020/new-beginning/" rel="alternate" type="text/html" title="New beginning" /><published>2020-04-21T11:12:00-04:00</published><updated>2020-04-21T11:12:00-04:00</updated><id>http://localhost:4000/articles/2020/new-beginning</id><content type="html" xml:base="http://localhost:4000/articles/2020/new-beginning/">&lt;div class=&quot;img_row&quot;&gt;
+    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/guitar.jpeg&quot; alt=&quot;&quot; title=&quot;Guitar&quot; /&gt;
+&lt;/div&gt;
+&lt;div class=&quot;col three caption&quot;&gt;
+    Side effects of having an amazing girlfriend. Yes, a Martin Acoustic-Electric Guitar.
+&lt;/div&gt;
+
+&lt;p class=&quot;text-justify&quot;&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h4 class=&quot;text-justify&quot; id=&quot;how-to-easily-start-again-in-music-after-a-long-break&quot;&gt;How to easily start again in music after a long break?&lt;/h4&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Get access to the instrument you loved.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Embrace depression. You can always practice scales meanwhile.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Realize &lt;a href=&quot;https://www.youtube.com/watch?v=aS1esgRV4Rc&quot;&gt;how essential art is in life&lt;/a&gt;. Avoid forgetting that life is more than work.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Find places where you have never felt lost before. Both, inside and outside.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Keep learning music theory. Books, classical music, friends, everything counts.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Seize the opportunity of isolation. Any pandemic scenario can help.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Take the best from those occasional and brief creative moments.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Listen to music you would not “normally” include in your playlist.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Share your progress with a close group of people you trust. Bore them with your multiple records until they start disagreeing.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Let multiple friends recommend you Garage Band. Don’t listen to them immediately. Regret it later. Enjoy the learning curve.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Understand how little you know.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;You can find here some of my recent attempts. Excluding Garden of Eden, which is a cover, the rest is original work.&lt;/p&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;100&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; allow=&quot;autoplay&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/765569443&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
+&lt;div style=&quot;font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;&quot;&gt;&lt;a href=&quot;https://soundcloud.com/alfredo-de-la-fuente512&quot; title=&quot;Alfredo De la Fuente&quot; target=&quot;_blank&quot; style=&quot;color: #cccccc; text-decoration: none;&quot;&gt;Alfredo De la Fuente&lt;/a&gt; · &lt;a href=&quot;https://soundcloud.com/alfredo-de-la-fuente512/times&quot; title=&quot;Times&quot; target=&quot;_blank&quot; style=&quot;color: #cccccc; text-decoration: none;&quot;&gt;Times&lt;/a&gt;&lt;/div&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;100&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; allow=&quot;autoplay&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/783363727&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
+&lt;div style=&quot;font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;&quot;&gt;&lt;a href=&quot;https://soundcloud.com/alfredo-de-la-fuente512&quot; title=&quot;Alfredo De la Fuente&quot; target=&quot;_blank&quot; style=&quot;color: #cccccc; text-decoration: none;&quot;&gt;Alfredo De la Fuente&lt;/a&gt; · &lt;a href=&quot;https://soundcloud.com/alfredo-de-la-fuente512/garden-of-eden&quot; title=&quot;Garden Of Eden&quot; target=&quot;_blank&quot; style=&quot;color: #cccccc; text-decoration: none;&quot;&gt;Garden Of Eden&lt;/a&gt;&lt;/div&gt;
+
+&lt;iframe width=&quot;100%&quot; height=&quot;100&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; allow=&quot;autoplay&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/778712911&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
+&lt;div style=&quot;font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;&quot;&gt;&lt;a href=&quot;https://soundcloud.com/alfredo-de-la-fuente512&quot; title=&quot;Alfredo De la Fuente&quot; target=&quot;_blank&quot; style=&quot;color: #cccccc; text-decoration: none;&quot;&gt;Alfredo De la Fuente&lt;/a&gt; · &lt;a href=&quot;https://soundcloud.com/alfredo-de-la-fuente512/komorebi&quot; title=&quot;Komorebi&quot; target=&quot;_blank&quot; style=&quot;color: #cccccc; text-decoration: none;&quot;&gt;Komorebi&lt;/a&gt;&lt;/div&gt;</content><author><name></name></author><category term="idea" /><category term="music" /><summary type="html">Side effects of having an amazing girlfriend. Yes, a Martin Acoustic-Electric Guitar.</summary></entry><entry><title type="html">Meraki</title><link href="http://localhost:4000/articles/2020/meraki/" rel="alternate" type="text/html" title="Meraki" /><published>2020-04-21T11:12:00-04:00</published><updated>2020-04-21T11:12:00-04:00</updated><id>http://localhost:4000/articles/2020/meraki</id><content type="html" xml:base="http://localhost:4000/articles/2020/meraki/">&lt;iframe width=&quot;100%&quot; height=&quot;200&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; allow=&quot;autoplay&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/856387372&amp;amp;color=%23ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&amp;amp;visual=true&quot;&gt;&lt;/iframe&gt;
+&lt;div style=&quot;font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;&quot;&gt;&lt;a href=&quot;https://soundcloud.com/alfredo-de-la-fuente512&quot; title=&quot;Alfredo De la Fuente&quot; target=&quot;_blank&quot; style=&quot;color: #cccccc; text-decoration: none;&quot;&gt;Alfredo De la Fuente&lt;/a&gt; · &lt;a href=&quot;https://soundcloud.com/alfredo-de-la-fuente512/meraki&quot; title=&quot;Meraki&quot; target=&quot;_blank&quot; style=&quot;color: #cccccc; text-decoration: none;&quot;&gt;Meraki&lt;/a&gt;&lt;/div&gt;
 
 &lt;div class=&quot;col three caption&quot;&gt;
-    A long way to go
+    Probably one of the most productive Junes I have ever had, despite my close encounter with death.
 &lt;/div&gt;
 
-&lt;p&gt;Thanks to Anna Obratzsova for my first watercolor palette set as present :)&lt;/p&gt;</content><author><name></name></author><category term="idea" /><category term="painting" /><summary type="html">I am not sure whether it was the multiple IG accounts I followed on the topic, or a few paintings that moved me just by using a few translucent strokes, yet I was cautivated by this art form for a while. Deciding to do something more than faulty geometric shapes, I started taking online lessons early this year. Here are some of the results. This could easily be an attempt to monitor my progress over time and hopefully motivated others to try it out.</summary></entry><entry><title type="html">Turnstyle</title><link href="http://localhost:4000/articles/2023/turnstyle/" rel="alternate" type="text/html" title="Turnstyle" /><published>2023-02-15T10:12:00-05:00</published><updated>2023-02-15T10:12:00-05:00</updated><id>http://localhost:4000/articles/2023/turnstyle</id><content type="html" xml:base="http://localhost:4000/articles/2023/turnstyle/">&lt;p&gt;Naturally, a casual walk on a stimulating work environment can trigger the most prominent forms of &lt;a href=&quot;https://xkcd.com/356/&quot;&gt;nerd snipping&lt;/a&gt;. Another addictive puzzle from the ninth floor dazzled me. Hopefully, I can share some of my curiosity with you.&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
 
-&lt;center&gt;
-&lt;div class=&quot;img_row&quot; style=&quot;height: 450px;width: 450px&quot;&gt;
-    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/turnstyle.png&quot; alt=&quot;&quot; title=&quot;Turnstyle&quot; /&gt;
-&lt;/div&gt;
-&lt;/center&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Truth be told, the idea of composing a song from scratch in a month still resonates as crazy to me. Nobody warns you how challenging it could be. Yet I enjoyed every single part of it. Despite I did not know where it was heading most of times, suddenly pieces started to fit and inspiration played its role: it started to sound like a song.&lt;/p&gt;
 
-&lt;p&gt;The &lt;strong&gt;&lt;a href=&quot;https://gamewright.com/product/turnstyle&quot;&gt;Turnstyle&lt;/a&gt;&lt;/strong&gt; brain teaser consists of two discs connected by a gear on the back. Allowing two types of valid moves:&lt;/p&gt;
+&lt;p class=&quot;text-justify&quot;&gt;Just as Dante was kindly guided through the circles of Hell by Virgil, I should deeply thank &lt;a href=&quot;https://www.instagram.com/eliza.carrington/&quot;&gt;Eliza Carrington&lt;/a&gt; for her guitar/composition lessons and songwriting advices, which made possible this crazy song idea I had. It worths mentioning, she happens to be an &lt;a href=&quot;https://www.youtube.com/channel/UCslUnS2O1EMLiJPeRDXksMQ&quot;&gt;amazing singer, songwriter and guitarist&lt;/a&gt; and I feel lucky to learn from her experience and perspective.&lt;/p&gt;
 
+&lt;h4 class=&quot;text-justify&quot; id=&quot;what-did-i-learn&quot;&gt;What did I learn?&lt;/h4&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;em&gt;Shift&lt;/em&gt;  all the numbers one position right (clockwise) or left (counter-clockwise).&lt;/li&gt;
-  &lt;li&gt;&lt;em&gt;Flip&lt;/em&gt; the connected gears to change the order of the numbers from ABCD to BADC.&lt;/li&gt;
+  &lt;li&gt;Do not understimate the power of secondary dominants.&lt;/li&gt;
+  &lt;li&gt;The balance between tension and resolution is key.&lt;/li&gt;
+  &lt;li&gt;Explore imagery and metaphors in conveying emotional lyrics.&lt;/li&gt;
+  &lt;li&gt;Adding a sad piano, choir, or odd drums could lead to interesting ideas.&lt;/li&gt;
+  &lt;li&gt;Avoiding predictability by incorporating variations and arrangements.&lt;/li&gt;
+  &lt;li&gt;Enjoying the process itself is the best reward.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p class=&quot;text-justify&quot;&gt;After interacting with the puzzle for a few seconds, I knew my best hope was to write a program to find an optimal solution for me.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Let’s solve it!&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;Being particularly bad at games, I couldn’t help but think whether I should invest a few hours into it. Naturally, one thought crossed my mind: the imminent fear of a jigsaw puzzle missing a piece. What if someone designed a devilish unsolvable game? Let’s better take one step back, and first prove the solvability of the game.&lt;/p&gt;
-
-&lt;h2 id=&quot;digging-into-math&quot;&gt;Digging into math&lt;/h2&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;We build up our intution by introducing a set of definitions. Let us consider \(\mathcal{A} = \{1,...,n\}\). We define a &lt;em&gt;permutation&lt;/em&gt; \(\sigma\) as a function from \(\mathcal{A}\) to itself, which is onto and one-to-one. In other words, a reording of the elements of \(\mathcal{A}\). Any permutation \(\sigma\) can be represented by a set of disjoint cycles, with the interpretation that any consecutive pair \(i,j\) indicates that \(i\) is mapped to \(j\), and any \(i\) at the end of a parenthesized cycle maps to \(j\) at the start of the same cycle.&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;For example, the permutation \(\sigma : \{1,2,3,4\} \rightarrow \{2,1,4,3\}\) can be denoted as \(\sigma = (12)(34)\). In addition, a cycle consisting of only two elements is called a &lt;em&gt;transposition&lt;/em&gt; and a cycle of one element (which can be avoided in the cycle notation) is called &lt;em&gt;fixed point&lt;/em&gt;. In our case, our permutation is expressed as the product of two transpositions.&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;We define the order of the permutation is the defined the smallest positive integer \(m\) such that \(\sigma^m = id\). That is, how many times we should apply the permutation mapping until we obtain the identity map. For example, for the above permutation \(\sigma\) the order is \(2\).&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;Regarding the parity of a permutation, using the cycle notation, the permutation is odd if and only if this factorization contains an odd number of even-length cycles. Thus, our permutation \(\sigma = (12)(34)\) is even. It is easy to proof that the composition of two even permutation is another even permutation. This will be a useful property for proving the solvability.&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;The set of all permutations of \(\mathcal{A}\) is the &lt;em&gt;symmetric group&lt;/em&gt; of \(n\) symbols, denoted by \(\mathcal{S}_n\). As detailed in &lt;a href=&quot;https://kconrad.math.uconn.edu/blurbs/grouptheory/genset.pdf&quot;&gt;this&lt;/a&gt; paper, for a group \(\mathcal{G}\) a subset \(\mathcal{X} \subset \mathcal{G}\) is a generating set for \(\mathcal{G}\) if every \(g \in \mathcal{G}\) can be written as a product of powers of elements taken from \(\mathcal{X}\):&lt;/p&gt;
-
-&lt;center&gt;
-$$ g = x_1^{a_1} x_2^{a_2} \cdots x_r^{a_r} $$,
-&lt;/center&gt;
-&lt;p class=&quot;text-justify&quot;&gt;where \(x_i \in \mathcal{X}\) and \(a_i \in \Z\). Thus, \(\mathcal{X}\) generates \(\mathcal{G}\) and is denoted by \(\mathcal{G} = \langle \mathcal{X} \rangle\).&lt;/p&gt;
-
-&lt;h3 id=&quot;lemma&quot;&gt;Lemma&lt;/h3&gt;
-&lt;p&gt;For any odd integer \(n&amp;gt;4\), the permutations \(\sigma_1 = (1,2,3,\cdots, n)\) and \(\sigma_2 = (1,2)(3,4)\) do not generate \(\mathcal{S}_n\). This solves the open question stated &lt;a href=&quot;https://www.cs.brandeis.edu/~storer/JimPuzzles/ZPAGES/zzzTurnstyle.html&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&quot;proof&quot;&gt;Proof&lt;/h3&gt;
-&lt;p class=&quot;text-justify&quot;&gt;Let us consider odd values of \(n&amp;gt;4\). We can easily verify that for odd \(n&amp;gt;8\), the permutations \(\sigma_1 = (1,2,3,\cdots, n)\) and \(\sigma_2 = (1,2)(3,4)\) are both even. Therefore, every composition of these two permutations would result in an even permutation, by the property described above. Thus, it is not possible to generate odd permutations, and ultimately \(\mathcal{S}_n\). ∎&lt;/p&gt;
-
-&lt;h3 id=&quot;lemma-1&quot;&gt;Lemma&lt;/h3&gt;
-&lt;center&gt;
-$$\mathcal{S}_{12} = \langle \sigma_1, \sigma_2 \rangle = \langle (1,2,3,\cdots, 12), (1,2) (3,4) \rangle$$
-&lt;/center&gt;
-
-&lt;h3 id=&quot;proof-1&quot;&gt;Proof&lt;/h3&gt;
-&lt;p&gt;Let us define the following permutations using the generators \(\sigma_1\) and \(\sigma_2\),&lt;/p&gt;
-
-\[L = \sigma_1 = (1,2,3,4,5,6,7,8,9,10,11, 12)\]
-
-\[R = \sigma_1^{-1} = (12, 11,10, 9, 8, 7, 6, 5, 4, 3, 2, 1)\]
-
-\[T = \sigma_2 = (1,2) (3,4)\]
-
-&lt;p&gt;We use the auxiliary composition of permutations,&lt;/p&gt;
-
-\[P = TLLLTR\]
-
-\[Q = RRTLL\]
-
-&lt;p&gt;Thus, we can verify&lt;/p&gt;
-
-\[L T L P Q P^3 T L = (1,2)\]
-
-&lt;p class=&quot;text-justify&quot;&gt;To conclude, we can generate \(\mathcal{S}_{12}\) using the transposition \((1,2)\) and the 12-cycle permutation.∎&lt;/p&gt;
-
-&lt;!---
-For this case, we can trivially verify $$\sigma_1$$ and $$\sigma_2$$ have opposite parity, as a necessity for generating $$S_n$$. Let us define $$\sigma_3 = \sigma_1^4$$. We have that $$\sigma_3^3 = \sigma_2^2 = id$$. By using the [theorem proven by Miller](https://www.ams.org/journals/bull/1901-07-10/S0002-9904-1901-00826-9/S0002-9904-1901-00826-9.pdf), which shows that for $$n&gt;8$$, the symmetric group $$S_n$$ can be generated by a permutation of order $$2$$ and a permutation of order $$3$$, we can guarantee the existence of two permutations of order $$2$$ and $$3$$, which generate $$S_{12}$$.
-{: .text-justify}
-
-Let $$G$$ be a group generated by the set $$S = \{ (1,2,3,\cdots, 12), (1,2) (3,4) \}$$. We choose an element $$x \in \mathcal{X}$$ that is not fixed by $$G$$. Since it suffices to choose a nontrivial generator $$s$$ and consider $$x$$ not fixed by $$s$$, we pick $$x=1$$. Then, the order of $$G$$ is given by, 
-
-$$ \vert G \vert = \vert Y \vert \cdot \vert H \vert$$,
-
-where $$H$$ is the stabilitzer of $$x$$ and $$Y$$ is the $$G$$-orbit of $$x$$.
-
-
-
-The orbit of 𝑥
- is &quot;everything that can be reached from 𝑥
- by an action of something in 𝐺
-.&quot;
-
-The stabilizer of 𝑥
- is &quot;the set of all elements of 𝐺
- which don&apos;t move 𝑥
- when they act on 𝑥
-&quot;.
---&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;In plain words, by using the two valid game moves (flip and shift), we can reach any possible configuration, for the case of \(n=12\). Therefore, we can now &lt;em&gt;safely&lt;/em&gt; verify the solutions using computer search.&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;Furthermore, we could use a library for symbolic mathematics such as &lt;a href=&quot;https://www.sympy.org/en/index.html&quot;&gt;SymPy&lt;/a&gt; to quickly verify our result. The library uses the &lt;a href=&quot;https://en.wikipedia.org/wiki/Schreier%E2%80%93Sims_algorithm&quot;&gt;Schreier–Sims algorithm&lt;/a&gt; to compute the order of the generated group.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;sympy.combinatorics&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Permutation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PermutationGroup&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Permutation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Permutation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;G&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PermutationGroup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Group Order:&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;G&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;order&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 12!&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;&lt;em&gt;I wanted to take this opportunity to relate &lt;a href=&quot;https://www.youtube.com/watch?v=px_4TxC2mXU&quot;&gt;Feynman’s famous quote&lt;/a&gt; on knowing the name of something. Despite I am nowhere near being a formerly trained mathematician, sometimes one can benefit by knowing the name of some obscure group theory concept in order to tackle a problem and appropriately explore previous research efforts on the field.&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;time-to-code&quot;&gt;Time to code&lt;/h2&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;From an algorithmic point, the problem consists of a graph traversal task. Each node represents each of the cyclic permutation formed by the 12 pieces. In order to restrict our representation of cyclic permutations, we fix the position of “\(1\)” at the beginning of the tuple, for each node.&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;Due to the high number of possible nodes (11! states = ~39M) in the connected graph, a naive implementation of DFS would reach maximum recursion limits. Thus, I opted for using BFS, since that would also help answering shortest path queries between any initial state to the solved state.&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;The only piece missing is the transition function to traverse each node. Since we want to keep the element \(1\) as fixed point in the tuple representation, we apply the transformations of the shape \([i\%n, (i+1)\%n, (i+2)\%n, (i+3)\%n ]\) for a valid \(i\) (\(0\leq i &amp;lt; n\)), and the necessary rotations to keep the element \(1\) at the beginnning. Throughout this post, we denote this sequence of transformations as &lt;strong&gt;move(\(i\))&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;math&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;copy&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deepcopy&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;collections&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deque&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;move&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;# Copy mutable state variable 
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;copy&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;# Swap the elements (ix%n, (ix+1)%n) and (ix+2)%n, (ix+3)%n)
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; 
-        &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;# Corner cases for resetting 1 at the beginning of the new state
-&lt;/span&gt;    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ix&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;new_state&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;We can now run our naive BFS implementation.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# Create a set for visited states 
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;visited&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Keep track of parent states during traversal for path reconstruction
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;dict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;parent_idx&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;dict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Intialization of solution state
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solution_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;initial_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;tuple&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;solution_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;visited&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;initial_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;deque&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;initial_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt; 
-&lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;initial_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;initial_state&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;parent_idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;initial_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Explore immediate neighbors not visited
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;current_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;popleft&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;current_state_tuple&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;tuple&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;next_state&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;tuple&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;move&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;current_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;next_state&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;visited&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;visited&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;queue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current_state_tuple&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;parent_idx&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next_state&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;As far as I remember, the initial game configuration that I encountered was the following,&lt;/p&gt;
-
-&lt;center&gt;
-$$(1, 3, 5, 7, 2, 4, 6, 8, 9, 10, 11, 12)$$.
-&lt;/center&gt;
-&lt;p class=&quot;text-justify&quot;&gt;Using our BFS traversal, the sequence of &lt;strong&gt;move&lt;/strong&gt; operations with indices \(i=[1, 5, 2, 3, 5]\)  solves the puzzle from the initial state.&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;In addition, we can observe the log-scaled histogram of paths lengths (from 0 to 15).&lt;/p&gt;
-&lt;center&gt;
-&lt;div class=&quot;img_row&quot; style=&quot;height: 450px;width: 450px&quot;&gt;
-    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/path_lengh_distribution.png&quot; alt=&quot;&quot; title=&quot;Turnstyle&quot; /&gt;
+&lt;div class=&quot;img_row&quot;&gt;
+    &lt;img class=&quot;col one&quot; src=&quot;/assets/img/MerakiWriting.png&quot; alt=&quot;&quot; title=&quot;Lyrics&quot; /&gt;
+    &lt;img class=&quot;col one&quot; src=&quot;/assets/img/LyricsMeraki.png&quot; alt=&quot;&quot; title=&quot;Chord Progression&quot; /&gt;
+    &lt;img class=&quot;col one&quot; src=&quot;/assets/img/MerakiProduction.png&quot; alt=&quot;&quot; title=&quot;Mixing&quot; /&gt;
 &lt;/div&gt;
-&lt;/center&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;Out of curiosity, I wanted to finish this post by pointing one possible initial configuration that requires the biggest amounts of move operations is \((1, 12, 11, 10, 9, 8, 6, 7, 4, 5, 2, 3)\).&lt;/p&gt;
-
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Turnstyle solution approach via computer search of SWAP - &lt;a href=&quot;https://www.cs.brandeis.edu/~storer/JimPuzzles/ZPAGES/zzzTurnstyle.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Tom’s Turnstile description and puzzle solution by J. A. Storer - &lt;a href=&quot;https://www.cs.brandeis.edu/~storer/JimPuzzles/SLIDE/TomsTurnstile/TomsTurnstile.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Miller, G.A., ‘On the groups generated by 2 operators’, 1901. - &lt;a href=&quot;https://www.ams.org/journals/bull/1901-07-10/S0002-9904-1901-00826-9/S0002-9904-1901-00826-9.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;MathOverflow discussion over genenator of Symmetric group. - &lt;a href=&quot;https://mathoverflow.net/questions/405256/what-is-the-standard-2-generating-set-of-the-symmetric-group-good-for#comment1038737_405273&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Keith Conrad, ‘Generating Sets’ - &lt;a href=&quot;https://kconrad.math.uconn.edu/blurbs/grouptheory/genset.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Bases for permutation groups, Tim Burness, University of Bristol - &lt;a href=&quot;https://seis.bristol.ac.uk/~tb13602/docs/padova_lecture_1.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Group Theory, J.S. Milne - &lt;a href=&quot;https://www.jmilne.org/math/CourseNotes/GT.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Jeffrey S. Leon, ‘On an Algorithm for Finding a Base and a Strong Generating Set for a Group Given by Generating Permutations’ - &lt;a href=&quot;https://www.ams.org/journals/mcom/1980-35-151/S0025-5718-1980-0572868-5/S0025-5718-1980-0572868-5.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Alexander Hulpke, ‘Notes on Computational Group Theory’ - &lt;a href=&quot;https://www.math.colostate.edu/~hulpke/lectures/m676cgt/notes.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Ken Brown, ‘Computation in permutation groups’ - &lt;a href=&quot;http://pi.math.cornell.edu/~kbrown/6310/computation.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;acknowledgment&quot;&gt;Acknowledgment&lt;/h2&gt;
-&lt;p&gt;Thanks to Niek Lamoree and Samuel Vidal for the group theory ideas and proofreading this post.&lt;/p&gt;</content><author><name></name></author><category term="idea" /><category term="math" /><category term="programming" /><summary type="html">Naturally, a casual walk on a stimulating work environment can trigger the most prominent forms of nerd snipping. Another addictive puzzle from the ninth floor dazzled me. Hopefully, I can share some of my curiosity with you.</summary></entry><entry><title type="html">Rice</title><link href="http://localhost:4000/articles/2022/rice/" rel="alternate" type="text/html" title="Rice" /><published>2022-11-30T10:12:00-05:00</published><updated>2022-11-30T10:12:00-05:00</updated><id>http://localhost:4000/articles/2022/rice</id><content type="html" xml:base="http://localhost:4000/articles/2022/rice/">&lt;p&gt;Have you ever struggled with cooking rice perfectly?&lt;/p&gt;
-
-&lt;p&gt;Are you tired of reading overly precise recipes like this?&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;For cooking 1 to 2 cups of dry rice, a 2-quart saucepan is just the right size. Too big and the rice may not steam right. 
-Too small and it will boil over and make a sticky mess. You will add 1 3/4 cups water.&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Or vague general proportions?&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;Add 2 parts water and 1 part rice to a large pot. For slightly firmer rice, use 1 part liquid to 2/3 parts rice.&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Let us evoke the Asian wisdom, which goes beyond standard pan sizes or fancy volume unit measures.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;To cook proper rice, one should add enough water to the pan so that it hits the first index finger knuckle, while the finger tip vertically touches the surface of the rice.&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Let’s build up our intution and start with a set of assumptions.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;c1&quot;&gt;# Average measurement (inches)
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;diameter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;6.&lt;/span&gt; 
-&lt;span class=&quot;n&quot;&gt;height_index_knuckle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.8&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Conversation Rates
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;inch_to_cm_ratio&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.54&lt;/span&gt; 
-&lt;span class=&quot;n&quot;&gt;cup_water_to_cm3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;236.588&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Random Packing Density
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random_packing_density&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.56&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Number of cups of rice to cook
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rice_volume&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Main assumptions:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Random Packing Density of the grains of rice approximate one of loosely random packed spheres and it’s constant over different medium (air/water).&lt;/li&gt;
-  &lt;li&gt;The rice quality (shape) is disregarded in the analysis.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Thus, we can define our main function for the finger heuristic.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;calculate_water&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pan_diameter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                     &lt;span class=&quot;n&quot;&gt;rice_volume&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-                     &lt;span class=&quot;n&quot;&gt;height_index_knuckle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.8&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;&apos;&apos;&apos;
-  Input:
-    pan_diameter : float 
-      Volume in inches for the pan diameter
-    rice_volume : float
-      Volume in cups for the rice
-    height_index_knuckle : float
-      Length of first index knuckle in inches
-
-  Returns 
-    Ideal water volume to add in cups
-  &apos;&apos;&apos;&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;pan_area&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pi&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pan_diameter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inch_to_cm_ratio&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;4.0&lt;/span&gt; 
-  &lt;span class=&quot;n&quot;&gt;volume_water_added&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;height_index_knuckle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inch_to_cm_ratio&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pan_area&lt;/span&gt; 
-  &lt;span class=&quot;n&quot;&gt;volume_water_added&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rice_volume&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cup_water_to_cm3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;1.&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random_packing_density&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;volume_water_added&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cup_water_to_cm3&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;We plot the results of applying our function to common sauce pan sizes and rice quantities.&lt;/p&gt;
-
-&lt;div class=&quot;img_row&quot; style=&quot;height: 650px;width: 650px&quot;&gt;
-    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/asian_rice_rule.png&quot; alt=&quot;&quot; title=&quot;Word Distribution&quot; /&gt;
+&lt;div class=&quot;col three caption&quot;&gt;
+    Song&apos;s journey
 &lt;/div&gt;
 
-&lt;h3 id=&quot;a-very-natural-observation-of-the-skeptic-reader-is-what-if-my-finger-is-way-smaller-or-bigger&quot;&gt;&lt;em&gt;A very natural observation of the skeptic reader is: what if my finger is way smaller or bigger?&lt;/em&gt;&lt;/h3&gt;
+&lt;p class=&quot;text-justify&quot;&gt;I need to apologize to all my close friends who were almost emotionally forced to listen to my endless song drafts and providing me valuable feedback. You are the best!&lt;/p&gt;
 
-&lt;p&gt;Let us consider the results from the following &lt;a href=&quot;https://scielo.conicyt.cl/pdf/ijmorphol/v28n3/art15.pdf&quot;&gt;scientific study&lt;/a&gt;. Since we only care about the size of the index first knuckle, we have&lt;/p&gt;
-
-\[TotalSize =  Tip size + First Phalanx = (3.84±0.59) + (15.82±2.26) \ (mm)\]
-
-&lt;p&gt;Assuming independence of the variables for simplicty,&lt;/p&gt;
-
-\[TotalSize =  (3.84+15.82) ± \sqrt{0.59^2 + 2.26^2} = 19.66 ± 2.33 \ (mm)\]
-
-&lt;p&gt;In this way, we can model the first index knuckle size distributions for simplicity as a Gaussian distribution.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;mean_knuckle_size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;19.66&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inch_to_cm_ratio&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
-&lt;span class=&quot;n&quot;&gt;std_knuckle_size&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.33&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;0.1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inch_to_cm_ratio&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
-
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;scipy.stats&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;norm&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;x_axis&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linspace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mean_knuckle_size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std_knuckle_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-                     &lt;span class=&quot;n&quot;&gt;mean_knuckle_size&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;std_knuckle_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;First Index Knuckle Distribution&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_axis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;norm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x_axis&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mean_knuckle_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std_knuckle_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;inches&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;div class=&quot;img_row&quot; style=&quot;height: 450px;width: 585px&quot;&gt;
-    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/finger_size_distribution.png&quot; alt=&quot;&quot; title=&quot;Word Distribution&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;We run a MonteCarlo simulation for different size of pans, finger sizes and rice cups.&lt;/p&gt;
-
-&lt;div class=&quot;img_row&quot; style=&quot;height: 600px;width: 600px&quot;&gt;
-    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/asian_rice_rule_2.png&quot; alt=&quot;&quot; title=&quot;Word Distribution&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;We can clearly observe that the different finger size effect is negligible in practice.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;strong&gt;“Wisdom comes from experience. Experience is often a result of lack of wisdom.” - Terry Pratchett&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Common Sauce Pan Sizes - &lt;a href=&quot;https://prudentreviews.com/saucepan-sizes/&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Conversion Units - &lt;a href=&quot;https://www.traditionaloven.com/conversions_of_measures/rice_amounts_converter.html&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Random Close Pack - &lt;a href=&quot;https://en.wikipedia.org/wiki/Random_close_pack&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Scientific Study on Finger Sizes - &lt;a href=&quot;https://scielo.conicyt.cl/pdf/ijmorphol/v28n3/art15.pdf&quot;&gt;link&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;acknowledgment&quot;&gt;Acknowledgment&lt;/h2&gt;
-&lt;p&gt;Thanks to Raine Yeh and Pedro Bello-Maldonado for the inspiring conversation.&lt;/p&gt;</content><author><name></name></author><category term="idea" /><category term="programming" /><summary type="html">Have you ever struggled with cooking rice perfectly?</summary></entry><entry><title type="html">Best Game</title><link href="http://localhost:4000/articles/2022/bestgame/" rel="alternate" type="text/html" title="Best Game" /><published>2022-06-22T11:12:00-04:00</published><updated>2022-06-22T11:12:00-04:00</updated><id>http://localhost:4000/articles/2022/bestgame</id><content type="html" xml:base="http://localhost:4000/articles/2022/bestgame/">&lt;p class=&quot;text-justify&quot;&gt;An ongoing effort to improve my bullet chess skills lead me to play one of the best games in my life (reported accuracy of \(93.3\%\), estimated performance of 2000 ELO). It worths noting that part of the credit goes to my opponent who made a blunder on move 6. After it, the game takes a straighforward approach to exchange as many pieces as possible until move 28, when a possibility of a perpetual check appeared for my opponent. It was then when I had to think for a while and come up with some escape route for the king. Kg1 was the key of success. Sometimes exposing the king and moving it towards the center of the board,  altough counterintuitive, might lead to a winning position where the opponent runs out of checks.  The big lesson here was to force as many exchanges as possible whenever a material advantage is consolidated early in the game. But yes, ultimately, I got lucky :D&lt;/p&gt;
-&lt;iframe id=&quot;10728951&quot; allowtransparency=&quot;true&quot; frameborder=&quot;0&quot; style=&quot;width:100%;border:none;&quot; src=&quot;//www.chess.com/emboard?id=10728951&quot;&gt;&lt;/iframe&gt;
-&lt;script&gt;window.addEventListener(&quot;message&quot;,e=&gt;{e[&apos;data&apos;]&amp;&amp;&quot;10728951&quot;===e[&apos;data&apos;][&apos;id&apos;]&amp;&amp;document.getElementById(`${e[&apos;data&apos;][&apos;id&apos;]}`)&amp;&amp;(document.getElementById(`${e[&apos;data&apos;][&apos;id&apos;]}`).style.height=`${e[&apos;data&apos;][&apos;frameHeight&apos;]+30}px`)});&lt;/script&gt;</content><author><name></name></author><category term="idea" /><category term="chess" /><summary type="html">An ongoing effort to improve my bullet chess skills lead me to play one of the best games in my life (reported accuracy of \(93.3\%\), estimated performance of 2000 ELO). It worths noting that part of the credit goes to my opponent who made a blunder on move 6. After it, the game takes a straighforward approach to exchange as many pieces as possible until move 28, when a possibility of a perpetual check appeared for my opponent. It was then when I had to think for a while and come up with some escape route for the king. Kg1 was the key of success. Sometimes exposing the king and moving it towards the center of the board, altough counterintuitive, might lead to a winning position where the opponent runs out of checks. The big lesson here was to force as many exchanges as possible whenever a material advantage is consolidated early in the game. But yes, ultimately, I got lucky :D</summary></entry><entry><title type="html">Power of trie-ing</title><link href="http://localhost:4000/articles/2022/poweroftrieing/" rel="alternate" type="text/html" title="Power of trie-ing" /><published>2022-02-19T10:12:00-05:00</published><updated>2022-02-19T10:12:00-05:00</updated><id>http://localhost:4000/articles/2022/poweroftrieing</id><content type="html" xml:base="http://localhost:4000/articles/2022/poweroftrieing/">&lt;p class=&quot;text-justify&quot;&gt;In a bittersweet talk with a friend, immediately after failing a tech job interview, one &lt;del&gt;unreasonable&lt;/del&gt; doubt came to my mind: how much memory compression can a trie actually offer? Naturally, since it was the data structure that defined my rejection, I opted to dedicate this post to it.&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;A &lt;a href=&quot;https://en.wikipedia.org/wiki/Trie&quot;&gt;trie&lt;/a&gt;, also known as prefix tree, is a tree data structure whose nodes store the characters present in a set of words given some alphabet (i.e., dictionary). These words can be easily re&lt;em&gt;trie&lt;/em&gt;ved by traversing down the branches of the tree.&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;For our analysis, we assume our alphabet size \(A\) to be \(26\), matching the English alphabet. In a simple and unoptimized manner, we could code our data structure in a few lines using Python.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Trie&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__init__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;children&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;26&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;global&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nodes&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;children&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;c&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Trie&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-                &lt;span class=&quot;n&quot;&gt;nodes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;ord&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)].&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;children&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;Since most operations on the data structure depend on the number of nodes and not on the dictionary size (key idea), I wanted to evaluate how much less characters do we need to represent a dictionary if we use a trie.&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;We proceed by obtaining a dictionary of english valid words and plotting their distribution by length.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;matplotlib&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;inline&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;english_words&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;english_words_lower_alpha_set&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Set of words in english dictionary, lower case and no punctuation
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;S&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;english_words_lower_alpha_set&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Filter dataset
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_word_length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;S&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;.&apos;&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;&amp;amp;&apos;&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; 
-                &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;max_word_length&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;S&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-
-
-&lt;span class=&quot;c1&quot;&gt;# Plot distribution of valid words with different number of letters
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lenghts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_word_length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;num_words&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;filter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;lambda&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word_size&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;S&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt;
-              &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;word_size&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;lenghts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;fig&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add_axes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Distribution of words by length&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_xlabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Length of words&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set_ylabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Frequency&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;ax&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;bar&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lenghts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;num_words&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;div class=&quot;img_row&quot; style=&quot;height: 600px;width: 820px&quot;&gt;
-    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/word_distribution.png&quot; alt=&quot;&quot; title=&quot;Word Distribution&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;After adding each of the words of our dictionary in random order to our trie, I was truly surprised by the following results:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Total number of chars in dictionary:  183728&lt;/li&gt;
-  &lt;li&gt;Total number of nodes of Trie to store dictionary:  77421&lt;/li&gt;
-  &lt;li&gt;General compression for storing all words in dictionary: &lt;strong&gt;42.14 %&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;My intuition was wrong. Perhaps I was assuming that most of words in the dictionary show a more uniform distribution, causing the trie to efficiently compress short words but obtaining no memory gains on longer words. Moreover, my friend pointed out one aspect I totally overlooked: the English language has some inherent prefix structure. Most common words share a similar etimology. This observation drove my stubbornes into another experiment: random words.&lt;/p&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;We compare the memory compression rates achieved by using a trie to store the dictionary. For that purpose, we generate a multiple dictionary of random gibberish words of different lengths using the English alphabet. We compare the number of characters in total versus the number of nodes created while adding each word to the trie.&lt;/p&gt;
-
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;n&quot;&gt;max_word_length&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;num_chars&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;num_nodes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Create random dataset of different sizes
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linspace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1e6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;D&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;total_chars&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;word&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;join&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;choices&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alphabet_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-                        &lt;span class=&quot;n&quot;&gt;k&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_word_length&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; 
-        &lt;span class=&quot;n&quot;&gt;sz&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;randint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;max_word_length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;word&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sz&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;total_chars&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sz&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;# Calculate global statistics after adding dictionary in trie
-&lt;/span&gt;    &lt;span class=&quot;n&quot;&gt;nodes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Trie&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;D&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;t&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;s&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;total_nodes&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;nodes&lt;/span&gt;
-    
-    &lt;span class=&quot;n&quot;&gt;num_chars&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;total_chars&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;num_nodes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;total_nodes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;# Plot trends
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;linspace&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1e6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figure&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;figsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_chars&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;# chars&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;num_nodes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;label&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;# nodes&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Memory Compression using Trie in Random Dictionary&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; 
-           &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ylabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Memory&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;xlabel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Number of words&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;fontsize&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;legend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;show&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;div class=&quot;img_row&quot; style=&quot;height: 700px&quot;&gt;
-    &lt;img class=&quot;col three&quot; src=&quot;/assets/img/trends_trie.png&quot; alt=&quot;&quot; title=&quot;Guitar&quot; /&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Again, my intuition was wrong :) Whenever you need to store retrieve a set of words, just use trie.&lt;/p&gt;</content><author><name></name></author><category term="idea" /><category term="programming" /><summary type="html">In a bittersweet talk with a friend, immediately after failing a tech job interview, one unreasonable doubt came to my mind: how much memory compression can a trie actually offer? Naturally, since it was the data structure that defined my rejection, I opted to dedicate this post to it.</summary></entry></feed>
+&lt;p&gt;Hopefully this is only the start :)&lt;/p&gt;</content><author><name></name></author><category term="idea" /><category term="music" /><summary type="html">Alfredo De la Fuente · Meraki</summary></entry></feed>

@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Ideas
+title: Interests
 permalink: /ideas/
-description: Brainstorming
+description: Past and future projects
 order: 2
 ---
 
