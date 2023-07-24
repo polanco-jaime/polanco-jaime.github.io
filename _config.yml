@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 title: Brigitte Castañeda
-email: alfredo.delafuente.b@gmail.com
+email: brigittecasro@gmail.com
 description: > # this means to ignore newlines until "url:"
   Personal website.
 footer_text: > #
@@ -31,13 +31,13 @@ sass:
     sass_dir: _sass
 
 # -----------------------------------------------------------------------------
-# Working papers
+# Research
 # -----------------------------------------------------------------------------
-blog_name: Working papers
-blog_description: Summary of academic articles
+blog_name: Research
+blog_description: Articles
 
 # Pagination
-paginate: 6
+paginate: 8
 permalink: /articles/:year/:title/
 paginate_path: /articles/page:num/
 
