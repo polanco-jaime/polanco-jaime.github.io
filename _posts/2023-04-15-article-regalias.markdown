@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Impacto de las regalías en el comportamiento fiscal de los municipios de Colombia.
+title: Impacto fiscal de las regalías en los municipios de Colombia.
 date: 2023-04-15 16:11:00-0400
-description: Recomendaciones para una transición energética justa. Análisis de posibles impactos macroeconómicos.
+description: Análisis de posibles impactos macroeconómicos para una transición energética justa.
 inline: false
 categories: article
 comments: true
