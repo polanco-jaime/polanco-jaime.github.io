@@ -2,7 +2,7 @@
 layout: post
 title: Can growth take place while reducing emissions?
 date: 2023-05-15 16:11:00-0400
-description: Learnings from studying how energy plays a role in the decoupling of economic growth and CO2 emissions.
+description: How energy mix plays a role in the decoupling of economic growth and CO2 emissions?
 inline: false
 categories: article
 comments: true

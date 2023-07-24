@@ -1,8 +1,8 @@
 ---
 layout: post
-title: REDD+ como herramienta para evitar la deforestación y la expansión de cultivos ilícitos en el pacífico Colombiano
+title: REDD+ su efecto sobre la deforestación y la expansión de cultivos ilícitos
 date: 2023-05-15 16:11:00-0400
-description: Aprendizajes del estudio de proyectos REDD+ (Reducing Emissions from Deforestation and Forest Degradation) en el pacifico Colombiano.
+description: Aprendizajes de proyectos REDD+ (Reducing Emissions from Deforestation and Forest Degradation) en el pacifico Colombiano.
 inline: false
 categories: article
 comments: true
