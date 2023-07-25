@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Equity index for educational scores standardization
+title: Equity index for educational scores
 date: 2020-08-21 11:12:00-0400
 description: Final project of the Data Science 4 All Course 2020.
 tags: programming 
@@ -16,24 +16,19 @@ Education enables upward socioeconomic mobility and is a key to escaping poverty
 
 Our proposal is to create a scaled index based on socioeconomic variables, which will offset the score of those students with a higher than expected score and deduct those with a lower than expected score.
 {: .text-justify}
+
 <div class="img_row center">
     <img src="{{ site.baseurl }}/assets/img/equatyindex.png">
 </div>
-<div class="col three caption">
-    Percentage of student participation in the Saber 11 exam and the best scores, in 2019 according to their socioeconomic strata. 
-</div>
+
 
 #### Model
 
 To test our hypothesis, we used Clustering techniques to generate 3 groups using only the socioeconomic variables, and then, we check how the Scores changed along each of the groups.This three clusters are a good representation of low, medium and high socioeconomic background.
 {: .text-justify}
 
-<div class="img_row">
-    <img class="col one" src="{{ site.baseurl }}/assets/img/equatyindex_1.png" alt="" title="Clusters" />
-    <img class="col one" src="{{ site.baseurl }}/assets/img/equatyindex_2.png" alt="" title="Expected results"/>
-</div>
-<div class="col two caption">
-    Song's journey
+<div class="img_row center">
+    <img src="{{ site.baseurl }}/assets/img/equatyindex_1.png">
 </div>
 
 #### Proposed equity index
@@ -42,7 +37,8 @@ Expected Scores were calculated for each individual, comparing several regressio
 {: .text-justify}
 
 $$ Index = \frac{Actual Score}{Expected Score}$$
-$$Adjusted Score = Actual Score * Index$$
+{: .text-justify}
+
 
 #### Results
 As a solution to the existing gap in access to higher education, this equity indicator was created to compensate those students who excelled with scores higher than the expected score according to our model results.

@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title> | Equity index for educational scores standardization</title>
+  <title> | Equity index for educational scores</title>
   <meta name="description" content="Personal website.
 ">
 
@@ -52,14 +52,15 @@
         <!-- About -->
         <a class="page-link" href="http://localhost:4000/">About</a>
 	
-	<!-- Ideas --> 
-	<a class="page-link" href="http://localhost:4000/ideas/">Interests</a>
+	<!-- CV --> 
+	<a class="page-link" href="https://drive.google.com/file/d/1bNTOP0Q08lJpOr-MEamFc9shRYE6NCLn/view?usp=sharing" rel="external nofollow noopener" target="_blank">CV</a>
 
         <!-- Articles -->
         <a class="page-link" href="http://localhost:4000/articles/">Research</a>
 
-	<!-- CV --> 
-	<a class="page-link" href="https://drive.google.com/file/d/1bNTOP0Q08lJpOr-MEamFc9shRYE6NCLn/view?usp=sharing" rel="external nofollow noopener" target="_blank">CV</a>
+	<!-- Ideas --> 
+	<a class="page-link" href="http://localhost:4000/ideas/">Interests</a>
+  
 
         <!-- Pages 
         
@@ -117,12 +118,12 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Equity index for educational scores standardization</h1>
+    <h1 class="post-title">Equity index for educational scores</h1>
     <p class="post-meta">August 21, 2020</p>
     <p class="post-meta"> Reading Time ~ 
   
   
-    3 mins
+    2 mins
   
 
 
@@ -136,31 +137,25 @@
 <p class="text-justify">Education enables upward socioeconomic mobility and is a key to escaping poverty. Over the past decade, major progress was made towards increasing access to education and school enrollment rates. Nevertheless the Saber 11 exam scores have a strong dependency on the socioeconomic background of the students, so comparing them using the same scale will put certain students at an advantage that other students don’t have access to.</p>
 
 <p class="text-justify">Our proposal is to create a scaled index based on socioeconomic variables, which will offset the score of those students with a higher than expected score and deduct those with a lower than expected score.</p>
+
 <div class="img_row center">
     <img src="/assets/img/equatyindex.png">
-</div>
-<div class="col three caption">
-    Percentage of student participation in the Saber 11 exam and the best scores, in 2019 according to their socioeconomic strata. 
 </div>
 
 <h4 id="model">Model</h4>
 
 <p class="text-justify">To test our hypothesis, we used Clustering techniques to generate 3 groups using only the socioeconomic variables, and then, we check how the Scores changed along each of the groups.This three clusters are a good representation of low, medium and high socioeconomic background.</p>
 
-<div class="img_row">
-    <img class="col one" src="/assets/img/equatyindex_1.png" alt="" title="Clusters">
-    <img class="col one" src="/assets/img/equatyindex_2.png" alt="" title="Expected results">
-</div>
-<div class="col two caption">
-    Song's journey
+<div class="img_row center">
+    <img src="/assets/img/equatyindex_1.png">
 </div>
 
 <h4 id="proposed-equity-index">Proposed equity index</h4>
 
 <p class="text-justify">Expected Scores were calculated for each individual, comparing several regression techniques and selecting the one that performs better in the data. The selected algorithm was a Linear Regression with ElasticNet Regularization, and the expected scores were used to calculate the index for each student, used to scale its original score as follows.</p>
 
-<p>\(Index = \frac{Actual Score}{Expected Score}\)
-\(Adjusted Score = Actual Score * Index\)</p>
+<div class="text-justify">\[Index = \frac{Actual Score}{Expected Score}\]
+</div>
 
 <h4 id="results">Results</h4>
 <p class="text-justify">As a solution to the existing gap in access to higher education, this equity indicator was created to compensate those students who excelled with scores higher than the expected score according to our model results.</p>
