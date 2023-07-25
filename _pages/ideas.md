@@ -3,7 +3,7 @@ layout: page
 title: Interests
 permalink: /ideas/
 description: Past and future projects
-order: 2
+order: 5
 ---
 
 
