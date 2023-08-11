@@ -7,7 +7,7 @@ order: 4
 ---
 
 
-<div class="project ">
+<!-- <div class="project ">
 {% assign n = site.posts | size %}
 {% assign listprojects = site.projects | sample: n %}
 {% for project in listprojects %}
@@ -26,5 +26,5 @@ order: 4
         </a>
     </div>
 {% endfor %}
-</div>
+</div> -->
 
