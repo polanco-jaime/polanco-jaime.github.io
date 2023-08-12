@@ -25,7 +25,11 @@ google_analytics: > #UA-XXXXXXXXX # out your google-analytics code
 
 # Tags
 tag_dir: tag
-
+categories:
+  - article
+  - notes 
+  - projects
+  - working-papers
 # Edit SASS
 sass:
     sass_dir: _sass
@@ -94,3 +98,6 @@ plugins:
 jquery_version: "1.12.4"
 katex_version: "0.11.1"
 anchorjs_version: "3.2.2"
+
+# Disable ImageMagick 
+imagemagick: false
