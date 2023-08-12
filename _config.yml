@@ -100,4 +100,4 @@ katex_version: "0.11.1"
 anchorjs_version: "3.2.2"
 
 # Disable ImageMagick 
-imagemagick: false
+# imagemagick: false

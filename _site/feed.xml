@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-08-12T18:37:00-04:00</updated><id>/feed.xml</id><title type="html">Jaime Polanco-Jimenez</title><subtitle>Personal website.
-</subtitle><entry><title type="html">Black Gold and Dull Minds</title><link href="/articles/2023/papers/" rel="alternate" type="text/html" title="Black Gold and Dull Minds" /><published>2023-08-12T16:11:00-04:00</published><updated>2023-08-12T16:11:00-04:00</updated><id>/articles/2023/papers</id><content type="html" xml:base="/articles/2023/papers/">&lt;p class=&quot;cursive-text&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-12T18:59:22-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Jaime Polanco-Jimenez</title><subtitle>Personal website.
+</subtitle><entry><title type="html">Black Gold and Dull Minds</title><link href="http://localhost:4000/articles/2023/black-gold/" rel="alternate" type="text/html" title="Black Gold and Dull Minds" /><published>2023-08-12T16:11:00-04:00</published><updated>2023-08-12T16:11:00-04:00</updated><id>http://localhost:4000/articles/2023/black-gold</id><content type="html" xml:base="http://localhost:4000/articles/2023/black-gold/">&lt;p class=&quot;cursive-text&quot;&gt;
   co-author:
   &lt;a href=&quot;https://sites.google.com/site/christianpossosuarez/&quot;&gt;Christian Posso&lt;/a&gt; 
 &lt;/p&gt;
@@ -23,31 +23,7 @@ Este caso es relevante pues según estudios previos, la titulación colectiva a 
 
 #### Proyecto en desarrollo, será presentado en [17th Biennial Conference of the International Society for Ecological Economics](https://theisee.wildapricot.org/event-5112431) --&gt;
 
-&lt;hr /&gt;</content><author><name></name></author><category term="article" /><summary type="html">co-author: Christian Posso</summary></entry><entry><title type="html">Black Gold and Dull Minds</title><link href="/articles/2023/black-gold/" rel="alternate" type="text/html" title="Black Gold and Dull Minds" /><published>2023-08-12T16:11:00-04:00</published><updated>2023-08-12T16:11:00-04:00</updated><id>/articles/2023/black-gold</id><content type="html" xml:base="/articles/2023/black-gold/">&lt;p class=&quot;cursive-text&quot;&gt;
-  co-author:
-  &lt;a href=&quot;https://sites.google.com/site/christianpossosuarez/&quot;&gt;Christian Posso&lt;/a&gt; 
-&lt;/p&gt;
-
-&lt;!-- &lt;div class=&quot;img_row center&quot;&gt;
-    &lt;img src=&quot;/assets/img/redd.jpg&quot;&gt;
-&lt;/div&gt;
-&lt;div class=&quot;col three caption&quot;&gt;
-    Foto desde Miramar, Bahía Málaga, Colombia.
-&lt;/div&gt; --&gt;
-
-&lt;p class=&quot;text-justify&quot;&gt;Black Gold and Dull Minds: The Impact of Hydrocarbon Exploration Announcements on Education in Colombia
-This study investigates the impact of the shocks in expected income resulting from the announcement of a hydrocarbon exploration on dropout rates in schools within the exploration areas of Colombia. Employing a Geographic Regression Discontinuity Design, we capture the local impact of exploration announcements and establish a causal relationship.
-Our findings reveal a significant reduction in dropout rates among elementary school pupils, with a more pronounced effect observed among girls. However, an increase in dropout rates is observed among secondary school pupils. These results highlight the complex and nuanced relationship between natural resources and educational outcomes, suggesting the presence of underlying factors influencing dropout rates at different stages of schooling.
-These findings underscore the critical importance of incorporating the impact of expected income shocks in educational policy formulation, particularly within exploration and explotaition of natural resources areas.&lt;/p&gt;
-
-&lt;!-- 
-Este caso es relevante pues según estudios previos, la titulación colectiva a comunidades negras ha disminuido la deforestación y porque allí se encuentra el 20% de los cultivos ilícitos del país. Este estudio busca entender &lt;i&gt;si la firma de acuerdos REDD+ por parte de los consejos comunitarios, además de la gobernanza colectiva, refuerza los sistemas de monitoreo y mejora las condiciones económicas para evitar la expansión de economías  ilícitas además de reducir la deforestación&lt;i&gt;. A través del uso de información satelital y herramientas econométricas, se encontró una relación causal entre la firma de los proyectos REDD+ y la reducción de los cultivos ilícitos durante los primeros años de implementación. Sin embargo, no se encontraron efectos significativos en la deforestación. Se evidencia que proyectos de conservación ambiental como los proyectos REDD+ pueden hacer frente a la expansión de cultivos ilícitos en el corto plazo y son una herramienta para distribuir los costos de la conservación. 
-{: .text-justify}
-
-
-#### Proyecto en desarrollo, será presentado en [17th Biennial Conference of the International Society for Ecological Economics](https://theisee.wildapricot.org/event-5112431) --&gt;
-
-&lt;hr /&gt;</content><author><name></name></author><category term="working-papers" /><summary type="html">co-author: Christian Posso</summary></entry><entry><title type="html">Roads to the future</title><link href="/articles/2023/article-1/" rel="alternate" type="text/html" title="Roads to the future" /><published>2023-05-15T16:11:00-04:00</published><updated>2023-05-15T16:11:00-04:00</updated><id>/articles/2023/article-1</id><content type="html" xml:base="/articles/2023/article-1/">&lt;div class=&quot;img_row center&quot;&gt;
+&lt;hr /&gt;</content><author><name></name></author><category term="working-papers" /><summary type="html">co-author: Christian Posso</summary></entry><entry><title type="html">Roads to the future</title><link href="http://localhost:4000/articles/2023/article-1/" rel="alternate" type="text/html" title="Roads to the future" /><published>2023-05-15T16:11:00-04:00</published><updated>2023-05-15T16:11:00-04:00</updated><id>http://localhost:4000/articles/2023/article-1</id><content type="html" xml:base="http://localhost:4000/articles/2023/article-1/">&lt;div class=&quot;img_row center&quot;&gt;
     &lt;img src=&quot;/assets/img/7g7P.gif&quot; /&gt;
 &lt;/div&gt;
 &lt;div class=&quot;col three caption&quot;&gt;
@@ -74,7 +50,7 @@ Este caso es relevante pues según estudios previos, la titulación colectiva a 
     &lt;li&gt;The effect of the carbon tax on employment rate is not statistically significant in the first three years after the policy.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr /&gt;</content><author><name></name></author><category term="working-papers" /><summary type="html">Stephen showing off. Road to the Future: Identifying Impacts of Roads on Education in Colombia</summary></entry><entry><title type="html">Creating well logs using Machine Learning</title><link href="/articles/2019/ogh-poster/" rel="alternate" type="text/html" title="Creating well logs using Machine Learning" /><published>2019-11-18T11:12:00-04:00</published><updated>2019-11-18T11:12:00-04:00</updated><id>/articles/2019/ogh-poster</id><content type="html" xml:base="/articles/2019/ogh-poster/">&lt;p&gt;Coauthor: Brigitte Castaneda.&lt;/p&gt;
+&lt;hr /&gt;</content><author><name></name></author><category term="working-papers" /><summary type="html">Stephen showing off. Road to the Future: Identifying Impacts of Roads on Education in Colombia</summary></entry><entry><title type="html">Creating well logs using Machine Learning</title><link href="http://localhost:4000/articles/2019/ogh-poster/" rel="alternate" type="text/html" title="Creating well logs using Machine Learning" /><published>2019-11-18T11:12:00-04:00</published><updated>2019-11-18T11:12:00-04:00</updated><id>http://localhost:4000/articles/2019/ogh-poster</id><content type="html" xml:base="http://localhost:4000/articles/2019/ogh-poster/">&lt;p&gt;Coauthor: Brigitte Castaneda.&lt;/p&gt;
 
 &lt;p class=&quot;text-justify&quot;&gt;We placed second in the poster contest for the &lt;a href=&quot;https://www.rogtecmagazine.com/results-of-the-11th-international-youth-scientific-practical-congress-oil-and-gas-horizons/&quot;&gt;“Oil and Gas Horizons”&lt;/a&gt; 11th International Youth Scientific &amp;amp; Practical Congress with this project. It was held from the 18th to the 21th of November 2019 at National University of Oil and Gas “Gubkin University” in Moscow and was being organized by Gubkin University SPE Student Chapter.&lt;/p&gt;
 
