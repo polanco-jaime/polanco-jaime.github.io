@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Can growth take place while reducing emissions?
+title: Roads to the future
 date: 2023-05-15 16:11:00-0400
-description: Energy mix plays a role in the decoupling of economic growth and CO2 emissions.
+description: This study evaluates the impact of the road concessions program on education in Colombia. 
 inline: false
-categories: article
+categories: working-papers
 comments: true
 ---
 <div class="img_row center">
@@ -13,8 +13,9 @@ comments: true
 <div class="col three caption">
     Stephen showing off. 
 </div>
+Road to the Future: Identifying Impacts of Roads on Education in Colombia
 
-This study aims to determine ***whether the economic effect of introducing a carbon tax differs between countries, according to the energy mix?*** Following a model of directed technical change and environmental, I empirically analyze the implementation of a carbon tax in countries with different carbon-intensity energy sources and the allocation of revenues. I find four main results: (i) In the absence of subsidies, carbon taxes have a negative effect on economic growth, (ii) this negative effect is a decreasing function of the proportion of clean energy sources in the energy mix increases. (iii) subsidies for clean inputs have a positive effect on economic growth, and (iv) the magnitude of this effect grows with the proportion of clean energy sources. These results are consistent with the predictions of the theoretical model and suggest that policymakers could consider this relationship between the energy mix and the economic effect of a carbon tax when creating environmental regulations. [See Paper](https://drive.google.com/file/d/1bNTOP0Q08lJpOr-MEamFc9shRYE6NCLn/view?usp=sharing)
+This study evaluates the impact of the road concessions program on education in Colombia. The results reveal a decrease in the fraction of students participating in the labor force in schools located near roads, accompanied by an increase in average reading and math scores and the fraction of students completing higher education. The evidence suggests positive effects on the accumulation of human capital, with a stronger impact on public schools compared to private schools. This research provides valuable insights into the potential effects of infrastructure development on the educational outcomes of students in Colombia.
 {: .text-justify}
 
 The main findings provide empirical evidence on the relationship between carbon tax implementation and economic growth, highlighting the importance of considering the composition of energy sources in the analysis.
