@@ -32,7 +32,8 @@ In addition to my research work, I've also served as a Research Assistant at the
 {: .text-justify} 
 <!--  -->
 In addition to my research work, I've also served as a Research Assistant at the [Laboratory of Economics of Education](https://lee.javeriana.edu.co/), where I explored the correlation between electrical accessibility and education. I've collaborated with Professor [Oliver Pardo](https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-administraci%C3%93n-24?redirect=%2Fprofesores) on comprehending the relationship between retirement savings and the informal labor market. Additionally, I've supported Researcher [Christian Posso](https://sites.google.com/site/christianpossosuarez/) from the Central Bank of Colombia in investigating the causal link between health insurance bankruptcy and its effects in Colombia. Moreover, I've contributed as a teaching assistant for econometrics courses under the guidance of Professor [Pablo Garlatti](https://sites.google.com/view/adriangarlati) in the last two years. 
-{: .text-justify}  -->
+{: .text-justify}
+
 
  
 
