@@ -13,19 +13,19 @@ news: true
 social: true
 ---
 
-My name is Jaime Polanco-Jiménez, and I am a dedicated PhD student in Economics at Pontificia Universidad Javeriana in Bogota, Colombia. This year, I'm honored to be a visiting scholar under the supervision of Professor [Kristof De Witte](https://www.kuleuven.be/wieiswie/en/person/00049626) at Katholieke Universiteit Leuven.  
-{: .text-justify}
+# About Me
 
-I have a passion for applying rigorous economic analysis to address issues related to natural resources, human capital accumulation, economics of education, and development economics. Alongside my academic journey, I'm also dedicated to my wife [Brigitte Castañeda](https://brigitte-castaneda.github.io/), who shares my passion as a PhD student. Together, we're committed to pushing the boundaries of research and knowledge in our respective fields.
-{: .text-justify}
- 
+I am Jaime Polanco-Jiménez, a dedicated PhD student in Economics at [Pontificia Universidad Javeriana](https://www.javeriana.edu.co/) in Bogota, Colombia. Currently, I am honored to be a visiting scholar under the supervision of Professor [Kristof De Witte](https://www.kuleuven.be/wieiswie/en/person/00049626) at [Katholieke Universiteit Leuven](https://www.kuleuven.be/english/).
 
-My research focuses on analyzing  how different factors influence educational outcomes and human capital accumulation, particularly in developing countries. I have been carrying out these research endeavors under the expert supervision of [Oliver Pardo](https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-administraci%C3%93n-24?redirect=%2Fprofesores)  and [Gloria Bernal](https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-econom%C3%8Da-17?redirect=%2Fprofesores).
-{: .text-justify} 
- 
- 
-In addition to my research work, I've also served as a Research Assistant at the [Laboratory of Economics of Education](https://lee.javeriana.edu.co/), where I explored the correlation between electrical accessibility and education. I've collaborated with Professor [Oliver Pardo](https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-administraci%C3%93n-24?redirect=%2Fprofesores) on comprehending the relationship between retirement savings and the informal labor market. Additionally, I've supported Researcher [Christian Posso](https://sites.google.com/site/christianpossosuarez/) from the Central Bank of Colombia in investigating the causal link between health insurance bankruptcy and its effects in Colombia. Moreover, I've contributed as a teaching assistant for econometrics courses under the guidance of Professor [Pablo Garlatti](https://sites.google.com/view/adriangarlati) in the last two years. 
-{: .text-justify}
+## Research Focus
+
+My passion lies in applying rigorous economic analysis to address issues related tohuman capital accumulation, economics of education, and development economics. Specifically, my current research focuses on analyzing how various factors influence educational outcomes and human capital accumulation, with a particular emphasis on developing countries. I conduct my research under the expert supervision of [Oliver Pardo](https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-administraci%C3%93n-24?redirect=%2Fprofesores) and [Gloria Bernal](https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-econom%C3%8Da-17?redirect=%2Fprofesores).
+
+
+
+## Chat Bot
+
+Feel free to test my researcher assistant chatbot at the bottom right of this page. If you have any observations, please let me know. 
 
  
 **I will be on the Job Market in 2024/2025.**
@@ -35,15 +35,17 @@ In addition to my research work, I've also served as a Research Assistant at the
   project-id="novyye-produkty"
   agent-id="dd6837ef-da45-44f4-b222-ccfaff6ade5b"
   language-code="en">
-  <df-messenger-chat-bubble
-   chat-title="Jaime">
-  </df-messenger-chat-bubble>
+  <df-messenger-chat
+   chat-title="Jaime Bot">
+  </df-messenger-chat>
 </df-messenger>
 <style>
   df-messenger {
     z-index: 999;
     position: fixed;
-    bottom: 16px;
-    right: 16px;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    width: 500px;
   }
 </style>
