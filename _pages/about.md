@@ -48,6 +48,13 @@ Feel free to test my researcher assistant chatbot at the bottom right of this pa
     bottom: 16px;
     right: 16px;  
   } 
+  .df-messenger-wrapper {
+    width: 480px; /* Set the desired width */
+  }
+  .df-messenger-chat-bubble {
+    /* Adjust other styles as needed */
+    chat-width: 480px;	
+  }
 </style>
 
        
