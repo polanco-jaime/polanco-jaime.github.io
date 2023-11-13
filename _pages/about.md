@@ -9,11 +9,9 @@ description: >
   Interested in Development Economics, Economics of Education, Natural Resource Economics, and being an enthusiastic data scientist.
   <br/>
   <blockquote2 class="warning" id="mymotto" title="Motto"><h5>'Nothing is built on stone, all is built on sand; but we must build as if the sand were stone.'<br/> – Jorge Luis Borges</h5></blockquote2>
-  
 profile:
   align: right
   image: prof_pic.jpg
-
 news: true
 social: true
 ---
