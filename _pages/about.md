@@ -43,11 +43,10 @@ Feel free to test my researcher assistant chatbot at the bottom right of this pa
 </df-messenger>
 <style>
   df-messenger {
-    position: absolute;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      width: 550px;
+    z-index: 999;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;  
   } 
 </style>
 
