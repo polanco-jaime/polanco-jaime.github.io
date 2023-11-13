@@ -47,7 +47,7 @@ Feel free to test my researcher assistant chatbot at the bottom right of this pa
     right: 16px; 
   }
   .df-messenger-wrapper {
-    width: 550px; /* Set the desired width */
+    width: 900px; /* Set the desired width */
   }
 </style>
 
