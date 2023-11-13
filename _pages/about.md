@@ -3,7 +3,7 @@ layout: about
 permalink: /
 title: <strong>  Jaime </strong> Polanco-Jimenez 
 order: 1
-description:  Interested in Development Economics, Economics of Education,  Natural Resource Economics, and being an enthusiastic data scientist. <br/> #<blockquote2 class="warning" id="mymotto" title="Motto"><h5> 'Nothing is built on stone, all is built on sand; but we must build as if the sand were stone.' <br/> – Jorge Luis Borges</h5></blockquote2> 
+description: I will be on the Job Market in 2024/2025.  <br/> Interested in Development Economics, Economics of Education,  Natural Resource Economics, and being an enthusiastic data scientist. <br/> #<blockquote2 class="warning" id="mymotto" title="Motto"><h5> 'Nothing is built on stone, all is built on sand; but we must build as if the sand were stone.' <br/> – Jorge Luis Borges</h5></blockquote2> 
 
 profile:
   align: right
@@ -12,9 +12,8 @@ profile:
 news: true
 social: true
 ---
-
+ 
 # About Me
-
 I am Jaime Polanco-Jiménez, a dedicated PhD student in Economics at [Pontificia Universidad Javeriana](https://www.javeriana.edu.co/) in Bogota, Colombia. Currently, I am honored to be a visiting scholar under the supervision of Professor [Kristof De Witte](https://www.kuleuven.be/wieiswie/en/person/00049626) at [Katholieke Universiteit Leuven](https://www.kuleuven.be/english/).
 {: .text-justify}
 
@@ -30,7 +29,7 @@ My passion lies in applying rigorous economic analysis to address issues related
 Feel free to test my researcher assistant chatbot at the bottom right of this page. If you have any observations, please let me know. 
 {: .text-justify}
  
-**I will be on the Job Market in 2024/2025.**
+
 <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
 <df-messenger
   location="us-central1"
