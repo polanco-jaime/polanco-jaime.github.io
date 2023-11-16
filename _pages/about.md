@@ -55,4 +55,12 @@ Feel free to test my researcher assistant chatbot at the bottom right of this pa
 
 </style>
 
-       
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EHXV39ZW0B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EHXV39ZW0B');
+</script>
