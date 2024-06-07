@@ -49,28 +49,27 @@ Feel free to test my researcher assistant chatbot at the bottom right of this pa
     position: fixed;
     bottom: 16px;
     right: 16px;
-    width: 50%; /* Covers half the page width */
-    max-width: 50%; /* Ensures it doesn't exceed half the page width */
+    width: 600px; !important; /* Ensure the width covers half the page */
+    max-width: 50% !important; /* Ensure the width does not exceed half the page */
     height: 600px; /* Adjust the height as needed */
   }
   df-messenger .chat-wrapper {
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
   }
   df-messenger .df-chat {
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
   }
   df-messenger .df-chat-wrapper {
-    width: 100%;
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
   }
   df-messenger iframe {
     width: 100% !important;
     height: 100% !important;
   }
 </style>
-
 
 
 
