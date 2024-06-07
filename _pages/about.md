@@ -55,6 +55,7 @@ Feel free to test my researcher assistant chatbot at the bottom right of this pa
     chat-width: 480px;	
     --df-messenger-bot-message: #878fac;
    --df-messenger-button-titlebar-color: #df9b56;
+   --df-messenger-chat-background-color: #fafafa;
   } 
  
 </style>  
