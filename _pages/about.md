@@ -53,6 +53,7 @@ Feel free to test my researcher assistant chatbot at the bottom right of this pa
     right: 16px;  
     width: 50%;
     height: 50%;
+    chat-width: 480px;	
   }
   df-messenger iframe {
     width: 100%;
