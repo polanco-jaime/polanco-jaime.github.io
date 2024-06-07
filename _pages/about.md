@@ -41,25 +41,35 @@ Feel free to test my researcher assistant chatbot at the bottom right of this pa
   project-id="novyye-produkty"
   agent-id="dd6837ef-da45-44f4-b222-ccfaff6ade5b"
   language-code="en">
-  <df-messenger-chat-bubble
-   chat-title="Jaime Bot">
-  </df-messenger-chat-bubble>
+  <df-messenger-chat-bubble chat-title="Jaime Bot"></df-messenger-chat-bubble>
 </df-messenger>
 <style>
   df-messenger {
     z-index: 999;
     position: fixed;
     bottom: 16px;
-    right: 16px;  
-    width: 50%;
-    height: 50%;
-    chat-width: 480px;	
+    right: 16px;
+    width: 50%; /* Adjust as needed */
+    height: 50%; /* Adjust as needed */
   }
-  df-messenger iframe {
+  df-messenger .chat-wrapper {
     width: 100%;
     height: 100%;
   }
+  df-messenger .df-chat {
+    width: 100%;
+    height: 100%;
+  }
+  df-messenger .df-chat-wrapper {
+    width: 100%;
+    height: 100%;
+  }
+  df-messenger iframe {
+    width: 100% !important;
+    height: 100% !important;
+  }
 </style>
+
 
 
 
