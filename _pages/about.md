@@ -48,14 +48,15 @@ Feel free to test my researcher assistant chatbot at the bottom right of this pa
 </df-messenger>
 <style>
   df-messenger {
-   --df-messenger-bot-message: #878fac;
+    z-index: 999;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;  
+    chat-width: 480px;	
+    --df-messenger-bot-message: #878fac;
    --df-messenger-button-titlebar-color: #df9b56;
-   --df-messenger-chat-background-color: #fafafa;
-   --df-messenger-font-color: white;
-   --df-messenger-send-icon: #878fac;
-   --df-messenger-user-message: #479b3d;
-  }
-
+  } 
+ 
 </style>  
 
 <!-- Google tag (gtag.js) -->
