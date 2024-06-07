@@ -35,44 +35,8 @@ My passion lies in applying rigorous economic analysis to address issues related
 Feel free to test my researcher assistant chatbot at the bottom right of this page. If you have any observations, please let me know. 
 {: .text-justify}
  
+
 <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-<df-messenger
-  location="us-central1"
-  project-id="novyye-produkty"
-  agent-id="dd6837ef-da45-44f4-b222-ccfaff6ade5b"
-  language-code="en">
-  <df-messenger-chat-bubble chat-title="Jaime Bot"></df-messenger-chat-bubble>
-</df-messenger>
-<style>
-  df-messenger {
-    z-index: 2500;
-    position: fixed;
-    bottom: 16px;
-    right: 16px;  
-    chat-width: 480px;	
-  } 
-  df-messenger .chat-wrapper {
-    width: 100% !important;
-    height: 100% !important;
-  }
-  df-messenger .df-chat {
-    width: 100% !important;
-    height: 100% !important;
-  }
-  df-messenger .df-chat-wrapper {
-    width: 100% !important;
-    height: 100% !important;
-  }
-  df-messenger iframe {
-    width: 100% !important;
-    height: 100% !important;
-  }
-</style>
-
-
-
-
-<!-- <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
 <df-messenger
   location="us-central1"
   project-id="novyye-produkty"
@@ -84,14 +48,15 @@ Feel free to test my researcher assistant chatbot at the bottom right of this pa
 </df-messenger>
 <style>
   df-messenger {
-    z-index: 999;
-    position: fixed;
-    bottom: 16px;
-    right: 16px;  
-    chat-width: 480px;	
-  } 
+   --df-messenger-bot-message: #878fac;
+   --df-messenger-button-titlebar-color: #df9b56;
+   --df-messenger-chat-background-color: #fafafa;
+   --df-messenger-font-color: white;
+   --df-messenger-send-icon: #878fac;
+   --df-messenger-user-message: #479b3d;
+  }
 
-</style> -->
+</style>  
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EHXV39ZW0B"></script>
