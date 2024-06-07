@@ -45,14 +45,12 @@ Feel free to test my researcher assistant chatbot at the bottom right of this pa
 </df-messenger>
 <style>
   df-messenger {
-    z-index: 2000;
+    z-index: 2500;
     position: fixed;
     bottom: 16px;
-    right: 16px;
-    width: 50%; /* Covers half the page width */
-    max-width: 50%; /* Ensures it doesn't exceed half the page width */
-    height: 600px; /* Adjust the height as needed */
-  }
+    right: 16px;  
+    chat-width: 480px;	
+  } 
   df-messenger .chat-wrapper {
     width: 100% !important;
     height: 100% !important;
