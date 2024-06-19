@@ -17,7 +17,7 @@ social: true
 ---
  
 # About Me
-I am Jaime Polanco-Jiménez, a PhD student in Economics at [Pontificia Universidad Javeriana](https://www.javeriana.edu.co/) in Bogota, Colombia. 
+I am Jaime Polanco-Jiménez, a PhD student in Economics at [Pontificia Universidad Javeriana](https://www.javeriana.edu.co/) and [Katholieke Universiteit Leuven](https://www.kuleuven.be/english/). 
 {: .text-justify}
 <!-- Currently, I am a visiting scholar under the supervision of Professor [Kristof De Witte](https://www.kuleuven.be/wieiswie/en/person/00049626) at [Katholieke Universiteit Leuven](https://www.kuleuven.be/english/). -->
 {: .text-justify}
