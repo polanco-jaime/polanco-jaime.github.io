@@ -30,10 +30,6 @@ My passion lies in applying rigorous economic analysis to address issues related
 
 
 
-## Chat Bot
-
-Feel free to test my researcher assistant chatbot at the bottom right of this page. If you have any observations, please let me know. 
-{: .text-justify}
  
 
 ## Chat Bot
