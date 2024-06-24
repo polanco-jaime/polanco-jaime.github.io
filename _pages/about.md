@@ -36,7 +36,59 @@ Feel free to test my researcher assistant chatbot at the bottom right of this pa
 {: .text-justify}
  
 
+## Chat Bot
+
+Feel free to test my researcher assistant chatbot at the bottom right of this page. If you have any observations, please let me know. 
+{: .text-justify}
+
+<div id="chat" class="w-full px-1 h-screen">
+  <df-messenger
+    location="us-central1"
+    project-id="novyye-produkty"
+    agent-id="dd6837ef-da45-44f4-b222-ccfaff6ade5b"
+    language-code="en">
+    <df-messenger-chat
+    chat-title="Jaime Bot">
+    </df-messenger-chat>
+  </df-messenger>
+</div>
+ 
+
 <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+
+<style>
+  df-messenger {
+    --df-messenger-bot-message: #878fac;
+   --df-messenger-button-titlebar-color: #df9b56;
+   --df-messenger-chat-background-color: #fafafa;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
+  .px-1 {
+    padding: 1.2rem, 0px;
+  }
+
+  .h-screen {
+    height: 100vh;
+  }
+ 
+</style>  
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EHXV39ZW0B"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EHXV39ZW0B');
+</script>
+
+
+<!-- <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
 <df-messenger
   location="us-central1"
   project-id="novyye-produkty"
@@ -58,14 +110,14 @@ Feel free to test my researcher assistant chatbot at the bottom right of this pa
    --df-messenger-chat-background-color: #fafafa;
   } 
  
-</style>  
+</style>   -->
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-EHXV39ZW0B"></script>
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-EHXV39ZW0B"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-EHXV39ZW0B');
-</script>
+</script> -->
