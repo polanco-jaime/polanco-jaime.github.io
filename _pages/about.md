@@ -54,17 +54,22 @@ Feel free to test my researcher assistant chatbot. If you have any observations,
 
 <style>
   df-messenger {
-   --df-messenger-bot-message: #878fac;
-   --df-messenger-button-titlebar-color: #b76e2a;
-   --df-messenger-chat-background-color: #fafafa;
-   /* --df-messenger-font-color: white; */
-   --df-messenger-send-icon: #fcba03;
-   --df-messenger-user-message: #2e9605;
+    --df-messenger-bot-message: #878fac; /* Bot message background color */
+    --df-messenger-button-titlebar-color: #b76e2a; /* Title bar button color */
+    --df-messenger-chat-background-color: #fafafa; /* Chat background color */
+    --df-messenger-font-color: #000000; /* Font color for messages, set to black for high contrast */
+    --df-messenger-send-icon: #fcba03; /* Send icon color */
+    --df-messenger-user-message: #2e9605; /* User message background color */
   }
   .df-messenger-message { /* Target message text */
     font-family: Arial, sans-serif; /* Specify a fallback font */
-    line-height: 1.4; /* Set line spacing */
+    font-size: 16px; /* Increase font size for better readability */
+    line-height: 1.8; /* Set line spacing */
+    padding: 10px; /* Add padding for better spacing */
+    margin: 5px 0; /* Add margins for better spacing between messages */
+    color: var(--df-messenger-font-color); /* Apply the font color variable */
   }
+
   .w-full {
     width: 100%;
   }
