@@ -34,7 +34,7 @@ My passion lies in applying rigorous economic analysis to address issues related
 
 ## Chat Bot
 
-Feel free to test my researcher assistant chatbot at the bottom right of this page. If you have any observations, please let me know. 
+Feel free to test my researcher assistant chatbot. If you have any observations, please let me know. 
 {: .text-justify}
 
 <div id="chat" class="w-full px-1 h-screen">
@@ -54,9 +54,16 @@ Feel free to test my researcher assistant chatbot at the bottom right of this pa
 
 <style>
   df-messenger {
-    --df-messenger-bot-message: #878fac;
+    /* --df-messenger-bot-message: #878fac;
+    --df-messenger-button-titlebar-color: #df9b56;
+    --df-messenger-chat-background-color: #fafafa;
+    --df-messenger-user-message: #479b3d; */
+   --df-messenger-bot-message: #878fac;
    --df-messenger-button-titlebar-color: #df9b56;
    --df-messenger-chat-background-color: #fafafa;
+   --df-messenger-font-color: white;
+   --df-messenger-send-icon: #878fac;
+   --df-messenger-user-message: #479b3d;
   }
 
   .w-full {
@@ -68,7 +75,7 @@ Feel free to test my researcher assistant chatbot at the bottom right of this pa
   }
 
   .h-screen {
-    height: 50vh;
+    height: 60vh;
   }
  
 </style>  
