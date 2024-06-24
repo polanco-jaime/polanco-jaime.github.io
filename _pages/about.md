@@ -57,11 +57,14 @@ Feel free to test my researcher assistant chatbot. If you have any observations,
    --df-messenger-bot-message: #878fac;
    --df-messenger-button-titlebar-color: #b76e2a;
    --df-messenger-chat-background-color: #fafafa;
-   --df-messenger-font-color: white;
+   /* --df-messenger-font-color: white; */
    --df-messenger-send-icon: #fcba03;
    --df-messenger-user-message: #2e9605;
   }
-
+  .df-messenger-message { /* Target message text */
+    font-family: Arial, sans-serif; /* Specify a fallback font */
+    line-height: 1.4; /* Set line spacing */
+  }
   .w-full {
     width: 100%;
   }
