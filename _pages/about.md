@@ -65,7 +65,7 @@ Feel free to test my researcher assistant chatbot. If you have any observations,
     font-family: Arial, sans-serif; /* Specify a fallback font */
     font-size: 18px; /* Increase font size for better readability */
     line-height: 2; /* Set line spacing */
-    padding: 10px; /* Add padding for better spacing */
+    padding: 14px; /* Add padding for better spacing */
     margin: 5px 0; /* Add margins for better spacing between messages */
     color: var(--df-messenger-font-color); /* Apply the font color variable */
   }
