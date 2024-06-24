@@ -72,7 +72,7 @@ Feel free to test my researcher assistant chatbot at the bottom right of this pa
   }
 
   .h-screen {
-    height: 100vh;
+    height: 50vh;
   }
  
 </style>  
