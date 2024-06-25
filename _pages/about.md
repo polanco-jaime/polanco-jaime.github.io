@@ -59,7 +59,7 @@ Feel free to test my researcher assistant chatbot. If you have any observations,
     --df-messenger-chat-background-color: #ffffff; 
     --df-messenger-font-color: #000000;   */
     --df-messenger-send-icon: #fca103;  
-    --df-messenger-user-message: #005c2e;  
+    --df-messenger-user-message: green;  
   }
 
   .df-messenger-message {
