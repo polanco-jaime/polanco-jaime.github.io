@@ -54,12 +54,12 @@ Feel free to test my researcher assistant chatbot. If you have any observations,
 
 <style>
   df-messenger {
-    --df-messenger-bot-message: #004aad; /* Bot message background color - dark blue */
-    --df-messenger-button-titlebar-color: #b76e2a; /* Title bar button color */
-    --df-messenger-chat-background-color: #ffffff; /* Chat background color - pure white */
-    --df-messenger-font-color: #000000; /* Font color for messages - black for high contrast */
-    --df-messenger-send-icon: #fca103; /* Send icon color */
-    --df-messenger-user-message: #005c2e; /* User message background color - dark green */
+    /* --df-messenger-bot-message: #004aad;  
+    --df-messenger-button-titlebar-color: #b76e2a;  
+    --df-messenger-chat-background-color: #ffffff; 
+    --df-messenger-font-color: #000000;   */
+    --df-messenger-send-icon: #fca103;  
+    --df-messenger-user-message: #005c2e;  
   }
 
   .df-messenger-message {
