@@ -54,12 +54,41 @@ Feel free to test my researcher assistant chatbot. If you have any observations,
 
 <style>
   df-messenger {
-    /* --df-messenger-bot-message: #004aad;  
-    --df-messenger-button-titlebar-color: #b76e2a;  
-    --df-messenger-chat-background-color: #ffffff; 
-    --df-messenger-font-color: #000000;   */
-    --df-messenger-send-icon: #fca103;  
-    --df-messenger-user-message: green;  
+    --df-messenger-bot-message: #004aad; /* Bot message background color - dark blue */
+    --df-messenger-button-titlebar-color: #b76e2a; /* Title bar button color */
+    --df-messenger-chat-background-color: #ffffff; /* Chat background color - pure white */
+    --df-messenger-font-color: #000000; /* Font color for messages - black for high contrast */
+    --df-messenger-send-icon: #fca103; /* Send icon color */
+    --df-messenger-user-message: #005c2e; /* User message background color - dark green */
+  }
+
+  /* Ensure the custom properties are applied to the correct elements */
+  df-messenger .chat-wrapper[opened] df-messenger-chat .message-list .message.user {
+    background-color: var(--df-messenger-user-message);
+  }
+
+  df-messenger .chat-wrapper[opened] df-messenger-chat .message-list .message.bot {
+    background-color: var(--df-messenger-bot-message);
+  }
+
+  df-messenger .chat-wrapper[opened] df-messenger-chat {
+    background-color: var(--df-messenger-chat-background-color);
+  }
+
+  df-messenger .chat-wrapper[opened] df-messenger-chat .message-list .message {
+    color: var(--df-messenger-font-color);
+  }
+
+  df-messenger .chat-wrapper[opened] df-messenger-titlebar {
+    background-color: var(--df-messenger-button-titlebar-color);
+  }
+
+  df-messenger .chat-wrapper[opened] df-messenger-input {
+    color: var(--df-messenger-font-color);
+  }
+
+  df-messenger .chat-wrapper[opened] df-messenger-send-icon {
+    fill: var(--df-messenger-send-icon);
   }
 
   .df-messenger-message {
