@@ -100,7 +100,7 @@ Feel free to test my researcher assistant chatbot. If you have any observations,
     color: var(--df-messenger-font-color); /* Apply the font color variable */
   }
   .w-full {
-    width: 100%;
+    width: 90%;
   }
 
   .px-1 {
