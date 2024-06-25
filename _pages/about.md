@@ -96,15 +96,15 @@ Feel free to test my researcher assistant chatbot. If you have any observations,
     font-size: 18px; /* Increase font size for better readability */
     line-height: 1.5; /* Set line spacing */
     padding: 14px; /* Add padding for better spacing */
-    margin: 5px 0; /* Add margins for better spacing between messages */
+    margin: 10px 0; /* Add margins for better spacing between messages */
     color: var(--df-messenger-font-color); /* Apply the font color variable */
   }
   .w-full {
-    width: 90%;
+    width: 95%;
   }
 
   .px-1 {
-    padding: 1.2rem, 0px;
+    padding: 1.0rem, 0px;
   }
 
   .h-screen {
