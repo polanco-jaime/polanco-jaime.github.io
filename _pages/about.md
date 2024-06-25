@@ -53,24 +53,23 @@ Feel free to test my researcher assistant chatbot. If you have any observations,
 <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
 
 <style>
-df-messenger::part(chat) {
-  --df-messenger-bot-message: #878fac; /* Bot message background color */
-  --df-messenger-button-titlebar-color: #b76e2a; /* Title bar button color */
-  --df-messenger-chat-background-color: #fafafa; /* Chat background color */
-  --df-messenger-font-color: #000000; /* Font color for messages, set to black for high contrast */
-  --df-messenger-send-icon: #fcba03; /* Send icon color */
-  --df-messenger-user-message: #2e9605; /* User message background color */
-}
+  df-messenger {
+    --df-messenger-bot-message: #004aad; /* Bot message background color - dark blue */
+    --df-messenger-button-titlebar-color: #b76e2a; /* Title bar button color */
+    --df-messenger-chat-background-color: #ffffff; /* Chat background color - pure white */
+    --df-messenger-font-color: #000000; /* Font color for messages - black for high contrast */
+    --df-messenger-send-icon: #fca103; /* Send icon color */
+    --df-messenger-user-message: #005c2e; /* User message background color - dark green */
+  }
 
-df-messenger::part(message) {
-  font-family: Arial, sans-serif; /* Specify a fallback font */
-  font-size: 16px; /* Increase font size for better readability */
-  line-height: 1.8; /* Set line spacing */
-  padding: 10px; /* Add padding for better spacing */
-  margin: 5px 0; /* Add margins for better spacing between messages */
-  color: var(--df-messenger-font-color); /* Apply the font color variable */
-}
-
+  .df-messenger-message {
+    font-family: Arial, sans-serif; /* Specify a fallback font */
+    font-size: 18px; /* Increase font size for better readability */
+    line-height: 1.5; /* Set line spacing */
+    padding: 14px; /* Add padding for better spacing */
+    margin: 5px 0; /* Add margins for better spacing between messages */
+    color: var(--df-messenger-font-color); /* Apply the font color variable */
+  }
   .w-full {
     width: 100%;
   }
