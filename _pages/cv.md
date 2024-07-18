@@ -95,7 +95,7 @@ In addition to my research work, I have served as a Research Assistant at the [L
   gtag('config', 'G-EHXV39ZW0B');
 </script>
 
-
+</style>  
 
 <!-- <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
 <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
