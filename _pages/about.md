@@ -34,7 +34,7 @@ My passion lies in applying rigorous economic analysis to address issues related
 
 ## Chat Bot
 
-Feel free to test my researcher assistant chatbot. If you have any observations, please let me know. 
+The Bibliographic Query Chatbot (BQC) in Economics is my own creation, designed as an essential tool for those who want to stay updated on the latest research and trends in the field of economics. Its capability to perform detailed queries and deliver precise analyses makes it a valuable resource for academics, researchers, and students alike.
 {: .text-justify}
 
 <div id="chat" class="w-full px-1 h-screen">
