@@ -8,7 +8,7 @@ In addition to my research work, I have served as a Research Assistant at the [L
 {: .text-justify}
 
 ## REVIEW YOUR INTRODUCTION
-
+This chatbot was designed to help researchers in economics science to improve thir redaction related to the introduction on a research.  
 
 <div id="chat" class="w-full px-1 h-screen">
   <df-messenger
