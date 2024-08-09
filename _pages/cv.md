@@ -47,3 +47,29 @@ This chatbot was designed to help researchers in economics science to improve th
 ## EXPLORE EDUCATIONAL DATA OF COLOMBIA 
 If you're interested in exploring the current state of secondary schools in Colombia in a dynamic and interactive manner, I invite you to visit the following dashboard:
 <iframe width="800" height="700" src="https://lookerstudio.google.com/embed/reporting/191b77ee-4430-49bf-acbd-79f477eb971c/page/tEnnC" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+## Chat
+<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+<df-messenger
+  project-id="gneerative-learning"
+  agent-id="723a9711-8f18-499d-80f4-21c8fca0da6a"
+  language-code="es"
+  max-query-length="-1">
+  <df-messenger-chat-bubble
+   chat-title="math_teacher">
+  </df-messenger-chat-bubble>
+</df-messenger>
+<style>
+  df-messenger {
+    z-index: 999;
+    position: fixed;
+    --df-messenger-font-color: #000;
+    --df-messenger-font-family: Google Sans;
+    --df-messenger-chat-background: #f3f6fc;
+    --df-messenger-message-user-background: #d3e3fd;
+    --df-messenger-message-bot-background: #fff;
+    bottom: 16px;
+    right: 16px;
+  }
+</style>
