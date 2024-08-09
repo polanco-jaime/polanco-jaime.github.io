@@ -57,19 +57,30 @@ If you're interested in exploring the current state of secondary schools in Colo
   language-code="es"
   max-query-length="-1">
   <df-messenger-chat-bubble
-   chat-title="math_teacher">
+   chat-title="JP Math Teacher">
   </df-messenger-chat-bubble>
 </df-messenger>
 <style>
   df-messenger {
     z-index: 999;
     position: fixed;
-    --df-messenger-font-color: #000;
-    --df-messenger-font-family: Google Sans;
-    --df-messenger-chat-background: #f3f6fc;
-    --df-messenger-message-user-background: #d3e3fd;
-    --df-messenger-message-bot-background: #fff;
+    --df-messenger-font-color: #333;
+    --df-messenger-font-family: "Roboto", sans-serif;
+    --df-messenger-chat-background: #e6f7ff; /* Fondo del chat en un azul claro */
+    --df-messenger-message-user-background: #4c8bf5; /* Mensajes del usuario en azul oscuro */
+    --df-messenger-message-user-font-color: #ffffff; /* Texto del usuario en blanco */
+    --df-messenger-message-bot-background: #ffffff; /* Mensajes del bot en blanco */
+    --df-messenger-button-titlebar-color: #4c8bf5; /* Color de la barra superior en azul oscuro */
+    --df-messenger-send-icon: #4c8bf5; /* Icono de envío en azul oscuro */
+    --df-messenger-input-box-placeholder-color: #999999; /* Color del placeholder en gris */
+    --df-messenger-input-box-font-color: #333; /* Color del texto del input en gris oscuro */
+    --df-messenger-bot-message-border-radius: 16px; /* Bordes redondeados para los mensajes del bot */
+    --df-messenger-user-message-border-radius: 16px; /* Bordes redondeados para los mensajes del usuario */
     bottom: 16px;
     right: 16px;
+  }
+  
+  df-messenger [data-chat-title]::after {
+    content: "👋"; /* Añade un emoji de saludo al título del chat */
   }
 </style>
