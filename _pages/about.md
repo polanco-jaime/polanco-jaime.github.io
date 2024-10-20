@@ -17,15 +17,16 @@ social: true
 ---
  
 # About Me
-I am Jaime Polanco-Jiménez, a PhD student in Economics at [Pontificia Universidad Javeriana](https://www.javeriana.edu.co/) and [Katholieke Universiteit Leuven](https://www.kuleuven.be/english/). 
+I am Jaime Polanco-Jiménez, a PhD student in Economics at [Leuven Economics of Education Research](https://research.kuleuven.be/portal/en/project/3H240489);  [Katholieke Universiteit Leuven](https://www.kuleuven.be/english/), Belgium;  Department of Economics at [Pontificia Universidad Javeriana](https://www.javeriana.edu.co/) 
+ 
+ 
 {: .text-justify}
-<!-- Currently, I am a visiting scholar under the supervision of Professor [Kristof De Witte](https://www.kuleuven.be/wieiswie/en/person/00049626) at [Katholieke Universiteit Leuven](https://www.kuleuven.be/english/). -->
-{: .text-justify}
+
 
 ## Research Focus
 
 
-My passion lies in applying rigorous economic analysis to address issues related to human capital accumulation, economics of education, and development economics. Specifically, my current research focuses on analyzing the gender composition, the intervention on infrastructure, and the oil industry's influence on educational outcomes as measures of academic performance and human capital accumulation, with a particular emphasis on developing countries. I am currently working on a research project that examines how gender composition in classrooms impacts the university's major choices of female students. I conduct my research dissertation under the expert supervision of Professor [Gloria Bernal](https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-econom%C3%8Da-17?redirect=%2Fprofesores), Professor [Oliver Pardo](https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-administraci%C3%93n-24?redirect=%2Fprofesores) and Professor [Kristof De Witte](https://www.kuleuven.be/wieiswie/en/person/00049626).
+My passion lies in applying rigorous economic analysis to address issues related to human capital accumulation, economics of education, and development economics. Specifically, my current research focuses on analyzing the gender composition, the intervention on infrastructure, the artificial intelligence, the oil industry's influence on educational outcomes as measures of academic performance and human capital accumulation, with a particular emphasis on developing countries.   I conduct my research dissertation under the expert supervision of Professor [Gloria Bernal](https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-econom%C3%8Da-17?redirect=%2Fprofesores), and Professor [Kristof De Witte](https://www.kuleuven.be/wieiswie/en/person/00049626).
 {: .text-justify}
 
 
@@ -122,38 +123,4 @@ The Bibliographic Query Chatbot (BQC) in Economics is my own creation, designed 
 
   gtag('config', 'G-EHXV39ZW0B');
 </script>
-
-
-<!-- <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-<df-messenger
-  location="us-central1"
-  project-id="novyye-produkty"
-  agent-id="dd6837ef-da45-44f4-b222-ccfaff6ade5b"
-  language-code="en">
-  <df-messenger-chat-bubble
-   chat-title="Jaime Bot">
-  </df-messenger-chat-bubble>
-</df-messenger>
-<style>
-  df-messenger {
-    z-index: 999;
-    position: fixed;
-    bottom: 16px;
-    right: 16px;  
-    chat-width: 480px;	
-    --df-messenger-bot-message: #878fac;
-   --df-messenger-button-titlebar-color: #df9b56;
-   --df-messenger-chat-background-color: #fafafa;
-  } 
  
-</style>   -->
-
-<!-- Google tag (gtag.js) -->
-<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-EHXV39ZW0B"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-EHXV39ZW0B');
-</script> -->
