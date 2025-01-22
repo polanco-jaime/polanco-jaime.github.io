@@ -30,6 +30,34 @@ I am Jaime Polanco-Jiménez, a PhD student in Economics at [Leuven Economics of 
 My passion lies in applying rigorous economic analysis to address issues related to human capital accumulation, economics of education, and development economics. Specifically, my current research focuses on analyzing how AI can support the learning of students facing teacher shortage, Also the gender composition, the intervention on infrastructure, the artificial intelligence, the oil industry's influence on educational outcomes as measures of academic performance and human capital accumulation, with a particular emphasis on developing countries.   I conduct my research dissertation under the expert supervision of Professor [Gloria Bernal](https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-econom%C3%8Da-17?redirect=%2Fprofesores), and Professor [Kristof De Witte](https://www.kuleuven.be/wieiswie/en/person/00049626).
 {: .text-justify}
 
+
+
+## Chat with our Agent
+
+<p>Interact with our chatbot below:</p>
+
+<div style="position: relative; height: 500px; width: 100%;">
+  <df-messenger
+      location="europe-west1"
+      project-id="groep2-belastingsystemen"
+      agent-id="9533f5bc-195d-42de-9b0f-6b9ae4309884"
+      language-code="nl"
+      chat-title="Agent Name" <!-- Update dialog title -->
+  ></df-messenger>
+</div>
+
+<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+
+<script>
+  // Event listener to navigate to the first suggested URL.
+  document.addEventListener('df-url-suggested', (event) => {
+    if (Array.isArray(event.detail.suggestedUrls) &&
+      event.detail.suggestedUrls.length) {
+      window.location.href = event.detail.suggestedUrls[0];
+    }
+  });
+</script>
+
 ## Chat Bot
 
 The Bibliographic Query Chatbot (BQC) in Economics is my own creation, designed as an essential tool for those who want to stay updated on the latest research and trends in the field of economics. Its capability to perform detailed queries and deliver precise analyses makes it a valuable resource for academics, researchers, and students alike.
