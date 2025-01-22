@@ -42,7 +42,7 @@ My passion lies in applying rigorous economic analysis to address issues related
       project-id="groep2-belastingsystemen"
       agent-id="9533f5bc-195d-42de-9b0f-6b9ae4309884"
       language-code="nl"
-      chat-title="Agent Name" <!-- Update dialog title -->
+      chat-title="Agent Name" 
   ></df-messenger>
 </div>
 
