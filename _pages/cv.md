@@ -20,7 +20,8 @@ In the case the embed page is broken please visit the next [link](https://github
 
 
 ## REVIEW YOUR INTRODUCTION
-This chatbot was designed to help researchers in economics science to improve thir redaction related to the introduction on a research.  
+This chatbot is designed to help economics researchers improve their writing, particularly in crafting research introductions.
+
  
  
 
