@@ -34,29 +34,81 @@ My passion lies in applying rigorous economic analysis to address issues related
 
 ## Chat with our Agent
 
-<p>Interact with our chatbot below:</p>
-
-<div style="position: relative; height: 500px; width: 100%;">
+<div id="chat" class="w-full px-1 h-screen">
   <df-messenger
-      location="europe-west1"
-      project-id="groep2-belastingsystemen"
-      agent-id="9533f5bc-195d-42de-9b0f-6b9ae4309884"
-      language-code="nl"
-      chat-title="Agent Name" 
-  ></df-messenger>
+    location="europe-west1"
+    project-id="groep2-belastingsystemen"
+    agent-id="9533f5bc-195d-42de-9b0f-6b9ae4309884"
+    language-code="nl">
+    <df-messenger-chat
+      chat-title="Groep 2">
+    </df-messenger-chat>
+  </df-messenger>
 </div>
 
 <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
 
-<script>
-  // Event listener to navigate to the first suggested URL.
-  document.addEventListener('df-url-suggested', (event) => {
-    if (Array.isArray(event.detail.suggestedUrls) &&
-      event.detail.suggestedUrls.length) {
-      window.location.href = event.detail.suggestedUrls[0];
-    }
-  });
-</script>
+<style>
+  df-messenger {
+    --df-messenger-bot-message: #004aad; /* Bot message background color - dark blue */
+    --df-messenger-button-titlebar-color: #b76e2a; /* Title bar button color */
+    --df-messenger-chat-background-color: #ffffff; /* Chat background color - pure white */
+    --df-messenger-font-color: #000000; /* Font color for messages - black for high contrast */
+    --df-messenger-send-icon: #fca103; /* Send icon color */
+    --df-messenger-user-message: #005c2e; /* User message background color - dark green */
+  }
+
+  /* Ensure the custom properties are applied to the correct elements */
+  df-messenger .chat-wrapper[opened] df-messenger-chat .message-list .message.user {
+    background-color: var(--df-messenger-user-message);
+  }
+
+  df-messenger .chat-wrapper[opened] df-messenger-chat .message-list .message.bot {
+    background-color: var(--df-messenger-bot-message);
+  }
+
+  df-messenger .chat-wrapper[opened] df-messenger-chat {
+    background-color: var(--df-messenger-chat-background-color);
+  }
+
+  df-messenger .chat-wrapper[opened] df-messenger-chat .message-list .message {
+    color: var(--df-messenger-font-color);
+  }
+
+  df-messenger .chat-wrapper[opened] df-messenger-titlebar {
+    background-color: var(--df-messenger-button-titlebar-color);
+  }
+
+  df-messenger .chat-wrapper[opened] df-messenger-input {
+    color: var(--df-messenger-font-color);
+  }
+
+  df-messenger .chat-wrapper[opened] df-messenger-send-icon {
+    fill: var(--df-messenger-send-icon);
+  }
+
+  .df-messenger-message {
+    font-family: Arial, sans-serif; /* Specify a fallback font */
+    font-size: 18px; /* Increase font size for better readability */
+    line-height: 1.5; /* Set line spacing */
+    padding: 14px; /* Add padding for better spacing */
+    margin: 10px 0; /* Add margins for better spacing between messages */
+    color: var(--df-messenger-font-color); /* Apply the font color variable */
+  }
+
+  .w-full {
+    width: 95%;
+  }
+
+  .px-1 {
+    padding: 1rem 0;
+  }
+
+  .h-screen {
+    height: 60vh;
+  }
+</style>
+
 
 ## Chat Bot
 
