@@ -30,37 +30,6 @@ I am Jaime Polanco-Jiménez, a PhD student in Economics at [Leuven Economics of 
 My passion lies in applying rigorous economic analysis to address issues related to human capital accumulation, economics of education, and development economics. Specifically, my current research focuses on analyzing how AI can support the learning of students facing teacher shortage, Also the gender composition, the intervention on infrastructure, the artificial intelligence, the oil industry's influence on educational outcomes as measures of academic performance and human capital accumulation, with a particular emphasis on developing countries.   I conduct my research dissertation under the expert supervision of Professor [Gloria Bernal](https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-econom%C3%8Da-17?redirect=%2Fprofesores), and Professor [Kristof De Witte](https://www.kuleuven.be/wieiswie/en/person/00049626).
 {: .text-justify}
 
-## Bot 2
-ajhsdkjahs kjahsdjkahsd kjhasdj
-
-<link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
-<script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
-<df-messenger
-  location="us-central1"
-  project-id="servi-modelos-ia-dev"
-  agent-id="d408e253-3124-496d-8c92-cad2225af0f3"
-  language-code="en"
-  max-query-length="-1">
-  <df-messenger-chat
-   chat-title="ADSMOVIL_2">
-  </df-messenger-chat>
-</df-messenger>
-<style>
-  df-messenger {
-    z-index: 999;
-    position: fixed;
-    --df-messenger-font-color: #000;
-    --df-messenger-font-family: Google Sans;
-    --df-messenger-chat-background: #f3f6fc;
-    --df-messenger-message-user-background: #d3e3fd;
-    --df-messenger-message-bot-background: #fff;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    width: 350px;
-  }
-</style>
-
 ## Chat Bot
 
 The Bibliographic Query Chatbot (BQC) in Economics is my own creation, designed as an essential tool for those who want to stay updated on the latest research and trends in the field of economics. Its capability to perform detailed queries and deliver precise analyses makes it a valuable resource for academics, researchers, and students alike.
