@@ -15,9 +15,10 @@ profile:
 news: true
 social: true
 ---
- 
+
+{: .text-justify}
 # About Me
-I am Jaime Polanco-Jiménez, a PhD student in Economics at [Leuven Economics of Education Research](https://research.kuleuven.be/portal/en/project/3H240489);  [Katholieke Universiteit Leuven](https://www.kuleuven.be/english/), Belgium;  Department of Economics at [Pontificia Universidad Javeriana](https://www.javeriana.edu.co/) 
+I am Jaime Polanco-Jiménez, a PhD student in Economics at [Leuven Economics of Education Research](https://research.kuleuven.be/portal/en/project/3H240489);  [Katholieke Universiteit Leuven](https://www.kuleuven.be/english/), Belgium and  Department of Economics at [Pontificia Universidad Javeriana](https://www.javeriana.edu.co/) 
  
  
 {: .text-justify}
@@ -26,7 +27,7 @@ I am Jaime Polanco-Jiménez, a PhD student in Economics at [Leuven Economics of 
 ## Research Focus
 
 
-My passion lies in applying rigorous economic analysis to address issues related to human capital accumulation, economics of education, and development economics. Specifically, my current research focuses on analyzing the gender composition, the intervention on infrastructure, the artificial intelligence, the oil industry's influence on educational outcomes as measures of academic performance and human capital accumulation, with a particular emphasis on developing countries.   I conduct my research dissertation under the expert supervision of Professor [Gloria Bernal](https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-econom%C3%8Da-17?redirect=%2Fprofesores), and Professor [Kristof De Witte](https://www.kuleuven.be/wieiswie/en/person/00049626).
+My passion lies in applying rigorous economic analysis to address issues related to human capital accumulation, economics of education, and development economics. Specifically, my current research focuses on analyzing how AI can support the learning of students facing teacher shortage, Also the gender composition, the intervention on infrastructure, the artificial intelligence, the oil industry's influence on educational outcomes as measures of academic performance and human capital accumulation, with a particular emphasis on developing countries.   I conduct my research dissertation under the expert supervision of Professor [Gloria Bernal](https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-econom%C3%8Da-17?redirect=%2Fprofesores), and Professor [Kristof De Witte](https://www.kuleuven.be/wieiswie/en/person/00049626).
 {: .text-justify}
 
 
