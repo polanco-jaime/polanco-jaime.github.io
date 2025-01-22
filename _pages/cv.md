@@ -49,6 +49,56 @@ If you're interested in exploring the current state of secondary schools in Colo
 <iframe width="800" height="700" src="https://lookerstudio.google.com/embed/reporting/191b77ee-4430-49bf-acbd-79f477eb971c/page/tEnnC" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 ## Chat
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>My chat</title>
+  <style>
+    df-messenger {
+      /*
+       * Customize as required. df-messenger will fill the
+       * space that is provided.
+      */
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 320px;
+    }
+  </style>
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+</head>
+<body>
+<df-messenger
+    location="europe-west1"
+    project-id="groep2-belastingsystemen"
+    agent-id="9533f5bc-195d-42de-9b0f-6b9ae4309884"
+    language-code="nl"
+>
+  <df-messenger-chat
+      chat-title="Agent Name" <!-- TODO: update dialog title as needed -->
+  ></df-messenger-chat>
+</df-messenger>
+
+<script>
+  // An example of handling events: Navigate to the first suggested URL.
+  document.addEventListener('df-url-suggested', (event) => {
+    if (Array.isArray(event.detail.suggestedUrls) &&
+      event.detail.suggestedUrls.length) {
+      window.location.href = event.detail.suggestedUrls[0];
+  }
+});
+</script>
+</body>
+</html>
+
+<!--  -->
+
+## Chat 2
 <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
 <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
 <df-messenger
