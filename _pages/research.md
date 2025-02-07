@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Research
-permalink: /research/
+permalink: /_pages/research/
 ---
 
 # Research
@@ -22,3 +22,5 @@ Welcome to my research page. Here you will find information about my current and
 
 - **Interest 1**: Description of the first research interest.
 - **Interest 2**: Description of the second research interest.
+
+<!-- Research -->

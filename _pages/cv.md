@@ -1,6 +1,7 @@
 ---
 layout: page 
 title: Curriculum Vitae
+permalink: _pages/cv/
 ---
 ## Professional Experience
 
