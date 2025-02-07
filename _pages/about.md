@@ -33,7 +33,7 @@ I am fortunate to be advised by Professor [Gloria Bernal](https://cea.javeriana.
 ## Featured Project: Bibliographic Query Chatbot (BQC)
 
 <div style="display: flex; align-items: center; margin-bottom: 20px;">
-  <img src="path/to/chatbot-icon.png" alt="BQC Icon" style="width: 80px; margin-right: 20px;">
+  <!-- <img src="path/to/chatbot-icon.png" alt="BQC Icon" style="width: 80px; margin-right: 20px;"> -->
   <div>
     <b>BQC: Your Economics Research Assistant</b>
     <p>The Bibliographic Query Chatbot (BQC) is a tool designed to keep researchers, academics, and students updated on the latest trends in economics. BQC provides detailed queries and precise analyses.</p>
