@@ -11,7 +11,7 @@ In addition to my research work, I have served as a Research Assistant at the [L
 
 
 ### Interested in My Resume?
-<!-- <embed src="{{ site.baseurl }}/assets/docs/CV___Jaime_Polanco.pdf" type="application/pdf" width="100%" height="500px" /> -->
+<embed src="{{ site.baseurl }}/assets/docs/CV___Jaime_Polanco.pdf" type="application/pdf" width="100%" height="500px" />
 
 <!-- <iframe src="{{ site.baseurl }}/assets/docs/CV___Jaime_Polanco.pdf" width="100%" height="600px"></iframe> -->
 
