@@ -1,33 +1,47 @@
 ---
 layout: about
 permalink: /
-title: "<strong>Jaime</strong> Polanco-Jimenez"
+title: "Jaime Polanco-Jimenez"
 order: 1
 description: >
-  <span style="font-size: 1.2em;">🚀 Exciting News: I will be on the Job Market in 2025/2026!</span>
-  <br/>
-  Interested in Development Economics, Economics of Education, Natural Resource Economics, and being an enthusiastic data scientist.
-  <br/>
-  <blockquote2 class="warning" id="mymotto" title="Motto"><h5>'Nothing is built on stone, all is built on sand; but we must build as if the sand were stone.'<br/> – Jorge Luis Borges</h5></blockquote2>
+  🚀 Job Market 2025/2026 | Development Economics, Economics of Education, Natural Resource Economics | Data Science Enthusiast
 profile:
   align: right
   image: prof_pic.jpg
+  alt: "Jaime Polanco-Jimenez Profile Picture"   
 news: true
 social: true
 ---
 
 {: .text-justify}
+
 # About Me
-I am Jaime Polanco-Jiménez, a PhD student in Economics at [Leuven Economics of Education Research](https://research.kuleuven.be/portal/en/project/3H240489); [Katholieke Universiteit Leuven](https://www.kuleuven.be/english/), Belgium and Department of Economics at [Pontificia Universidad Javeriana](https://www.javeriana.edu.co/).
 
-## Professional Summary
-I am a dedicated PhD student with a passion for applying rigorous economic analysis to address issues related to human capital accumulation, economics of education, and development economics. My research focuses on leveraging AI to support student learning, analyzing gender composition, infrastructure interventions, and the oil industry's influence on educational outcomes.
+I am Jaime Polanco-Jiménez, a PhD student in Economics at [Leuven Economics of Education Research](https://research.kuleuven.be/portal/en/project/3H240489); [Katholieke Universiteit Leuven](https://www.kuleuven.be/english/), Belgium, and the Department of Economics at [Pontificia Universidad Javeriana](https://www.javeriana.edu.co/).  My research bridges development and education economics, leveraging data science to address critical challenges in human capital accumulation.  I am particularly interested in exploring how technology, gender dynamics, and resource allocation influence educational outcomes in developing countries.
 
-## Research Focus
-My passion lies in applying rigorous economic analysis to address issues related to human capital accumulation, economics of education, and development economics. Specifically, my current research focuses on analyzing how AI can support the learning of students facing teacher shortages, the gender composition, the intervention on infrastructure, the artificial intelligence, and the oil industry's influence on educational outcomes as measures of academic performance and human capital accumulation, with a particular emphasis on developing countries. I conduct my research dissertation under the expert supervision of Professor [Gloria Bernal](https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-econom%C3%8Da-17?redirect=%2Fprofesores), and Professor [Kristof De Witte](https://www.kuleuven.be/wieiswie/en/person/00049626).
+## Research Highlights
 
-## Chat Bot
-The Bibliographic Query Chatbot (BQC) in Economics is my own creation, designed as an essential tool for those who want to stay updated on the latest research and trends in the field of economics. Its capability to perform detailed queries and deliver precise analyses makes it a valuable resource for academics, researchers, and students alike.
+My doctoral research delves into the following key areas:
+
+*   **AI-Powered Learning Support:** Investigating how AI can mitigate teacher shortages and enhance student learning outcomes, particularly in resource-constrained environments.
+*   **Gender Composition Effects:** Analyzing the impact of gender ratios in educational settings on student performance and gender equity.
+*   **Infrastructure Interventions:** Evaluating the effectiveness of infrastructure improvements on educational access and quality.
+*   **Natural Resource Impacts:** Examining the influence of the oil industry on educational outcomes and human capital development in resource-rich regions.
+
+I am fortunate to be advised by Professor [Gloria Bernal](https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-econom%C3%8Da-17?redirect=%2Fprofesores) and Professor [Kristof De Witte](https://www.kuleuven.be/wieiswie/en/person/00049626), whose expertise has been instrumental in shaping my research agenda.
+
+## Featured Project: Bibliographic Query Chatbot (BQC)
+
+<div style="display: flex; align-items: center; margin-bottom: 20px;">
+  <img src="path/to/chatbot-icon.png" alt="BQC Icon" style="width: 80px; margin-right: 20px;">
+  <div>
+    <b>BQC: Your Economics Research Assistant</b>
+    <p>The Bibliographic Query Chatbot (BQC) is a tool designed to keep researchers, academics, and students updated on the latest trends in economics. BQC provides detailed queries and precise analyses.</p>
+  </div>
+</div>
+
+<details>
+  <summary><b>Try the Chatbot</b></summary>
 
 <div id="chat" class="w-full px-1 h-screen">
   <df-messenger
@@ -41,6 +55,9 @@ The Bibliographic Query Chatbot (BQC) in Economics is my own creation, designed 
     </df-messenger-chat>
   </df-messenger>
 </div>
+
+</details>
+
 
 <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
 
