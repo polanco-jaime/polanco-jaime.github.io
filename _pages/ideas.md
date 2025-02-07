@@ -10,7 +10,8 @@ order: 5
 
 #### Road to the Future: Identifying Impacts of Roads on Education in Colombia
 **Polanco-Jimenez, J. (2024)**
-![Road to the Future](https://github.com/polanco-jaime/polanco-jaime.github.io/blob/main/assets/docs/Road to the Future.png)
+![Road to the Future](https://raw.githubusercontent.com/polanco-jaime/polanco-jaime.github.io/main/assets/docs/Road%20to%20the%20Future.png)
+
 *Abstract: This study examines the impact of road construction on educational outcomes in Colombia, identifying key improvements in access and quality.*
 
 #### Black Gold and Dull Minds: The Impact of Oil Exploration Announcements on Education in Colombia
