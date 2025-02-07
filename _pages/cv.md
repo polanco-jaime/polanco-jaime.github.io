@@ -19,29 +19,10 @@ In addition to my research work, I have served as a Research Assistant at the [L
 In the case the embed page is broken please visit the next [link](https://github.com/polanco-jaime/polanco-jaime.github.io/blob/main/assets/docs/CV___Jaime_Polanco.pdf)
 
 
-
-## REVIEW YOUR INTRODUCTION
-This chatbot is designed to help economics researchers improve their writing, particularly in crafting research introductions.
-
  
- 
-
-<!-- ### FIND YOUR PAPER IN ECONOMICS -->
-
-<!-- <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
- 
-<gen-search-widget
-  configId="c382ef68-7ac5-4aea-b2f2-a9c8dd752cef"
-  triggerId="searchWidgetTrigger">
-</gen-search-widget>
- 
-<input placeholder="Search here any paper in economics"  id="searchWidgetTrigger" /> -->
- 
-
 ## EXPLORE EDUCATIONAL DATA OF COLOMBIA 
 If you're interested in exploring the current state of secondary schools in Colombia in a dynamic and interactive manner, I invite you to visit the following dashboard:
 <iframe width="800" height="700" src="https://lookerstudio.google.com/embed/reporting/191b77ee-4430-49bf-acbd-79f477eb971c/page/tEnnC" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-
-<!--  -->
+ 
 
