@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: Ongoing Research
 permalink: /_pages/ideas/
@@ -23,7 +23,7 @@ order: 5
 <!-- <img src="https://raw.githubusercontent.com/polanco-jaime/polanco-jaime.github.io/main/assets/docs/Road%20to%20the%20Future.png" width="600"> -->
 
 
-
+<!-- 
 #### Black Gold and Dull Minds: The Impact of Oil Exploration Announcements on Education in Colombia
 **Polanco-Jimenez, J., & Posso, C. (2024)**
 ![Black Gold and Dull Minds](path/to/image2.jpg)
@@ -52,4 +52,4 @@ order: 5
 ---
 
 ### About
-This site showcases my ongoing research projects in economics, education, and artificial intelligence. Feel free to explore my work and get in touch!
+This site showcases my ongoing research projects in economics, education, and artificial intelligence. Feel free to explore my work and get in touch! --> -->
