@@ -39,7 +39,7 @@ We evaluate the effect of Artificial Intelligence (AI) on learning and learning 
 
 ## Working Papers
 
-### Economics of Education and Development
+
 
 ### Economics of Education and Development
 
