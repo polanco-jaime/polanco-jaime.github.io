@@ -1,13 +1,10 @@
 ---
 layout: page
-title: Ongoing Research
-permalink: /_pages/ideas/
-description: Past and future projects
+title: Ongoing Research Ideas
+permalink: /_pages/ideas/ 
 order: 5
 ---
-
-
-## Ongoing Research Ideas
+ 
 
 ### 1. AI Agents to Support Migrant Career Choices
 
