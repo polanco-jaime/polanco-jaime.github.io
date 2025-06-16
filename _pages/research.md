@@ -44,22 +44,22 @@ We evaluate the effect of Artificial Intelligence (AI) on learning and learning 
 ### Economics of Education and Development
 
 **Black Gold and Dull Minds: The Impact of Oil Exploration Announcements on Education in Colombia** (Working Paper) <br>
-*with Alberto Posso* <br>
+*with Christian Posso Suarez* <br>
 [[PDF]](/assets/docs/Black_Gold_and_Dull_Minds__HEA_on_Education.pdf)
 
 **Gender Composition in Classrooms: Influences on Post-Secondary Schooling Choices** (Working Paper) <br>
-*with Kristof De Witte & G. L. Bernal* <br>
+*with Kristof De Witte & Gloria L. Bernal* <br>
 [[PDF]](/assets/docs/Gender_Composition_in_Classrooms.pdf)
 
 **Moving into Greener Jobs: Impact of Oil Shocks on Students’ Career Choices** (Working Paper) <br>
-*with K. Castaneda* <br>
+*with Karen Castaneda* <br>
 [[PDF]](/assets/docs/Moving_into_Greener_Jobs.pdf) <!-- NOTE: See instructions below -->
 <!-- [[Poster]](/assets/docs/Poster_Castaneda.pdf) -->
 
 ### Financial Literacy and Small Business Development
 
 **Empowering Growth: A Longitudinal Analysis of Financial Literacy’s Impact on Colombian Small Businesses** (Working Paper) <br>
-*with J. Lozano* <br>
+*with Johan Lozano* <br>
 [[PDF]](/assets/docs/Financial_Literacy_s_on_Mipymes.pdf)
 
 
