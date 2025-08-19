@@ -68,7 +68,7 @@ We evaluate the effect of Artificial Intelligence (AI) on learning and learning 
 
 ## Publications
 
-- Polanco-Jimenez, J. (2025). Road to the future: Identifying impacts of roads on education in Colombia. International Journal of Educational Development
+- Polanco-Jimenez, J. (2025). Road to the future: Identifying impacts of roads on education in Colombia. International Journal of Educational Development. 
  
 <details>
   <summary><strong>Abstract</strong></summary>

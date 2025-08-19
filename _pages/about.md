@@ -17,7 +17,16 @@ social: true
 
 # About Me
 
-I am Jaime Polanco-Jiménez, a PhD student in Economics at [Leuven Economics of Education Research](https://research.kuleuven.be/portal/en/project/3H240489); [Katholieke Universiteit Leuven](https://www.kuleuven.be/english/), Belgium, and the Department of Economics at [Pontificia Universidad Javeriana](https://www.javeriana.edu.co/).  My research bridges development and education economics, leveraging data science to address critical challenges in human capital accumulation.  I am particularly interested in exploring how technology, gender dynamics, and resource allocation influence educational outcomes in developing countries.
+I am Jaime Polanco-Jiménez, a PhD student in Economics at [Leuven Economics of Education Research](https://research.kuleuven.be/portal/en/project/3H240489); [Katholieke Universiteit Leuven](https://www.kuleuven.be/english/), Belgium, and the Department of Economics at [Pontificia Universidad Javeriana](https://www.javeriana.edu.co/).  My research bridges development and Economics of Education to address critical challenges in human capital accumulation.  I am particularly interested in exploring how technology, gender dynamics, and resource allocation influence educational outcomes.
+
+## Job Market Paper: The Returns to Tailoring AI in the Classroom
+<div class="jmp-container" style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+  <h3 style="margin-top: 0;">The Double-Edged Sword of AI: Evidence on Student Engagement from the Classroom</h3>
+  <p class="text-justify" style="margin-bottom: 1.5rem;">
+    This paper investigates how the design of educational technology affects student outcomes. Using a large-scale randomized trial with 2,440 secondary students in Belgium, I find that the design of AI chatbots has a powerful, non-monotonic effect on student engagement. A chatbot tailored to the local curriculum increased module completion by 10 percentage points, while a generic chatbot decreased it by 5 percentage points relative to traditional instruction. This effect on engagement is the primary mechanism driving learning: offering the tailored chatbot produces robust gains in knowledge, particularly for students on the margin of engagement. The results show that deep curricular integration is essential for solving the first-order challenge of student engagement in educational technology.
+  </p>
+  <a href="assets/docs/Job_Market_Paper.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">View Paper (PDF)</a>
+</div>
 
 ## Research Highlights
 
