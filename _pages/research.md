@@ -14,13 +14,13 @@ My research focuses on the economics of education, human capital development, an
 
 ### Economics of Education and Development
 
-**Black Gold and Dull Minds: The Impact of Oil Exploration Announcements on Education in Colombia** (Working Paper) <br>
-*with Christian Posso Suarez* <br>
-[[PDF]](/assets/docs/Black_Gold_and_Dull_Minds__HEA_on_Education.pdf)
-
 **Gender Composition in Classrooms: Influences on Post-Secondary Schooling Choices** (Working Paper) <br>
 *with Kristof De Witte & Gloria L. Bernal* <br>
 [[PDF]](/assets/docs/Gender_Composition_in_Classrooms.pdf)
+
+**Black Gold and Dull Minds: The Impact of Oil Exploration Announcements on Education in Colombia** (Working Paper) <br>
+*with Christian Posso Suarez* <br>
+[[PDF]](/assets/docs/Black_Gold_and_Dull_Minds__HEA_on_Education.pdf)
 
 **Moving into Greener Jobs: Impact of Oil Shocks on Students’ Career Choices** (Working Paper) <br>
 *with Karen Castaneda* <br>
