@@ -19,7 +19,7 @@ social: true
 
 I am Jaime Polanco-Jiménez, a PhD student in Economics at [Leuven Economics of Education Research](https://research.kuleuven.be/portal/en/project/3H240489); [Katholieke Universiteit Leuven](https://www.kuleuven.be/english/), Belgium, and the Department of Economics at [Pontificia Universidad Javeriana](https://www.javeriana.edu.co/).  My research bridges development and Economics of Education to address critical challenges in human capital accumulation.  I am particularly interested in exploring how technology, gender dynamics, and resource allocation influence educational outcomes.
 
-## Job Market Paper: The Returns to Tailoring AI in the Classroom
+## Job Market Paper 
 <div class="jmp-container" style="border: 1px solid #ddd; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
   <h3 style="margin-top: 0;">The Double-Edged Sword of AI: Evidence on Student Engagement from the Classroom</h3>
   <p class="text-justify" style="margin-bottom: 1.5rem;">
