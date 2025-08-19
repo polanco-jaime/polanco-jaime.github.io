@@ -6,36 +6,7 @@ permalink: /_pages/research/
 My research focuses on the economics of education, human capital development, and financial inclusion, with a regional focus on Colombia. I use quasi-experimental and experimental methods to evaluate the impact of infrastructure, technology, and policy interventions.
 
 ---
-
-## Job Market Paper
-
-**The Impact of AI-Supported Learning on Financial Literacy: Evidence from a Randomized Controlled Trial** <br>
-*with Kristof De Witte* <br>
-<!-- [[PDF]](/assets/docs/JMP_Polanco-Jimenez.pdf) TODO: Update path to your JMP PDF -->
-<!-- [[Slides]](/assets/docs/JMP_Slides_Polanco-Jimenez.pdf) TODO: Update path to your Slides PDF -->
-
-#### Key Findings
-*   We conduct an RCT with over 2,200 students to test if AI chatbots can improve financial education.
-*   A **tailored AI chatbot** increases **learning efficiency** (knowledge gain per minute) by a significant **0.178 standard deviations**.
-*   The learning is durable: students in the tailored AI group score **0.164 standard deviations higher** on a follow-up test two months later, showing strong knowledge retention.
-*   The results show that well-designed, curriculum-specific AI tools are powerful instruments for making learning more efficient and effective.
-
-<br>
-
-<details>
-  <summary><strong>View Abstract</strong></summary>
-  <div markdown="1">
-We evaluate the effect of Artificial Intelligence (AI) on learning and learning efficiency in financial education. Using a randomized controlled trial with 2,236 Belgian secondary students, we compare traditional instruction to two AI chatbots: one generic and one tailored to the local curriculum. Our central finding is that the tailored AI chatbot significantly improves learning efficiency, measured as knowledge gain per unit of time, by 0.178 standard deviations. This learning is durable: students using the tailored AI scored 0.164 standard deviations higher on a follow-up test two months later, suggesting strong knowledge retention. While the tailored AI also boosts student engagement and self-confidence, we find that the immediate impact on post-test scores, without accounting for time, is not statistically significant. Our results show that well-designed AI can be a powerful tool for promoting efficient and lasting learning.
-  </div>
-</details>
-
-<figure style="text-align: center;">
-  <img src="/assets/docs/Standardized ATT Score.png" width="600" alt="Bar chart showing the average treatment effect on the treated (ATT) for different outcomes. The tailored AI group shows a significant positive effect on learning efficiency and follow-up test scores.">
-  <!-- TODO: Make sure this image path is correct -->
-  <figcaption><strong>Figure:</strong> Impact of AI Chatbots on Learning Efficiency and Knowledge Retention</figcaption>
-</figure>
-
----
+ 
 
 ## Working Papers
 
@@ -68,8 +39,8 @@ We evaluate the effect of Artificial Intelligence (AI) on learning and learning 
 
 ## Publications
 
-- Polanco-Jimenez, J. (2025). Road to the future: Identifying impacts of roads on education in Colombia. International Journal of Educational Development. 
- 
+<p>Polanco-Jimenez, J. (2025). Road to the future: Identifying impacts of roads on education in Colombia. <i>International Journal of Educational Development</i>. <a href="https://doi.org/10.1016/j.ijedudev.2025.103339">https://doi.org/10.1016/j.ijedudev.2025.103339</a></p>
+
 <details>
   <summary><strong>Abstract</strong></summary>
   This study examines the impact of Colombia's road concession program on educational outcomes in public schools. Using a staggered difference-in-differences approach, I find that road improvements lead to a significant increase of 0.169 standard deviations in math scores, with the full effect materializing after project completion. Reading scores also show a positive, though less pronounced, trend. These findings are robust to various checks, including alternative estimators and control groups. Additionally, I observe reduced child labor participation and increased higher education pursuit following road improvements. This evidence suggests that Public-Private Partnerships-driven road concession programs can be effective tools for promoting human capital development in developing countries and that policymakers should consider the long-term educational benefits when evaluating infrastructure investments.
