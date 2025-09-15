@@ -40,16 +40,30 @@ My doctoral research delves into the following key areas:
 
 I am fortunate to be advised by Professor [Gloria Bernal](https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-econom%C3%8Da-17?redirect=%2Fprofesores) and Professor [Kristof De Witte](https://www.kuleuven.be/wieiswie/en/person/00049626), whose expertise has been instrumental in shaping my research agenda.
 
-## Featured Project: Bibliographic Query Chatbot (BQC)
 
-<div style="display: flex; align-items: center; margin-bottom: 20px;">
+
+## AI Paper Analyzer
+Here you can interact with an AI agent I deployed. Feel free to test it out!
+
+<div class="ai-agent-container" style="border: 1px solid #ddd; padding: 1rem; border-radius: 8px; margin-top: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
+<iframe
+src="https://paper-analizer-economics-667403711390.us-central1.run.app"
+style="width: 100%; height: 600px; border: none; border-radius: 4px;"
+title="AI Paper Analyzer Economics">
+</iframe>
+</div>
+
+
+<!-- ## Featured Project: Bibliographic Query Chatbot (BQC) -->
+
+<!-- <div style="display: flex; align-items: center; margin-bottom: 20px;"> -->
   <!-- <img src="path/to/chatbot-icon.png" alt="BQC Icon" style="width: 80px; margin-right: 20px;"> -->
-  <div>
+  <!-- <div>
     <b>BQC: Your Economics Research Assistant</b>
     <p>The Bibliographic Query Chatbot (BQC) is a tool designed to keep researchers, academics, and students updated on the latest trends in economics. BQC provides detailed queries and precise analyses.</p>
   </div>
-</div>
-
+</div> -->
+<!-- 
 <details>
   <summary><b>Try the Chatbot</b></summary>
 
@@ -143,7 +157,7 @@ I am fortunate to be advised by Professor [Gloria Bernal](https://cea.javeriana.
       opacity: 1;
     }
   }
-</style>
+</style> -->
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EHXV39ZW0B"></script>
