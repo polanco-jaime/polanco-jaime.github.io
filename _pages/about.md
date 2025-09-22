@@ -4,7 +4,7 @@ permalink: /
 title: "Jaime Polanco-Jimenez"
 order: 1
 description: >
-  🚀 Job Market 2025/2026 | Development Economics, Economics of Education, Natural Resource Economics | Data Science Enthusiast
+  PhD Candidate in Economics | Job Market 2025/2026
 profile:
   align: right
   image: prof_pic.jpg
@@ -13,11 +13,19 @@ news: true
 social: true
 ---
 
-{: .text-justify}
-
 # About Me
 
-I am Jaime Polanco-Jiménez, a PhD student in Economics at [Leuven Economics of Education Research](https://research.kuleuven.be/portal/en/project/3H240489); [Katholieke Universiteit Leuven](https://www.kuleuven.be/english/), Belgium, and the Department of Economics at [Pontificia Universidad Javeriana](https://www.javeriana.edu.co/).  My research bridges development and Economics of Education to address critical challenges in human capital accumulation.  I am particularly interested in exploring how technology, gender dynamics, and resource allocation influence educational outcomes.
+I am a PhD Candidate in Economics in a joint program between **KU Leuven** (at the [Leuven Economics of Education Research](https://research.kuleuven.be/portal/en/project/3H240489) center) and **Pontificia Universidad Javeriana**. My advisors are Professor [Gloria Bernal](https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-econom%C3%8Da-17?redirect=%2Fprofesores) and Professor [Kristof De Witte](https://www.kuleuven.be/wieiswie/en/person/00049626).
+
+My research focuses on human capital accumulation at the intersection of **Development Economics** and the **Economics of Education**. I use causal inference and data science methods to study how we can improve educational outcomes in developing countries.
+
+My primary research interests include:
+*   The impact of educational technology and AI on student engagement.
+*   Gender dynamics and peer effects in the classroom.
+*   The effects of infrastructure and natural resource allocation on human capital.
+
+
+
 
 ## Job Market Paper 
 
@@ -69,7 +77,7 @@ title="AI Paper Analyzer Economics">
     </a>
   </div>
 
-  <iframe ...></iframe>
+
 </div>
 
 <!-- Google tag (gtag.js) -->
