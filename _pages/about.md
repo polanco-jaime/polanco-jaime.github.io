@@ -41,19 +41,36 @@ My doctoral research delves into the following key areas:
 I am fortunate to be advised by Professor [Gloria Bernal](https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-econom%C3%8Da-17?redirect=%2Fprofesores) and Professor [Kristof De Witte](https://www.kuleuven.be/wieiswie/en/person/00049626), whose expertise has been instrumental in shaping my research agenda.
 
 
+<h2 style="text-align: center; margin-bottom: 1rem;">Experience the Future of Peer Review</h2>
 
-## AI Paper Analyzer
-Here you can interact with an AI agent I deployed. Feel free to test it out!
-(Use as user: JaimeBot)
+<p class="text-justify" style="margin-bottom: 1.5rem;">
+  As part of my research into applied AI, I developed this tool to demonstrate the power of multi-agent systems in academic writing. It simulates the rigorous, section-by-section peer review process of a top-tier economics journal. Upload a paper or paste text to receive instant, constructive feedback designed to elevate your research.
+</p>
+
+<!-- A styled "callout" box for instructions -->
+<div style="background-color: #f0f8ff; border-left: 4px solid #1e90ff; padding: 10px 15px; margin-bottom: 2rem; border-radius: 4px;">
+  <strong>Ready to try it?</strong> Use the username <code>JaimeBot</code> to log in.
+</div>
+
 
 <div class="ai-agent-container" style="border: 1px solid #ddd; padding: 1rem; border-radius: 8px; margin-top: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
 <iframe
-src="https://paper-analizer-economics-667403711390.us-central1.run.app"
+src="https://econ-ai-multi-agent-paper-reviewer-667403711390.us-west1.run.app"
 style="width: 100%; height: 400px; border: none; border-radius: 4px;"
 title="AI Paper Analyzer Economics">
 </iframe>
 </div>
 
+<div class="ai-agent-container" style="...">
+  <div style="display: flex; justify-content: flex-end; margin-bottom: 0.5rem;">
+    <!-- The "btn" and "btn-sm" classes should match your Jekyll theme's styling -->
+    <a href="https://econ-ai-multi-agent-paper-reviewer-667403711390.us-west1.run.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
+      Open in New Tab ↗
+    </a>
+  </div>
+
+  <iframe ...></iframe>
+</div>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EHXV39ZW0B"></script>
