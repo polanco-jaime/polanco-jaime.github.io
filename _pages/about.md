@@ -17,7 +17,7 @@ social: true
 
   <!-- Column 1: Your text content -->
   <div style="flex: 3;">
-    I am a PhD Candidate in Economics in a joint program between KU Leuven (at the <a href="https://research.kulekuven.be/portal/en/project/3H240489">Leuven Economics of Education Research</a> center) and Pontificia Universidad Javeriana. My advisors are Professor <a href="https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-econom%C3%8Da-17?redirect=%2Fprofesores">Gloria Bernal</a> and Professor <a href="https://www.kuleuven.be/wieiswie/en/person/00049626">Kristof De Witte</a>.
+    I am a PhD Candidate in Economics in a joint program between KU Leuven (at the <a href="https://research.kulekuven.be/portal/en/project/3H240489">Leuven Economics of Education Research</a> center) and Pontificia Universidad Javeriana. I am fortunate to be advised by Professor <a href="https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-econom%C3%8Da-17?redirect=%2Fprofesores">Gloria Bernal</a> and Professor <a href="https://www.kuleuven.be/wieiswie/en/person/00049626">Kristof De Witte</a>.
 
 
   </div>
@@ -31,11 +31,12 @@ social: true
 
 My research focuses on human capital accumulation at the intersection of Development Economics and the Economics of Education. I use causal inference and data science methods to study how we can improve educational outcomes in developing countries.
 
+My primary research interests include:
 
-    My primary research interests include:
-    *   The impact of educational technology and AI on student engagement.
-    *   Gender dynamics and peer effects in the classroom.
-    *   The effects of infrastructure and natural resource allocation on human capital.
+*   The impact of educational technology and AI on student engagement.
+*   Gender dynamics and peer effects in the classroom.
+*   The effects of infrastructure and natural resource allocation on human capital.
+
 
 <!-- A blank line here is enough for spacing -->
 
