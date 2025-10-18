@@ -65,12 +65,12 @@ My primary research interests include:
 
 <div class="ai-agent-container" style="border: 1px solid #ddd; padding: 1rem; border-radius: 8px; margin-top: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
 <iframe
-src="https://econ-ai-multi-agent-paper-reviewer-667403711390.us-west1.run.app"
+src="https://refereeai-667403711390.us-west1.run.app"
 style="width: 100%; height: 400px; border: none; border-radius: 4px;"
 title="AI Paper Analyzer Economics">
 </iframe>
   <div style="display: flex; justify-content: flex-end; margin-top: 0.5rem;">
-    <a href="https://econ-ai-multi-agent-paper-reviewer-667403711390.us-west1.run.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
+    <a href="https://refereeai-667403711390.us-west1.run.app" target="_blank" rel="noopener noreferrer" class="btn btn-sm">
       Open in New Tab ↗
     </a>
   </div>
