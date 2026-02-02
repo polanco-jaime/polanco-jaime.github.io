@@ -59,7 +59,7 @@ My primary research interests include:
 
 <!-- A styled "callout" box for instructions -->
 <div style="background-color: #f0f8ff; border-left: 4px solid #1e90ff; padding: 10px 15px; margin-bottom: 2rem; border-radius: 4px;">
-  <strong>To log in, please write me directly, and then I will bring a special access
+  <strong>To log in, please contact me directly, and I will provide you with special access (jaime.polancojimenez@kuleuven.be)
 <!-- </div> -->
 
 
