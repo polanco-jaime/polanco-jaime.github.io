@@ -60,7 +60,7 @@ My primary research interests include:
 <!-- A styled "callout" box for instructions -->
 <div style="background-color: #f0f8ff; border-left: 4px solid #1e90ff; padding: 10px 15px; margin-bottom: 2rem; border-radius: 4px;">
   <strong>To log in, please write me directly, and then I will bring a special access
-</div>
+<!-- </div> -->
 
 
 <div class="ai-agent-container" style="border: 1px solid #ddd; padding: 1rem; border-radius: 8px; margin-top: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
