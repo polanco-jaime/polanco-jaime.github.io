@@ -4,7 +4,7 @@ permalink: /
 title: "Jaime Polanco-Jimenez"
 order: 1
 description: >
-  PhD Candidate in Economics | Defending March 2026 | Available for Academic & Research Positions
+  PhD Candidate in Economics | Defending March 12, 2026 | Available for Academic & Research Positions
 news: true
 social: true
 ---
@@ -20,13 +20,14 @@ social: true
       I am a PhD Candidate in Economics in a joint program between KU Leuven (at the <a href="https://research.kulekuven.be/portal/en/project/3H240489">Leuven Economics of Education Research</a> center) and Pontificia Universidad Javeriana.
     </p> 
     <p>
-      <strong>Update:</strong> I will defend my dissertation on <strong>March 12, 2026</strong>. I am currently on the job market and available for positions starting immediately or in Fall 2026.
+      <strong>Status:</strong> I will defend my dissertation on <strong>March 12, 2026</strong>. I am currently available for positions starting immediately or in Fall 2026.
     </p>
     <p>
       I am fortunate to be advised by Professor <a href="https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-econom%C3%8Da-17?redirect=%2Fprofesores">Gloria Bernal</a> and Professor <a href="https://www.kuleuven.be/wieiswie/en/person/00049626">Kristof De Witte</a>.
     </p>
-    <div style="margin-top: 1rem;">
-       <a href="assets/docs/CV_Polanco_Jimenez.pdf" class="btn btn-sm z-depth-0" role="button" target="_blank">Download CV</a>
+    <div style="margin-top: 1.5rem;">
+       <!-- Updated CV Link using relative URL so it opens the PDF directly -->
+       <a href="{{ '/assets/docs/CV___Jaime_Polanco.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Download CV</a>
     </div>
   </div>
 
@@ -102,6 +103,8 @@ social: true
 *   **AI-Powered Learning Support:** Investigating how AI can mitigate teacher shortages and enhance student learning outcomes.
 *   **Gender Dynamics:** Analyzing the impact of gender ratios and peer effects in educational and professional settings.
 *   **Infrastructure & Resources:** Evaluating the effectiveness of infrastructure improvements and natural resource allocation on human capital.
+
+
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-EHXV39ZW0B"></script>
