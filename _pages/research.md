@@ -6,36 +6,6 @@ permalink: /_pages/research/
 My research focuses on the economics of education, human capital development, and financial inclusion, with a regional focus on Colombia. I use quasi-experimental and experimental methods to evaluate the impact of infrastructure, technology, and policy interventions.
 
 ---
- 
-
-## Working Papers
-
-
-
-### Economics of Education and Development
-
-**Gender Composition in Classrooms: Influences on Post-Secondary Schooling Choices** (Working Paper) <br>
-*with Kristof De Witte & Gloria L. Bernal* <br>
-[[PDF]](/assets/docs/Gender_Composition_in_Classrooms.pdf)
-
-**Black Gold and Dull Minds: The Impact of Oil Exploration Announcements on Education in Colombia** (Working Paper) <br>
-*with Christian Posso Suarez* <br>
-[[PDF]](/assets/docs/Black_Gold_and_Dull_Minds__HEA_on_Education.pdf)
-
-**Moving into Greener Jobs: Impact of Oil Shocks on Students’ Career Choices** (Working Paper) <br>
-*with Karen Castaneda* <br>
-[[PDF]](/assets/docs/Moving_into_Greener_Jobs.pdf) <!-- NOTE: See instructions below -->
-<!-- [[Poster]](/assets/docs/Poster_Castaneda.pdf) -->
-
-### Financial Literacy and Small Business Development
-
-**Empowering Growth: A Longitudinal Analysis of Financial Literacy’s Impact on Colombian Small Businesses** (Working Paper) <br>
-*with Johan Lozano* <br>
-[[PDF]](/assets/docs/Financial_Literacy_s_on_Mipymes.pdf)
-
-
----
-
 
 ## Publications
 
@@ -64,7 +34,42 @@ My research focuses on the economics of education, human capital development, an
 "cellarId": "2fbac4e5-bb8c-11f0-b37f-01aa75ed71a1"
 }
 </script>
+--- 
+
+## Working Papers
+
+
+
+### Economics of Education and Development
+
+**The Tailoring Premium: AI Design, Behavioral Engagement, and Human Capital Formation** (Working Paper) <br>
+*with Kristof De Witte * <br>
+[PDF](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6110192)
+
+
+**Gender Composition in Classrooms: Influences on Post-Secondary Schooling Choices** (Working Paper) <br>
+*with Kristof De Witte & Gloria L. Bernal* <br>
+[[PDF]](/assets/docs/Gender_Composition_in_Classrooms.pdf)
+
+**Black Gold and Dull Minds: The Impact of Oil Exploration Announcements on Education in Colombia** (Working Paper) <br>
+*with Christian Posso Suarez* <br>
+[[PDF]](/assets/docs/Black_Gold_and_Dull_Minds__HEA_on_Education.pdf)
+
+**Moving into Greener Jobs: Impact of Oil Shocks on Students’ Career Choices** (Working Paper) <br>
+*with Karen Castaneda* <br>
+[[PDF]](/assets/docs/Moving_into_Greener_Jobs.pdf) <!-- NOTE: See instructions below -->
+<!-- [[Poster]](/assets/docs/Poster_Castaneda.pdf) -->
+
+### Financial Literacy and Small Business Development
+
+**Empowering Growth: A Longitudinal Analysis of Financial Literacy’s Impact on Colombian Small Businesses** (Working Paper) <br>
+*with Johan Lozano* <br>
+[[PDF]](/assets/docs/Financial_Literacy_s_on_Mipymes.pdf)
+
+
 ---
+
+
 
 <!-- # Research -->
 <!-- 
