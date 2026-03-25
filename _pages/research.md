@@ -9,47 +9,52 @@ My research focuses on the economics of education, human capital development, an
 
 ## Publications
 
-<p>Polanco-Jimenez, J. (2025). Road to the future: Identifying impacts of roads on education in Colombia. <i>International Journal of Educational Development</i>. <a href="https://doi.org/10.1016/j.ijedudev.2025.103339">https://doi.org/10.1016/j.ijedudev.2025.103339</a></p>
+<div style="margin-bottom: 30px; padding: 15px; border: 1px solid #ddd; border-radius: 8px;">
+
+<p><strong>Polanco-Jimenez, J. (2025).</strong><br>
+Road to the future: Identifying impacts of roads on education in Colombia.<br>
+<i>International Journal of Educational Development</i>.<br>
+<a href="https://doi.org/10.1016/j.ijedudev.2025.103339">DOI</a></p>
 
 <details>
   <summary><strong>Abstract</strong></summary>
-  This study examines the impact of Colombia's road concession program on educational outcomes in public schools. Using a staggered difference-in-differences approach, I find that road improvements lead to a significant increase of 0.169 standard deviations in math scores, with the full effect materializing after project completion. Reading scores also show a positive, though less pronounced, trend. These findings are robust to various checks, including alternative estimators and control groups. Additionally, I observe reduced child labor participation and increased higher education pursuit following road improvements. This evidence suggests that Public-Private Partnerships-driven road concession programs can be effective tools for promoting human capital development in developing countries and that policymakers should consider the long-term educational benefits when evaluating infrastructure investments.
-
+  <p>This study examines the impact of Colombia's road concession program on educational outcomes in public schools. Using a staggered difference-in-differences approach, I find that road improvements lead to a significant increase of 0.169 standard deviations in math scores, with the full effect materializing after project completion. Reading scores also show a positive, though less pronounced, trend. These findings are robust to various checks, including alternative estimators and control groups. Additionally, I observe reduced child labor participation and increased higher education pursuit following road improvements. This evidence suggests that Public-Private Partnerships-driven road concession programs can be effective tools for promoting human capital development in developing countries and that policymakers should consider the long-term educational benefits when evaluating infrastructure investments.</p>
 </details>
 
 <figure>
-  <img src="https://raw.githubusercontent.com/polanco-jaime/polanco-jaime.github.io/main/assets/docs/Road%20to%20the%20Future.png" width="600">
-  <figcaption>Figure 1: Impact of Road Concessions on Education Outcomes</figcaption>
+  <img src="https://raw.githubusercontent.com/polanco-jaime/polanco-jaime.github.io/main/assets/docs/Road%20to%20the%20Future.png" width="100%">
 </figure>
 
-<p>
-Polanco-Jimenez, J., & De Witte, K. (2025). 
-Factors influencing STEM participation and effective intervention strategies. 
-European Commission. 
-<a href="https://data.europa.eu/doi/10.2766/6852280">DOI</a>
-</p>
+</div>
+
+<div style="margin-bottom: 30px; padding: 15px; border: 1px solid #ddd; border-radius: 8px;">
+
+<p><strong>Polanco-Jimenez, J., & De Witte, K. (2025).</strong><br>
+Factors influencing STEM participation and effective intervention strategies.<br>
+European Commission.<br>
+<a href="https://data.europa.eu/doi/10.2766/6852280">DOI</a></p>
+
+<details>
+  <summary><strong>Summary</strong></summary>
+  <p>
+  Science, technology, engineering and mathematics (STEM) are increasingly recognised as critical drivers of economic competitiveness, innovation and sustainable growth in the European Union (EU). A robust STEM workforce is essential to address key societal challenges, including labour shortages, skill gaps, achieving the goals of the European Green Deal, and facilitating the digital transition. Investments in STEM education and careers are therefore crucial for securing the EU's future prosperity and global leadership. This report provides evidence-based insights to guide EU policies aimed at increasing participation in STEM, drawing on international research with a focus on the EU context. It identifies key factors influencing decisions to pursue STEM education across individual, social, and institutional levels.
+  </p>
+</details>
 
 <details>
   <summary><strong>View publication</strong></summary>
   <p>
     🔗 <a href="https://op.europa.eu/en/publication-detail/-/publication/2fbac4e5-bb8c-11f0-b37f-01aa75ed71a1" target="_blank">
-    Open publication on European Commission website
+    Open publication
     </a>
   </p>
 </details>
 
-<!-- 
-<p> Polanco-Jimenez, J. et De Witte, K. (2025), Commission européenne, Direction générale de l’éducation, de la jeunesse, du sport et de la culture,  Factors influencing STEM participation and effective intervention strategies, Office des publications de l’Union européenne, 2025, <a href="https://data.europa.eu/doi/10.2766/6852280">https://data.europa.eu/doi/10.2766/6852280 </a></p>
+</div>
 
-<script type='text/javascript' src='https://op.europa.eu/o/opportal-widgets/js/widget/widgetload.js'></script>
-<script type='application/json'>
-{
-"portalURL": "https://op.europa.eu",
-"uuid": "portal2012ebbdb5a0abfe4fb6a88f18d47279df71",
-"widgetType": "5",
-"cellarId": "2fbac4e5-bb8c-11f0-b37f-01aa75ed71a1"
-}
-</script> -->
+
+
+ 
 --- 
 
 ## Working Papers
