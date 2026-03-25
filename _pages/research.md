@@ -52,8 +52,18 @@ My research focuses on the economics of education, human capital development, an
   <figcaption>Figure 1: Impact of Road Concessions on Education Outcomes</figcaption>
 </figure>
 
- 
 
+<p> Polanco-Jimenez, J. et De Witte, K. (2025), Commission européenne, Direction générale de l’éducation, de la jeunesse, du sport et de la culture,  Factors influencing STEM participation and effective intervention strategies, Office des publications de l’Union européenne, 2025, <a href="https://data.europa.eu/doi/10.2766/6852280">https://data.europa.eu/doi/10.2766/6852280 </a></p>
+
+<script type='text/javascript' src='https://op.europa.eu/o/opportal-widgets/js/widget/widgetload.js'></script>
+<script type='application/json'>
+{
+"portalURL": "https://op.europa.eu",
+"uuid": "portal2012ebbdb5a0abfe4fb6a88f18d47279df71",
+"widgetType": "5",
+"cellarId": "2fbac4e5-bb8c-11f0-b37f-01aa75ed71a1"
+}
+</script>
 ---
 
 <!-- # Research -->
