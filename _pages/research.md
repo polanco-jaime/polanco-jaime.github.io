@@ -31,7 +31,11 @@ European Commission.
 
 <details>
   <summary><strong>View publication</strong></summary>
-  <iframe src="https://op.europa.eu/en/publication-detail/-/publication/2fbac4e5-bb8c-11f0-b37f-01aa75ed71a1" width="100%" height="500"></iframe>
+  <p>
+    🔗 <a href="https://op.europa.eu/en/publication-detail/-/publication/2fbac4e5-bb8c-11f0-b37f-01aa75ed71a1" target="_blank">
+    Open publication on European Commission website
+    </a>
+  </p>
 </details>
 
 <!-- 
