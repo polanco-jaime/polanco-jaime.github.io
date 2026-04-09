@@ -4,7 +4,7 @@ permalink: /
 title: "Jaime Polanco-Jimenez"
 order: 1
 description: >
-  PhD Candidate in Economics | Defending March 12, 2026 | Available for Academic & Research Positions
+  PhD in Economics | Development Economics · Human Capital · Environment · Gender · Behavioral Economics | Available for Academic & Research Positions
 news: true
 social: true
 ---
@@ -17,10 +17,10 @@ social: true
   <!-- Column 1: Text -->
   <div style="flex: 3;">
     <p>
-      I am a PhD Candidate in Economics in a joint program between KU Leuven (at the <a href="https://research.kulekuven.be/portal/en/project/3H240489">Leuven Economics of Education Research</a> center) and Pontificia Universidad Javeriana.
+      I am a PhD in Economics from a joint program between KU Leuven (at the <a href="https://research.kulekuven.be/portal/en/project/3H240489">Leuven Economics of Education Research</a> center) and Pontificia Universidad Javeriana.
     </p> 
     <p>
-      <strong>Status:</strong> I will defend my dissertation on <strong>March 12, 2026</strong>. I am currently available for positions starting immediately or in Fall 2026.
+      <strong>Status:</strong> I defended my dissertation on <strong>March 12, 2026</strong> and am currently available for academic and research positions.
     </p>
     <p>
       I am fortunate to be advised by Professor <a href="https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-econom%C3%8Da-17?redirect=%2Fprofesores">Gloria Bernal</a> and Professor <a href="https://www.kuleuven.be/wieiswie/en/person/00049626">Kristof De Witte</a>.
@@ -39,7 +39,7 @@ social: true
 </div>
 
 <p>
-    My research lies at the intersection of <strong>Development Economics</strong> and the <strong>Economics of Education</strong>, with a focus on Artificial Intelligence. I combine causal inference with data science to study how frontier technologies can improve human capital accumulation in developing contexts.
+    My research lies at the intersection of <strong>Development Economics</strong>, <strong>Human Capital</strong>, and <strong>Behavioral Economics</strong>. I study how policies, technologies, and institutions shape education, gender equity, financial inclusion, and environmental outcomes in developing contexts. My work is grounded in <strong>Randomized Controlled Trials (RCTs)</strong> and field experiments, combining causal inference with data science to generate actionable, evidence-based policy insights.
 </p>
 
 <!-- Spacer -->
@@ -100,9 +100,17 @@ social: true
 
 ## Research Interests
 
-*   **AI-Powered Learning Support:** Investigating how AI can mitigate teacher shortages and enhance student learning outcomes.
-*   **Gender Dynamics:** Analyzing the impact of gender ratios and peer effects in educational and professional settings.
-*   **Infrastructure & Resources:** Evaluating the effectiveness of infrastructure improvements and natural resource allocation on human capital.
+**Substantive Areas**
+*   **Human Capital & Education:** How policies and technologies—including AI—improve learning outcomes and expand opportunity in developing contexts.
+*   **Environment & Development:** Evaluating the welfare and behavioral effects of environmental shocks and natural resource policies on households and communities.
+*   **Gender & Development:** Analyzing gender gaps, peer effects, and the impact of targeted interventions in education and labor markets.
+*   **Behavioral Economics:** Applying behavioral insights to understand decision-making by households, students, and firms in low- and middle-income countries.
+*   **Microfinance & Financial Inclusion:** Studying how access to credit, savings, and digital financial services affects poverty and resilience.
+
+**Methodological Focus**
+*   **Randomized Controlled Trials (RCTs):** Designing and implementing large-scale field experiments in real-world policy settings.
+*   **Evidence-Based Policymaking:** Translating causal estimates into actionable recommendations for governments and international organizations.
+*   **Causal Inference & Data Science:** Combining quasi-experimental methods with machine learning to identify policy-relevant effects at scale.
 
 
 
