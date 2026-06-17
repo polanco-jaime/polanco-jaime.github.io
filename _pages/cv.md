@@ -3,12 +3,21 @@ layout: page
 title: Curriculum Vitae
 permalink: _pages/cv/
 ---
-## Professional Experience
 
-In addition to my research work, I have served as a Research Assistant at the [Laboratory of Economics of Education](https://lee.javeriana.edu.co/), where I explored the correlation between electrical accessibility and education. I collaborated with Professor [Oliver Pardo](https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-administraci%C3%93n-24?redirect=%2Fprofesores) on understanding the relationship between retirement savings and the informal labor market. Furthermore, I supported Researcher [Christian Posso](https://sites.google.com/site/christianpossosuarez/) from the Central Bank of Colombia in investigating the causal link between health insurance bankruptcy and its effects in Colombia. Additionally, I have contributed as a teaching assistant for econometrics courses under the guidance of Professor [Pablo Garlatti](https://sites.google.com/view/adriangarlati) over the last two years.
+## Current Positions
+
+I am a **Postdoctoral Researcher** at the [Leuven Economics of Education Research (LEER)](https://research.kuleuven.be/portal/en/project/3H240489) center at **KU Leuven** (since March 2026), and a **Visiting Fellow** at the [London School of Economics and Political Science (LSE)](https://www.lse.ac.uk/) within WISPPRH (since March 2026).
 {: .text-justify}
 
+## Academic & Research Experience
 
+Prior to my current roles, I served as a **Graduate Teaching Assistant** for Advanced Econometrics I & II at Pontificia Universidad Javeriana (2022--2024) under the supervision of Professor [Adrian Garlati](https://sites.google.com/view/adriangarlati). I was a **Research Assistant** at the [Central Bank of Colombia (Banco de la Republica)](https://www.banrep.gov.co/) (2022--2023), working with Researcher [Christian Posso](https://sites.google.com/site/christianpossosuarez/) on macroeconomic shocks and human capital. I also worked as a **Research Assistant** at the [Laboratory of Economics of Education (LEE)](https://lee.javeriana.edu.co/) at Pontificia Universidad Javeriana (2020--2021). In 2021, I served as a Graduate Teaching Assistant for Real Analysis at the Bogota Summer School in Economics.
+{: .text-justify}
+
+## Extension & Professional Services
+
+I have also contributed as a **Consultant / Senior Data Scientist** at [Servinformacion](https://servinformacion.com/) (2022--2024), as a **Consultant** at the Fiscal Observatory of Universidad Javeriana (2023), and as a **Data Scientist** at the Secretaria de Salud de Bogota (2020--2022).
+{: .text-justify}
 
 ### Interested in My Resume?
 <embed src="{{ site.baseurl }}/assets/docs/CV___Jaime_Polanco.pdf" type="application/pdf" width="100%" height="500px" />
@@ -25,4 +34,3 @@ If you're interested in exploring the current state of secondary schools in Colo
 <iframe width="800" height="700" src="https://lookerstudio.google.com/embed/reporting/191b77ee-4430-49bf-acbd-79f477eb971c/page/tEnnC" frameborder="0" style="border:0" allowfullscreen></iframe>
 
  
-
