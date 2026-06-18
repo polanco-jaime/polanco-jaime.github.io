@@ -1,10 +1,10 @@
 <div class="news">
   <h2>News</h2>
-  {% if site.news  %}
-    <table>
+  {% if site.news %}
     {% assign news = site.news | reverse %}
+    <table>
     {% for item in news limit: site.news_limit %}
-      <tr>
+      <tr{% if forloop.index > 4 %} class="news-hidden" style="display: none;"{% endif %}>
         <td class="date">{{ item.date | date: "%b %-d, %Y" }}</td>
         <td class="announcement">
           {% if item.inline %}
@@ -16,6 +16,24 @@
       </tr>
     {% endfor %}
     </table>
+    {% assign total_news = site.news | size %}
+    {% if total_news > 4 %}
+      <div style="text-align: center; margin-top: 0.5rem;">
+        <a href="#" id="news-toggle" onclick="toggleNews(event)" style="font-size: 0.9rem; color: #0056b3; text-decoration: none;">Show all news &darr;</a>
+      </div>
+      <script>
+        function toggleNews(e) {
+          e.preventDefault();
+          var rows = document.querySelectorAll('.news-hidden');
+          var link = document.getElementById('news-toggle');
+          var visible = rows[0].style.display !== 'none';
+          for (var i = 0; i < rows.length; i++) {
+            rows[i].style.display = visible ? 'none' : '';
+          }
+          link.innerHTML = visible ? 'Show all news &darr;' : 'Show less &uarr;';
+        }
+      </script>
+    {% endif %}
   {% else %}
     <p>No news so far...</p>
   {% endif %}
