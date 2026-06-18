@@ -2,9 +2,9 @@
 # Site settings
 # -----------------------------------------------------------------------------
 title: Jaime Polanco-Jimenez
-email: eng.pepj@gmail.com
+email: jaime.polancojimenez@kuleuven.be
 description: > # this means to ignore newlines until "url:"
-  Postdoctoral Researcher at KU Leuven & Visiting Fellow at LSE. Research in Development Economics, Human Capital, AI & Education.
+  Researcher at KU Leuven LEER & Visiting Fellow at LSE. Research in Development Economics, Human Capital, AI & Education.
 footer_text: > #
 
 url: #"https://polanco-jaime.github.io/"
@@ -72,7 +72,7 @@ collections:
     output: true
     permalink: /projects/:path/
 
-news_limit: 10
+news_limit: 20
 
 # -----------------------------------------------------------------------------
 # Jekyll settings

@@ -6,6 +6,7 @@ description: This study evaluates the impact of the road concessions program on 
 inline: false
 categories: working-papers
 comments: true
+hidden: true
 ---
 <div class="img_row center">
     <img src="{{ site.baseurl }}/assets/img/7g7P.gif">

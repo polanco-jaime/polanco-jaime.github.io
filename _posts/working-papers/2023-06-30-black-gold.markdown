@@ -5,7 +5,8 @@ date: 2023-08-12 16:11:00-0400
 description: This study investigates the impact of the shocks in expected income resulting from the announcement of a hydrocarbon exploration on dropout rates in schools within the exploration areas of Colombia.
 inline: false
 categories: working-papers
-comments: true 
+comments: true
+hidden: true
 ---
 
 <p class="cursive-text">

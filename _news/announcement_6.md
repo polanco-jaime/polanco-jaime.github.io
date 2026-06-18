@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2020-02-10 07:59:00-0400
+date: 2020-10-01 07:59:00-0400
 inline: true
 ---
 
-Started working as senior Data scientist at [Servinformacion](https://servinformacion.com/)
+Started working as **Data Scientist** at the Secretaria de Salud de Bogota, providing analytical support during public health operations.

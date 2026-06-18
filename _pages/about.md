@@ -4,7 +4,7 @@ permalink: /
 title: "Jaime Polanco-Jimenez"
 order: 1
 description: >
-  Postdoctoral Researcher at KU Leuven | Visiting Fellow at LSE | Development Economics · Human Capital · AI & Education · Gender · Behavioral Economics
+  Researcher at KU Leuven LEER | Visiting Fellow at LSE | Development Economics · Human Capital · AI & Education · Gender · Behavioral Economics
 news: true
 social: true
 ---
@@ -17,7 +17,7 @@ social: true
   <!-- Column 1: Text -->
   <div style="flex: 3;">
     <p>
-      I am a Postdoctoral Researcher at the <a href="https://research.kuleuven.be/portal/en/project/3H240489">Leuven Economics of Education Research (LEER)</a> center at <strong>KU Leuven</strong>, and a Visiting Fellow at the <a href="https://www.lse.ac.uk/">London School of Economics and Political Science (LSE)</a> within WISPPRH.
+      I am a Researcher at the <a href="https://research.kuleuven.be/portal/en/project/3H240489">Leuven Economics of Education Research (LEER)</a> center at <strong>KU Leuven</strong>, and a Visiting Fellow at the <a href="https://www.lse.ac.uk/people/jaime-polanco-jimenez">London School of Economics and Political Science (LSE)</a> within WISPPRH.
     </p>
     <p>
       I obtained my <strong>PhD in Economics</strong> (joint degree) from KU Leuven and Pontificia Universidad Javeriana, defending my dissertation on <strong>March 12, 2026</strong>. I was advised by Professor <a href="https://www.kuleuven.be/wieiswie/en/person/00049626">Kristof De Witte</a> and Professor <a href="https://cea.javeriana.edu.co/w/facultad-de-cea-profesores-econom%C3%8Da-17?redirect=%2Fprofesores">Gloria Bernal</a>.

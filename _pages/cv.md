@@ -6,7 +6,7 @@ permalink: _pages/cv/
 
 ## Current Positions
 
-I am a **Postdoctoral Researcher** at the [Leuven Economics of Education Research (LEER)](https://research.kuleuven.be/portal/en/project/3H240489) center at **KU Leuven** (since March 2026), and a **Visiting Fellow** at the [London School of Economics and Political Science (LSE)](https://www.lse.ac.uk/) within WISPPRH (since March 2026).
+I am a **Researcher** at the [Leuven Economics of Education Research (LEER)](https://research.kuleuven.be/portal/en/project/3H240489) center at **KU Leuven** (since August 2026), and a **Visiting Fellow** at the [London School of Economics and Political Science (LSE)](https://www.lse.ac.uk/people/jaime-polanco-jimenez) within WISPPRH (since June 2026).
 {: .text-justify}
 
 ## Academic & Research Experience
