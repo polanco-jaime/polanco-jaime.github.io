@@ -9,10 +9,8 @@ news: true
 social: true
 ---
 
-# About Me
-
 <!-- Main profile container -->
-<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 2rem; margin-top: 1rem; margin-bottom: 2rem;">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 2rem; margin-top: 0.5rem; margin-bottom: 2rem;">
 
   <!-- Column 1: Text -->
   <div style="flex: 3;">
@@ -36,6 +34,10 @@ social: true
 
 <p>
     My research lies at the intersection of <strong>Development Economics</strong>, <strong>Human Capital</strong>, and <strong>Behavioral Economics</strong>. I study how policies, technologies, and institutions shape education, gender equity, financial inclusion, and environmental outcomes in developing contexts. My work is grounded in <strong>Randomized Controlled Trials (RCTs)</strong> and field experiments, combining causal inference with data science to generate actionable, evidence-based policy insights.
+</p>
+
+<p>
+    I also design and build <strong>applied AI systems</strong> for research and education, including multi-agent platforms for peer review (<em>ResearchAI / Referee AI</em>), gamified AI tutoring tools for primary and secondary education, and AI-powered financial literacy interventions. I am a certified <strong>Google Cloud Professional Machine Learning Engineer</strong> and <strong>Google Cloud Professional Data Engineer</strong>, with expertise in Python, R, Stata, SQL, and cloud computing (GCP).
 </p>
 
 <!-- Spacer -->
@@ -78,7 +80,7 @@ social: true
 
   <!-- Login Callout -->
   <div style="background-color: #f0f8ff; border-left: 4px solid #1e90ff; padding: 10px 15px; margin-bottom: 1rem; border-radius: 4px; font-size: 0.9rem;">
-    <strong>Access Required:</strong> To test the tool or discuss the experimental design, please contact me at <code>jaime.polancojimenez@kuleuven.be</code>.
+    <strong>Access Required:</strong> To test the tool or discuss the experimental design, please contact me at <code>P.Jimenez1@lse.ac.uk</code> or <code>jaime.polancojimenez@kuleuven.be</code>.
   </div>
 
   <div class="ai-agent-container">

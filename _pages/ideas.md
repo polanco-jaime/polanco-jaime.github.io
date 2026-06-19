@@ -58,6 +58,6 @@ This project details the design of a cluster-randomized controlled trial to eval
 
 ### Collaboration
 
-I am actively looking for collaborators across these research areas. If you are interested in any of these projects or have complementary expertise, please reach out at <code>jaime.polancojimenez@kuleuven.be</code>.
+I am actively looking for collaborators across these research areas. If you are interested in any of these projects or have complementary expertise, please reach out at <code>P.Jimenez1@lse.ac.uk</code> or <code>jaime.polancojimenez@kuleuven.be</code>.
 
 ---
