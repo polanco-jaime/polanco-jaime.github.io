@@ -19,6 +19,22 @@ Prior to my current roles, I served as a **Graduate Teaching Assistant** for Adv
 I have also contributed as a **Consultant / Senior Data Scientist** at [Servinformacion](https://servinformacion.com/) (2022--2024), as a **Consultant** at the Fiscal Observatory of Universidad Javeriana (2023), and as a **Data Scientist** at the Secretaria de Salud de Bogota (2020--2022).
 {: .text-justify}
 
+## Technical Skills & Certifications
+
+| Category | Details |
+|----------|---------|
+| **Languages** | Spanish (Native), English (Fluent), Russian (Fluent) |
+| **Programming** | Python, R, Stata, SQL, LaTeX |
+| **Methodologies** | Causal Inference (RCTs, DiD, RDD), Applied Econometrics, Machine Learning, Cloud Computing (GCP) |
+| **Applied AI** | Multi-agent systems, AI tutoring platforms, NLP, LLM-based evaluation tools (ResearchAI, Referee AI, Mia's Macondo Adventure) |
+| **Certifications** | Google Cloud Professional Machine Learning Engineer; Google Cloud Professional Data Engineer |
+
+## Scholarships & Grants
+
+- **Google Cloud Platform Research Credits Program** (2024--2026) -- $5,000 USD
+- **Doctoral Fellowship**, Pontificia Universidad Javeriana (2020) -- Merit-based full scholarship
+- **Russian Government Scholarship**, Udmurt State University (2018) -- International grant
+
 ### Interested in My Resume?
 <embed src="{{ site.baseurl }}/assets/docs/CV___Jaime_Polanco.pdf" type="application/pdf" width="100%" height="500px" />
 
