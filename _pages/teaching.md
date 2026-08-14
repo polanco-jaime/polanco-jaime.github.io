@@ -41,6 +41,15 @@ This course provides a rigorous introduction to probability and statistics for e
   </ul>
 </details>
 
+<details>
+  <summary><strong>JaveHoot -- Real-Time Classroom Tool</strong></summary>
+  <div style="margin-top: 10px; padding: 12px; border-left: 3px solid #28a745; background-color: #f8fff8; border-radius: 4px;">
+    <p style="font-size: 0.9rem; margin: 0;">
+      <a href="https://javehoot-667403711390.us-central1.run.app" target="_blank"><strong>JaveHoot</strong></a> is a real-time student engagement tool that allows instructors to launch questions designed with Gen Z language and themes. Students respond anonymously via QR code or link, and the app renders live statistical visualizations -- histograms, boxplots, word clouds, and bar charts -- to teach mathematical and analytical concepts using the classroom's own data.
+    </p>
+  </div>
+</details>
+
 </div>
 
 ---
