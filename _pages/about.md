@@ -43,7 +43,7 @@ social: true
 <!-- Spacer -->
 <div style="height: 1rem;"></div>
 
-## Job Market Paper 
+## Job Market Paper (Accepted at JEBo)
 
 <div class="jmp-container" style="border-left: 5px solid #0056b3; background-color: #fafafa; padding: 1.5rem; border-radius: 4px; margin-bottom: 2rem; box-shadow: 0 2px 4px rgba(0,0,0,0.05);">
   <h3 style="margin-top: 0; font-size: 1.3rem;">The Tailoring Premium: How AI Design Unlocks Student Engagement and Learning</h3>
@@ -85,7 +85,7 @@ social: true
 
   <div class="ai-agent-container">
     <iframe
-    src="https://refereeai-667403711390.us-west1.run.app"
+    src="https://researchai-development-suite.web.app"
     style="width: 100%; height: 400px; border: 1px solid #ccc; border-radius: 4px;"
     title="AI Paper Analyzer Economics">
     </iframe>
