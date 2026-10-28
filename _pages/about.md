@@ -27,7 +27,7 @@ social: true
 
   <!-- Column 2: Picture -->
   <div style="flex: 1; min-width: 200px;">
-    <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Jaime Polanco-Jimenez" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <img src="{{ '/assets/img/Photo_1.jpg' | relative_url }}" alt="Jaime Polanco-Jimenez" style="width: 100%; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
   </div>
 
 </div>
