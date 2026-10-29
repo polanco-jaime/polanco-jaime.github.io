@@ -121,7 +121,10 @@ social: true
     <strong>Energy Transitions & Youth Choices:</strong> <em>Decisiones educativas de los jóvenes en tiempos de transición</em> (with Brigitte Castañeda), in <em>Retos económicos de la transición energética en Colombia</em>, edited by Andrés Álvarez, Jorge Guerra-España, and Marc Hofstetter (Ediciones Uniandes, 2026).
   </li>
   <li>
-    <strong>European Policy Evidence:</strong> <em>Factors Influencing STEM Participation and Effective Intervention Strategies</em> (with Kristof De Witte). European Commission (DG EAC) / NESET Policy Report (2025), <a href="https://data.europa.eu/doi/10.2766/4854833" target="_blank" rel="noopener noreferrer">doi: 10.2766/4854833</a>.
+    <strong>Policy Report on AI & Teacher Shortages:</strong> <em>Tailored AI can help address teacher shortages</em> (with Kristof De Witte). Zenodo (2026), <a href="https://doi.org/10.5281/zenodo.20393189" target="_blank" rel="noopener noreferrer">doi: 10.5281/zenodo.20393189</a>.
+  </li>
+  <li>
+    <strong>European Commission Policy Report:</strong> <em>Factors Influencing STEM Participation and Effective Intervention Strategies</em> (with Kristof De Witte). European Commission (DG EAC) / NESET Policy Report (2025), <a href="https://data.europa.eu/doi/10.2766/4854833" target="_blank" rel="noopener noreferrer">doi: 10.2766/4854833</a>.
   </li>
   <li>
     <strong>Forthcoming Book:</strong> <em>The Algorithmic Ladder: RCTs, Artificial Intelligence, and the Future of Human Capital</em> (with Kristof De Witte). Under review at Leuven University Press.
