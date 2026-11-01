@@ -36,7 +36,7 @@ This RCT evaluates the causal impact of a gamified, AI-powered financial educati
 <p style="font-size: 0.85rem; color: #666;"><em>Research Proposal (June 2026)</em></p>
 </div>
 
-### 4. The Algorithmic Ladder: RCTs, AI, and the Future of Human Capital
+### 4. Designing Randomized Experiments for AI in Education: Theory, Evidence, and Practice
 
 <div style="border: 1px solid #ddd; padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem;">
 <p class="text-justify" style="font-size: 0.95rem;">

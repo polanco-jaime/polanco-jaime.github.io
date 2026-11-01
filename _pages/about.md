@@ -127,7 +127,7 @@ social: true
     <strong>European Commission Policy Report:</strong> <em>Factors Influencing STEM Participation and Effective Intervention Strategies</em> (with Kristof De Witte). European Commission (DG EAC) / NESET Policy Report (2025), <a href="https://data.europa.eu/doi/10.2766/4854833" target="_blank" rel="noopener noreferrer">doi: 10.2766/4854833</a>.
   </li>
   <li>
-    <strong>Forthcoming Book:</strong> <em>The Algorithmic Ladder: RCTs, Artificial Intelligence, and the Future of Human Capital</em> (with Kristof De Witte). Under review at Leuven University Press.
+    <strong>Forthcoming Book:</strong> <em>Designing Randomized Experiments for AI in Education: Theory, Evidence, and Practice</em> (with Kristof De Witte). Under review at Leuven University Press.
   </li>
 </ul>
 
