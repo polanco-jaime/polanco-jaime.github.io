@@ -11,6 +11,20 @@ My research focuses on the economics of education, human capital development, an
 
 <div style="margin-bottom: 30px; padding: 15px; border: 1px solid #ddd; border-radius: 8px;">
 
+<p><strong>Polanco-Jiménez, J., & De Witte, K. (2026).</strong><br>
+The tailoring premium: AI design, behavioral engagement, and human capital formation. (Job Market Paper)<br>
+<i>Journal of Economic Behavior & Organization</i>, 252, Article 107826.<br>
+<a href="https://doi.org/10.1016/j.jebo.2026.107826">DOI: 10.1016/j.jebo.2026.107826</a> · <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6110192">[SSRN]</a> · <a href="/assets/docs/Job_Market_Paper.pdf">[Working Paper PDF]</a></p>
+
+<details>
+  <summary><strong>Abstract</strong></summary>
+  <p>Standard human capital models assume educational technology automatically expands the cognitive production frontier by lowering marginal delivery costs, yet real-world adoptions frequently yield null or unequal returns. We provide the first large-scale causal evidence on why. In a randomized controlled trial with 2,440 students across secondary schools, we evaluate a purpose-built, curriculum-tailored AI chatbot against a generic AI tool and conventional instruction. We find that generic AI produces zero learning gains over standard instruction, whereas curriculum-tailored AI increases learning by 0.126 standard deviations (0.309 SD LATE). Crucially, the underlying economic mechanism is behavioral: tailored design resolves participation frictions, raising module completion by 13.2 percentage points, which explains the entire cognitive gain. Our findings demonstrate that the returns to AI in human capital formation are strictly bounded by behavioral engagement constraints, which only purposeful pedagogical and algorithmic design can resolve.</p>
+</details>
+
+</div>
+
+<div style="margin-bottom: 30px; padding: 15px; border: 1px solid #ddd; border-radius: 8px;">
+
 <p><strong>Polanco-Jimenez, J. (2025).</strong><br>
 Road to the Future: Identifying Impacts of Roads on Education in Colombia.<br>
 <i>International Journal of Educational Development</i>, 114, 103173.<br>
@@ -62,11 +76,6 @@ Factors Influencing STEM Participation and Effective Intervention Strategies.<br
 
 ### Economics of Education and Development
 
-<div style="margin-bottom: 20px; padding: 10px 15px; border-left: 3px solid #0056b3;">
-<p><strong>The Tailoring Premium: How AI Design Unlocks Student Engagement and Learning</strong> (Job Market Paper)<br>
-<em>with Kristof De Witte</em> · Under Peer-Review at <em>Journal of Economic Behavior and Organization</em><br>
-<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6110192">[PDF]</a> · <a href="/assets/docs/Job_Market_Paper.pdf">[Working Paper]</a></p>
-</div>
 
 <div style="margin-bottom: 20px; padding: 10px 15px; border-left: 3px solid #0056b3;">
 <p><strong>Does Coeducation Close the STEM Gap? Evidence from a Single-Sex Schooling Transition in Colombia</strong><br>

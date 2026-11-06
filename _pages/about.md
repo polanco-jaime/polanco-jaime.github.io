@@ -47,17 +47,17 @@ social: true
 ## Job Market Paper
 
 <div class="jmp-container" style="border-left: 5px solid #0056b3; background-color: #fafafa; padding: 1.5rem; border-radius: 4px; margin-bottom: 2rem; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
-  <span class="badge badge-success" style="background-color: #28a745; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase;">Accepted at JEBO</span>
+  <span class="badge badge-success" style="background-color: #28a745; color: white; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase;">Published in JEBO (2026)</span>
   <h3 style="margin-top: 0.5rem; font-size: 1.3rem;">The Tailoring Premium: AI Design, Behavioral Engagement, and Human Capital Formation</h3>
   <p style="font-size: 0.9rem; color: #555;">
-    <em>with Kristof De Witte. Accepted for publication at the <strong>Journal of Economic Behavior and Organization</strong>.</em>
+    <em>with Kristof De Witte. <strong>Journal of Economic Behavior & Organization</strong>, 252, Article 107826 (2026).</em>
   </p>
   <p class="text-justify" style="margin-bottom: 1rem; font-size: 0.95rem;">
     Standard human capital models assume educational technology automatically expands the cognitive production frontier by lowering marginal delivery costs, yet real-world adoptions frequently yield null or unequal returns. We provide the first large-scale causal evidence on why. In a randomized controlled trial with 2,440 students across secondary schools, we evaluate a purpose-built, curriculum-tailored AI chatbot against a generic AI tool and conventional instruction. We find that generic AI produces zero learning gains over standard instruction, whereas curriculum-tailored AI increases learning by 0.126 standard deviations (0.309 SD LATE). Crucially, the underlying economic mechanism is behavioral: tailored design resolves participation frictions, raising module completion by 13.2 percentage points, which explains the entire cognitive gain. Our findings demonstrate that the returns to AI in human capital formation are strictly bounded by behavioral engagement constraints, which only purposeful pedagogical and algorithmic design can resolve.
   </p>
   <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap;">
-    <a href="{{ '/assets/docs/Job_Market_Paper.pdf' | relative_url }}" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">View Paper (PDF)</a>
-    <a href="https://authors.elsevier.com/tracking/article/details.do?aid=107826&jid=JEBO&surname=Polanco-Jimenez" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener noreferrer">Elsevier Tracking Link ↗</a>
+    <a href="{{ '/assets/docs/Job_Market_Paper.pdf' | relative_url }}" class="btn btn-sm btn-primary" target="_blank" rel="noopener noreferrer">View Working Paper (PDF)</a>
+    <a href="https://doi.org/10.1016/j.jebo.2026.107826" class="btn btn-sm btn-outline-secondary" target="_blank" rel="noopener noreferrer">Journal Article (DOI) ↗</a>
   </div>
 </div>
 
